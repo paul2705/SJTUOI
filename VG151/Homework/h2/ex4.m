@@ -1,14 +1,11 @@
+s=input('','s');
+f=str2func(s);
 x=input('');
-while 1
-    a=0; tmp=x;
-    while (tmp)
-        tmp1=mod(tmp,10);
-        a=a+tmp1*tmp1*tmp1;
-        tmp=floor(tmp/10);
-    end
-    if (x==a) 
-        disp(x);
-        break;
-    end
-    x=x+1;
+y=input('');
+i=2;
+while (abs(x(i)-x(i-1))>=power(10,-y))
+    x(i+1)=(x(i-1)*f(x(i))-x(i)*f(x(i-1)))/(f(x(i))-f(x(i-1)));
+    i=i+1;
 end
+format longg;
+disp(roundn(x(i),-y));
