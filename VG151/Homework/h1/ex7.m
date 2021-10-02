@@ -1,4 +1,4 @@
 % Use function primes(x) to display primes between 1 and x
-disp(primes(100000));
-% Use function floor(rand(x,y)*(r-l)+l) to generate matrix x*y filled with random number in [l,r]
-disp(floor(rand(1,5)*9+1));
+disp(length(primes(100000)));
+% Use function randi(r,x,y) to generate matrix x*y filled with random number in [1,r]
+disp(randi(10,1,5));
