@@ -9,7 +9,6 @@ function Plate=CreateNewPlate()
         cnt=cnt+1;
         CharPool(cnt)=char(i);
     end
-    disp(cnt);
 	% Shuffle this pool
     CharPool=CharPool(randperm(cnt));
     Use=zeros(cnt); PlatePool=[]; Plate=[];
