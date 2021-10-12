@@ -26,14 +26,17 @@ void OptPlayerDrawCard(User *_thisPlayer,Pile *_thisPile,int _thisDrawCardNumber
 }
 
 Card *OptPlayerPlayCard(User *_thisPlayer,Card *_laterCard){
-	printf("Please Play A Card Or Give Up This Turn: \n");
+	printf("Please Play A Card Or Enter -1 To Give Up This Turn: \n");
 	int _thisCardNumber;
 	while (1){
 		while (!scanf("%d",&_thisCardNumber));
+		if (_thisCardNumber==-1) break;
 		if (IsCardMatch(_thisPlayer->HandCard->thisPile[_thisCardNumber],_laterCard)) break;
 		else printf("Your Choice Didn't Match The Rank Or Suit Of The Last Card! Please Choose again!\n");
 	}
-	Card *_formerCard=_thisPlayer->HandCard->thisPile[_thisCardNumber];
+	Card *_formerCard=_laterCard;
+	if (_thisCardNumber==-1) return _formerCard;
+	_formerCard=_thisPlayer->HandCard->thisPile[_thisCardNumber];
 	WithdrawCardFromPile(_thisPlayer->HandCard,_thisCardNumber);
 	return _formerCard;
 }

@@ -17,18 +17,18 @@ void StartGame(Game *_thisGame){
 		int _thisIfInit=1;
 		Card *LastTurnCard=OutputCardFromPile(_thisGame->StockPile);
 		while (!IsGameEnd(_thisGame)){
+			system("clear");
 			DetermineDrawCardNumber(&_thisDrawCardNumber,LastTurnCard,_thisIfInit);
 			DetermineNextPlayer(&_thisPlayer,_thisGame->PlayerNumber,LastTurnCard,_thisIfInit);
 			printf("Player: %d\n",_thisPlayer);
-			printf("You Should Draw %d Card(s).\n",_thisDrawCardNumber);
+			printf("You Are Supposed To Draw %d Card(s).\n",_thisDrawCardNumber);
 			printf("Last Card: "); DisplayCard(LastTurnCard);
 			printf("Your current HandCard: \n");
 			DisplayPile(_thisGame->Player[_thisPlayer]->HandCard);
 			LastTurnCard=OptPlayerPlayCard(_thisGame->Player[_thisPlayer],LastTurnCard);
+			if (_thisIfInit>0) _thisIfInit=0;
 			if (LastTurnCard->Rank==7) _thisDrawCardNumber=1;
 			OptPlayerDrawCard(_thisGame->Player[_thisPlayer],_thisGame->StockPile,_thisDrawCardNumber);
-			_thisPlayer=(_thisPlayer+1)%_thisGame->PlayerNumber;
-			if (_thisIfInit>0) _thisIfInit=0;
 		}
 	}
 }
@@ -68,6 +68,7 @@ int IsGameEnd(Game *_thisGame){
 }
 
 void DetermineDrawCardNumber(int *_thisNumber,Card *_thisCard,int _thisIfInit){
+	*_thisNumber=1;
 	if (_thisIfInit>0){ *_thisNumber=1; return; }
 	switch (_thisCard->Rank){
 		case 2: *_thisNumber+=2; break;
@@ -77,9 +78,10 @@ void DetermineDrawCardNumber(int *_thisNumber,Card *_thisCard,int _thisIfInit){
 }
 
 void DetermineNextPlayer(int *_thisPlayer,int _thisPlayerNumber,Card *_thisCard,int _thisIfInit){
-	if (_thisIfInit>0){ *_thisPlayer=(*_thisPlayer+1)%_thisPlayerNumber; return; }
+	if (_thisIfInit>0){ return; }
 	switch (_thisCard->Rank){
 		case 11: *_thisPlayer=(*_thisPlayer+2)%_thisPlayerNumber; break;
 		case 12: *_thisPlayer=(*_thisPlayer-1+_thisPlayerNumber)%_thisPlayerNumber; break;
+		default: *_thisPlayer=(*_thisPlayer+1)%_thisPlayerNumber; break;
 	}
 }

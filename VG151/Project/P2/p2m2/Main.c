@@ -6,6 +6,7 @@
 #include"Card.h"
 #include"Pile.h"
 #include"User.h"
+#include"Operation.h"
 #include"Game.h"
 
 int OptionType(char *_thisOption){
@@ -22,6 +23,7 @@ int main(int Argc,char *Argv[]){
 	_thisGame.InitialCardNumber=5;
 	_thisGame.DeckNumber=2;
 	_thisGame.RoundNumber=1;
+	char _thisChar;
 //	printf("%d %s\n",Argc,Argv[1]);
 	for (int i=1;i<Argc;i++){
 		char *Option=Argv[i];
@@ -50,7 +52,10 @@ int main(int Argc,char *Argv[]){
 						printf("-c c|--initial-cards=c  deal c cards per player, c must be at least 2 (default: 5) \n"); 
 						printf("-d d|--decks=d          use d decks 52 cards each, d must be at least 2 (default: 2) \n"); 
 						printf("-r r|--rounds=r         play r rounds, r must be at least 1 (default: 1) \n");
-						printf("-a|--auto               run in demo mode \n"); break;
+						printf("-a|--auto               run in demo mode \n"); 
+						printf("Enter Any Word To StartGame Or Enter ? To Shut Down\n");
+						while (!scanf("%c",&_thisChar)); 
+						break;
 				case 'n': _thisGame.PlayerNumber=_thisNumber; break;
 				case 'c': _thisGame.InitialCardNumber=_thisNumber; break;
 				case 'd': _thisGame.DeckNumber=_thisNumber; break;
@@ -58,7 +63,8 @@ int main(int Argc,char *Argv[]){
 			}
 		}
 	}
-	StartGame(&_thisGame);
+	if (_thisChar!='?') StartGame(&_thisGame);
+	else OptInitialize(&_thisGame);
 	DisplayGame(&_thisGame);
 	return 0;
 }
