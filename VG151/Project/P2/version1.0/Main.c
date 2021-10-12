@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<time.h>
 #include<stddef.h>
 
 #include"Card.h"
@@ -15,6 +16,7 @@ int OptionType(char *_thisOption){
 }
 
 int main(int Argc,char *Argv[]){
+	srand(time(NULL));
 	Game _thisGame; InitializeGame(&_thisGame);
 	_thisGame.PlayerNumber=4;
 	_thisGame.InitialCardNumber=5;
@@ -56,7 +58,7 @@ int main(int Argc,char *Argv[]){
 			}
 		}
 	}
-	printf("0000\n");
 	StartGame(&_thisGame);
+	DisplayGame(&_thisGame);
 	return 0;
 }

@@ -5,10 +5,12 @@
 	#include"Pile.h"
 
 	typedef struct _User{
-		Pile HeadCard;
+		Pile *HandCard;
 		char UserName[10];
 	} User;
-
+	
 	void DrawCardFromPile(Pile *_formerPile,Pile *_laterPile,int DrawCardNumber);
-	void InitializePlayer(User **_thisPlayer,int _thisPlayerNumber);
+	void InitializePlayer(User **_thisPlayers,int _thisPlayerNumber);
+	void DisplayPlayer(User *_thisPlayer);
+	
 #endif

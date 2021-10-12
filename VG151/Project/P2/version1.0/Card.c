@@ -15,20 +15,35 @@ char *InterpretCardName(Card _this){
 }
 
 int IsCardMatch(Card _former,Card _later){
-	return (_former.Rank==_later.Rank||_former.Suit==_later.Rank);
+	return (_former.Rank==_later.Rank||_former.Suit==_later.Suit);
+}
+
+int IsCardEmpty(Card *_thisCard){
+//	printf("IsCardEmpty (%d,%d)\n",_thisCard->Rank,_thisCard->Suit);
+	return (_thisCard->Rank==0&&_thisCard->Suit==0);
+}
+
+int CardOrder(Card *_thisCard){
+	return _thisCard->Suit*15+_thisCard->Rank;
 }
 
 Card *CreateNewCard(int _thisCardSuit,int _thisCardRank){
-//	printf("3001\n");
 	Card *_thisNewCard=malloc(sizeof(Card));
 	_thisNewCard->Suit=_thisCardSuit;
 	_thisNewCard->Rank=_thisCardRank;
-//	printf("3002\n");
 	return _thisNewCard;
 }
 
+void DisplayCard(Card *_thisCard){
+	switch (_thisCard->Suit){
+		case 1: printf("Spades   "); break;
+		case 2: printf("Hearts   "); break;
+		case 3: printf("Diamonds "); break;
+		case 4: printf("Clubs    "); break;
+	}
+	printf("%d\n",_thisCard->Rank);
+}
+
 void ClearCard(Card *_thisCard){
-	printf("5001\n");
 	_thisCard->Rank=0; _thisCard->Suit=0;
-	printf("5002\n");
 }

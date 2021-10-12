@@ -12,7 +12,10 @@
 	
 	char *InterpretCardName(Card _this);
 	int IsCardMatch(Card _former,Card _later);
+	int IsCardEmpty(Card *_thisCard);
+	int CardOrder(Card *_thisCard);
 	Card *CreateNewCard(int _thisCardSuit,int _thisCardRank);
+	void DisplayCard(Card *_thisCard);
 	void ClearCard(Card *_thisCard);
 
 #endif

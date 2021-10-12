@@ -22,3 +22,16 @@ void InitializeGame(Game *_thisGame){
 	_thisGame->DiscardPile=malloc(sizeof(Pile));
 	InitializePile(_thisGame->DiscardPile);
 }
+
+void DisplayGame(Game *_thisGame){
+	printf("PlayerNumber: %d\n",_thisGame->PlayerNumber);
+	printf("InitialCardNuber: %d\n",_thisGame->InitialCardNumber);
+	printf("DeckNumber: %d\n",_thisGame->DeckNumber);
+	printf("RoundNumber: %d\n",_thisGame->RoundNumber);
+	for (int i=0;i<_thisGame->PlayerNumber;i++)
+		DisplayPlayer(_thisGame->Player[i]);
+	printf("StockPile: \n");
+	DisplayPile(_thisGame->StockPile);
+	printf("DiscardPile: \n");
+	DisplayPile(_thisGame->DiscardPile);
+}

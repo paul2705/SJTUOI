@@ -13,4 +13,6 @@
 	
 	void StartGame(Game *_thisGame);
 	void InitializeGame(Game *_thisGame);
+	void DisplayGame(Game *_thisGame);
+	
 #endif
