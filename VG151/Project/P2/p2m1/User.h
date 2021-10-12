@@ -6,7 +6,7 @@
 
 	typedef struct _User{
 		Pile *HandCard;
-		char UserName[10];
+		char PlayerName[10];
 	} User;
 	
 	void DrawCardFromPile(Pile *_formerPile,Pile *_laterPile,int DrawCardNumber);

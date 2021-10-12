@@ -49,15 +49,20 @@ void InsertCardToPile(Pile *_thisPile,Card *_thisCard){
 Card *OutputCardFromPile(Pile *_thisPile){
 	int Cardx=rand()%_thisPile->PileSize;
 	Card *_thisCard=_thisPile->thisPile[Cardx];
-	for (int i=Cardx;i<_thisPile->PileSize-1;i++) _thisPile->thisPile[i]=_thisPile->thisPile[i+1];
-	_thisPile->PileSize--;
+	WithdrawCardFromPile(_thisPile,Cardx);
 	return _thisCard;
+}
+
+void WithdrawCardFromPile(Pile *_thisPile,int _thisCardNumber){
+	for (int i=_thisCardNumber;i<_thisPile->PileSize-1;i++) _thisPile->thisPile[i]=_thisPile->thisPile[i+1];
+	_thisPile->PileSize--;
 }
 
 void DisplayPile(Pile *_thisPile){
 	printf("PileSize: %d\n",_thisPile->PileSize);
 	for (int i=0;i<_thisPile->PileSize;i++){
 //		if (IsCardEmpty(_thisPile->thisPile[i])) break;
+		printf("%d: ",i);
 		DisplayCard(_thisPile->thisPile[i]);
 	}
 	printf("\n");

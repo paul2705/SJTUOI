@@ -12,6 +12,7 @@
 	void CreatePile(Pile *_thisPile);
 	void InsertCardToPile(Pile *_thisPile,Card *_thisCard);
 	Card *OutputCardFromPile(Pile *_thisPile);
+	void WithdrawCardFromPile(Pile *_thisPile,int _thisCardNumber);
 	void DisplayPile(Pile *_thisPile);
 	void EmptyPile(Pile *_thisPile);
 

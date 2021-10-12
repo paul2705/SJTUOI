@@ -10,7 +10,7 @@
 void DrawCardFromPile(Pile *_formerPile,Pile *_laterPile,int DrawCardNumber){
 	for (int i=1;i<=DrawCardNumber;i++){
 		InsertCardToPile(_formerPile,OutputCardFromPile(_laterPile));
-		DisplayPile(_formerPile);
+//		DisplayPile(_formerPile);
 	}
 }
 
@@ -23,7 +23,7 @@ void InitializePlayer(User **_thisPlayers,int _thisPlayerNumber){
 }
 
 void DisplayPlayer(User *_thisPlayer){
-	printf("Player: %s\n",_thisPlayer->UserName);
+	printf("Player: %s\n",_thisPlayer->PlayerName);
 	DisplayPile(_thisPlayer->HandCard);
 	printf("\n");
 }
