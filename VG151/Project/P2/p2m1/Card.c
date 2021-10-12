@@ -22,7 +22,7 @@ char *InterpretCardFunction(Card *_thisCard){
 		case 7: Function="Cancel An Attack"; break;
 		case 11: Function="Skip The Next Player"; break;
 		case 12: Function="Reverse The Playing Order"; break;
-//		default: Function="Regular Card"; break;
+		default: Function="~"; break;
 	}
 	return Function;
 }
