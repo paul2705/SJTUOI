@@ -7,8 +7,8 @@
 	#include"Game.h"
 
 	void OptInitialize(Game *_thisGame);
-	void OptPlayerDrawCard(User *_thisPlayer,Pile *_thisPile,int DrawCardNumber);
+	void OptPlayerDrawCard(User *_thisPlayer,Pile *_formerPile,Pile *_laterPile,int DrawCardNumber);
 	Card *OptPlayerPlayCard(User *_thisPlayer,Card *_laterCard,Pile *_laterPile);
-	void OptReFillStockPile(Game *_thisGame);
+	void OptShiftPile(Pile *_formerPile,Pile *_laterPile);
 
 #endif

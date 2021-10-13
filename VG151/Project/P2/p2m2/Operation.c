@@ -20,17 +20,17 @@ void OptInitialize(Game *_thisGame){
 	InitializePlayer(_thisGame->Player,_thisGame->PlayerNumber);
 	for (int i=0;i<_thisGame->PlayerNumber;i++){
 //		printf("DrawPlayer: %d\n",i);
-		DrawCardFromPile(_thisGame->Player[i]->HandCard,_thisGame->StockPile,_thisGame->InitialCardNumber);
+		DrawCardFromPile(_thisGame->Player[i]->HandCard,_thisGame->StockPile,_thisGame->DiscardPile,_thisGame->InitialCardNumber);
 	}
 }
 
-void OptPlayerDrawCard(User *_thisPlayer,Pile *_thisPile,int _thisDrawCardNumber){
+void OptPlayerDrawCard(User *_thisPlayer,Pile *_formerPile,Pile *_laterPile,int _thisDrawCardNumber){
 	UIPrint(500,"Draw %d Card(s).\n",_thisDrawCardNumber);
-	DrawCardFromPile(_thisPlayer->HandCard,_thisPile,_thisDrawCardNumber);
+	DrawCardFromPile(_thisPlayer->HandCard,_formerPile,_laterPile,_thisDrawCardNumber);
 }
 
 Card *OptPlayerPlayCard(User *_thisPlayer,Card *_laterCard,Pile *_laterPile){
-	UIPrint(0,"Please Play A Card Or Enter -1 To Give Up This Turn: \n");
+	UIPrint(0,"Please Play A Card Or Enter -1 To Give Up This Turn And Draw One More Card: \n");
 	int _thisCardNumber;
 	while (1){
 		while (!scanf("%d",&_thisCardNumber));
@@ -46,8 +46,11 @@ Card *OptPlayerPlayCard(User *_thisPlayer,Card *_laterCard,Pile *_laterPile){
 	return _formerCard;
 }
 
-void OptReFillStockPile(Game *_thisGame){
-	Pile *tmp=_thisGame->StockPile;
-	_thisGame->StockPile=_thisGame->DiscardPile;
-	_thisGame->DiscardPile=tmp;
+void OptShiftPile(Pile *_formerPile,Pile *_laterPile){
+	Card **tmp=_formerPile->thisPile;
+	_formerPile->thisPile=_laterPile->thisPile;
+	_laterPile->thisPile=tmp;
+	int tmpNumber=_formerPile->PileSize;
+	_formerPile->PileSize=_laterPile->PileSize;
+	_laterPile->PileSize=tmpNumber;
 }

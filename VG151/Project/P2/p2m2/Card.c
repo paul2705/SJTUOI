@@ -59,3 +59,7 @@ void DisplayCard(Card *_thisCard){
 void ClearCard(Card *_thisCard){
 	_thisCard->Rank=0; _thisCard->Suit=0;
 }
+
+void DeleteCard(Card *_thisCard){
+	free(_thisCard);
+}

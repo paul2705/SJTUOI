@@ -8,8 +8,8 @@
 #include"UIScreen.h"
 
 void InitializePile(Pile *_thisPile){
-	_thisPile->thisPile=(Card**)malloc(sizeof(Card*)*55);
-	for (int i=0;i<55;i++){
+	_thisPile->thisPile=(Card**)malloc(sizeof(Card*)*550);
+	for (int i=0;i<550;i++){
 		_thisPile->thisPile[i]=(Card*)malloc(sizeof(Card));
 	}
 	EmptyPile(_thisPile);
@@ -65,15 +65,22 @@ void DisplayPile(Pile *_thisPile){
 	UIPrint(0,"PileSize: %d\n",_thisPile->PileSize);
 	for (int i=0;i<_thisPile->PileSize;i++){
 //		if (IsCardEmpty(_thisPile->thisPile[i])) break;
-		UIPrint(0,"%d: ",i);
+		UIPrint(200,"%d: ",i);
 		DisplayCard(_thisPile->thisPile[i]);
 	}
 	UIPrint(0,"\n");
 }
 
 void EmptyPile(Pile *_thisPile){
-	for (int i=0;i<55;i++){
+	for (int i=0;i<550;i++){
 		ClearCard(_thisPile->thisPile[i]);
 	}
 	_thisPile->PileSize=0;
+}
+
+void DeletePile(Pile *_thisPile){
+	for (int i=0;i<_thisPile->PileSize;i++){
+		DeleteCard(_thisPile->thisPile[i]);
+	}
+	free(_thisPile);
 }

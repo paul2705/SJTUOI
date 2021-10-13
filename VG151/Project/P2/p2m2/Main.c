@@ -23,6 +23,7 @@ int main(int Argc,char *Argv[]){
 	_thisGame.InitialCardNumber=5;
 	_thisGame.DeckNumber=2;
 	_thisGame.RoundNumber=1;
+	_thisGame.Debug=0;
 	char _thisChar;
 //	printf("%d %s\n",Argc,Argv[1]);
 	for (int i=1;i<Argc;i++){
@@ -36,7 +37,7 @@ int main(int Argc,char *Argv[]){
 		}
 		else {
 			int _thisNumber=0;
-			if (Type==1&&Option[1]!='h'){
+			if (Type==1&&Option[1]!='h'&&Option[1]!='g'){
 				char *Parameter=Argv[i+1];
 				int ParaType=OptionType(Parameter);
 				if (ParaType>0){
@@ -53,6 +54,7 @@ int main(int Argc,char *Argv[]){
 						printf("-d d|--decks=d          use d decks 52 cards each, d must be at least 2 (default: 2) \n"); 
 						printf("-r r|--rounds=r         play r rounds, r must be at least 1 (default: 1) \n");
 						printf("-a|--auto               run in demo mode \n"); 
+						printf("-g|--debug              run in debug mode \n");
 						printf("Enter Any Word To StartGame Or Enter ? To Shut Down\n");
 						while (!scanf("%c",&_thisChar)); 
 						break;
@@ -60,11 +62,11 @@ int main(int Argc,char *Argv[]){
 				case 'c': _thisGame.InitialCardNumber=_thisNumber; break;
 				case 'd': _thisGame.DeckNumber=_thisNumber; break;
 				case 'r': _thisGame.RoundNumber=_thisNumber; break;
+				case 'g': _thisGame.Debug=1; break;
 			}
 		}
 	}
 	if (_thisChar!='?') StartGame(&_thisGame);
 	else OptInitialize(&_thisGame);
-	DisplayGame(&_thisGame);
 	return 0;
 }

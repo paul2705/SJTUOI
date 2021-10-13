@@ -4,6 +4,8 @@
 #include<stdlib.h>
 #include<stddef.h>
 
+#include"Sys.h"
+#include"UIScreen.h"
 #include"Operation.h"
 #include"User.h"
 #include"Pile.h"
@@ -12,23 +14,40 @@
 void StartGame(Game *_thisGame){
 	for (int i=1;i<=_thisGame->RoundNumber;i++){
 		OptInitialize(_thisGame);
+		
 		int _thisPlayer=0;
 		int _thisDrawCardNumber=1;
 		int _thisIfInit=1;
+		
 		Card *LastTurnCard=OutputCardFromPile(_thisGame->StockPile);
+		
 		while (!IsGameEnd(_thisGame)){
-			system("clear");
+			ClearScreen();
+
+//			DisplayGame(_thisGame);
+
 			DetermineDrawCardNumber(&_thisDrawCardNumber,LastTurnCard,_thisIfInit);
 			DetermineNextPlayer(&_thisPlayer,_thisGame->PlayerNumber,LastTurnCard,_thisIfInit);
-			printf("Player: %d\n",_thisPlayer);
-			printf("You Are Supposed To Draw %d Card(s).\n",_thisDrawCardNumber);
-			printf("Last Card: "); DisplayCard(LastTurnCard);
-			printf("Your current HandCard: \n");
+			
+			UIPrint(200,"Player: %d\n",_thisPlayer);
+			UIPrint(500,"You Are Supposed To Draw %d Card(s).\n",_thisDrawCardNumber);
+			UIPrint(800,"Last Card: "); DisplayCard(LastTurnCard);
+
+			UIPrint(200,"Your Current HandCard: \n");
 			DisplayPile(_thisGame->Player[_thisPlayer]->HandCard);
-			LastTurnCard=OptPlayerPlayCard(_thisGame->Player[_thisPlayer],LastTurnCard);
+			LastTurnCard=OptPlayerPlayCard(_thisGame->Player[_thisPlayer],LastTurnCard,_thisGame->DiscardPile);
+			
 			if (_thisIfInit>0) _thisIfInit=0;
 			if (LastTurnCard->Rank==7) _thisDrawCardNumber=1;
 			OptPlayerDrawCard(_thisGame->Player[_thisPlayer],_thisGame->StockPile,_thisDrawCardNumber);
+			
+			if (_thisGame->StockPile->PileSize==0){
+				UIPrint(200,"StockPile Is Empty! \n");
+				UIPrint(500,"Refresh The StockPile....");
+				OptReFillStockPile(_thisGame);
+				UIPrint(200,"Success!\n");
+			}
+
 		}
 	}
 }
@@ -38,8 +57,10 @@ void InitializeGame(Game *_thisGame){
 	for (int i=0;i<10;i++){
 		_thisGame->Player[i]=malloc(sizeof(User));
 	}
+
 	_thisGame->StockPile=malloc(sizeof(Pile));
 	InitializePile(_thisGame->StockPile);
+	
 	_thisGame->DiscardPile=malloc(sizeof(Pile));
 	InitializePile(_thisGame->DiscardPile);
 }
@@ -49,10 +70,13 @@ void DisplayGame(Game *_thisGame){
 	printf("InitialCardNuber: %d\n",_thisGame->InitialCardNumber);
 	printf("DeckNumber: %d\n",_thisGame->DeckNumber);
 	printf("RoundNumber: %d\n",_thisGame->RoundNumber);
+	
 	for (int i=0;i<_thisGame->PlayerNumber;i++)
 		DisplayPlayer(_thisGame->Player[i]);
+	
 	printf("StockPile: \n");
 	DisplayPile(_thisGame->StockPile);
+	
 	printf("DiscardPile: \n");
 	DisplayPile(_thisGame->DiscardPile);
 }
