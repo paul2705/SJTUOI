@@ -25,7 +25,7 @@ void StartGame(Game *_thisGame){
 
 		Card *LastTurnCard=OutputCardFromPile(_thisGame->StockPile);
 		InsertCardToPile(_thisGame->DiscardPile,LastTurnCard);
-		int _thisCardLatest=1;
+		int _thisCardLatest=0;
 
 		while (!IsGameEnd(_thisGame,&_laterWinner)){
 			ClearScreen();
