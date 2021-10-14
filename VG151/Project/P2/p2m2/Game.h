@@ -15,7 +15,7 @@
 	void StartGame(Game *_thisGame);
 	void InitializeGame(Game *_thisGame);
 	void DisplayGame(Game *_thisGame);
-	int IsGameEnd(Game *_thisGame);
+	int IsGameEnd(Game *_thisGame,int *_laterWinner);
 	void DetermineDrawCardNumber(int *_thisNumber,Card *_thisCard,int _thisIfInit,int _thisCardLatest);
 	void DetermineNextPlayer(int *_thisPlayer,int _thisPlayerNumber,int *_thisPlayOrder,Card *_thisCard,int _thisIfInit,int _thisCardLatest);
 	void DeleteGame(Game* _thisGame);

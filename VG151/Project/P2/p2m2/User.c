@@ -33,7 +33,17 @@ void InitializePlayer(User **_thisPlayers,int _thisPlayerNumber){
 //		printf("Player: %d\n",i);
 		_thisPlayers[i]->HandCard=(Pile*)malloc(sizeof(Pile));
 		InitializePile(_thisPlayers[i]->HandCard);
+		_thisPlayers[i]->Penalty=0;
 	}
+}
+
+int CanPlayerPlay(User *_thisPlayer,Card *_laterCard,int _thisOption){
+	int _tmpCanCardCount=0;
+	for (int i=0;i<_thisPlayer->HandCard->PileSize;i++){
+		Card *_formerCard=_thisPlayer->HandCard->thisPile[i];
+		_tmpCanCardCount+=IsCardMatch(_formerCard,_laterCard,_thisOption);
+	}
+	return _tmpCanCardCount>0;
 }
 
 void DisplayPlayer(User *_thisPlayer){

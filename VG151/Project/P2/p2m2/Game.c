@@ -12,10 +12,13 @@
 #include"Card.h"
 
 void StartGame(Game *_thisGame){
+	int _laterWinner=0;
 	for (int i=1;i<=_thisGame->RoundNumber;i++){
 		OptInitialize(_thisGame);
 		
-		int _thisPlayer=0;
+		int _thisPlayer;
+		if (i==1) _thisPlayer=rand()%_thisGame->PlayerNumber;
+		else _thisPlayer=_laterWinner;
 		int _thisDrawCardNumber=0;
 		int _thisIfInit=1;
 		int _thisPlayOrder=1;
@@ -24,7 +27,7 @@ void StartGame(Game *_thisGame){
 		InsertCardToPile(_thisGame->DiscardPile,LastTurnCard);
 		int _thisCardLatest=1;
 
-		while (!IsGameEnd(_thisGame)){
+		while (!IsGameEnd(_thisGame,&_laterWinner)){
 			ClearScreen();
 
 			if (_thisGame->Debug) DisplayGame(_thisGame);
@@ -41,12 +44,12 @@ void StartGame(Game *_thisGame){
 			UIPrint(50,"Your Current HandCard: \n");
 			DisplayPile(_thisGame->Player[_thisPlayer]->HandCard);
 			Card* _tmpCard=LastTurnCard;
-			LastTurnCard=OptPlayerPlayCard(_thisGame->Player[_thisPlayer],LastTurnCard,_thisGame->DiscardPile);			
-			
+			LastTurnCard=OptPlayerPlayCard(_thisGame->Player[_thisPlayer],LastTurnCard,_thisGame->DiscardPile,!_thisCardLatest);					
+
 			if (_thisIfInit>0) _thisIfInit=0;
 			
 			_thisCardLatest=(LastTurnCard!=_tmpCard);
-			if (!_thisCardLatest) _thisDrawCardNumber++;
+			if (!_thisCardLatest&&_thisDrawCardNumber==0) _thisDrawCardNumber++;
 			if ((_thisCardLatest)&&(LastTurnCard->Rank==7||LastTurnCard->Rank==2||LastTurnCard->Rank==3||LastTurnCard->Rank==11||LastTurnCard->Rank==12))
 				OptPlayerDrawCard(_thisGame->Player[_thisPlayer],_thisGame->StockPile,_thisGame->DiscardPile,0);
 			else OptPlayerDrawCard(_thisGame->Player[_thisPlayer],_thisGame->StockPile,_thisGame->DiscardPile,_thisDrawCardNumber);
@@ -92,10 +95,20 @@ void DisplayGame(Game *_thisGame){
 	DisplayPile(_thisGame->DiscardPile);
 }
 
-int IsGameEnd(Game *_thisGame){
+int IsGameEnd(Game *_thisGame,int *_laterWinner){
 	for (int i=0;i<_thisGame->PlayerNumber;i++){
 		if (_thisGame->Player[i]->HandCard->PileSize==0){
-			printf("Player:%d wins!\n",i);
+			UIPrint(500,"Player:%d wins!\n",i);
+			*_laterWinner=i;
+			for (int j=0;j<_thisGame->PlayerNumber;j++){
+				for (int k=0;k<_thisGame->Player[j]->HandCard->PileSize;k++){
+					Card *_thisCard=_thisGame->Player[j]->HandCard->thisPile[k];
+					_thisGame->Player[j]->Penalty+=
+						((_thisCard->Rank==2||_thisCard->Rank==3)? 5:
+						(_thisCard->Rank==11||_thisCard->Rank==12)?3:1)
+						*10;
+				}
+			}
 			return 1;
 		}
 	}
@@ -114,13 +127,14 @@ void DetermineDrawCardNumber(int *_thisNumber,Card *_thisCard,int _thisIfInit,in
 }
 
 void DetermineNextPlayer(int *_thisPlayer,int _thisPlayerNumber,int *_thisPlayOrder,Card *_thisCard,int _thisIfInit,int _thisCardLatest){
-	if (!_thisCardLatest){ *_thisPlayer=(*_thisPlayer+*_thisPlayOrder)%_thisPlayerNumber; return; }
+	if (!_thisCardLatest){ *_thisPlayer=(*_thisPlayer+*_thisPlayOrder+_thisPlayerNumber)%_thisPlayerNumber; return; }
 	if (_thisIfInit>0){ return; }
 	switch (_thisCard->Rank){
 		case 11: *_thisPlayer=(*_thisPlayer+2*(*_thisPlayOrder))%_thisPlayerNumber; break;
 		case 12: *_thisPlayOrder*=-1; *_thisPlayer=(*_thisPlayer+*_thisPlayOrder+_thisPlayerNumber)%_thisPlayerNumber; break;
 		default: *_thisPlayer=(*_thisPlayer+*_thisPlayOrder)%_thisPlayerNumber; break;
 	}
+	*_thisPlayer=(*_thisPlayer+_thisPlayerNumber)%_thisPlayerNumber;
 }
 
 void DeleteGame(Game* _thisGame){

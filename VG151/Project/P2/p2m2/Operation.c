@@ -29,13 +29,18 @@ void OptPlayerDrawCard(User *_thisPlayer,Pile *_formerPile,Pile *_laterPile,int 
 	DrawCardFromPile(_thisPlayer->HandCard,_formerPile,_laterPile,_thisDrawCardNumber);
 }
 
-Card *OptPlayerPlayCard(User *_thisPlayer,Card *_laterCard,Pile *_laterPile){
-	UIPrint(0,"Please Play A Card Or Enter -1 To Give Up This Turn And Draw One More Card: \n");
+Card *OptPlayerPlayCard(User *_thisPlayer,Card *_laterCard,Pile *_laterPile,int _laterOption){
 	int _thisCardNumber;
+	if (!CanPlayerPlay(_thisPlayer,_laterCard,_laterOption)){
+		UIPrint(0,"Oops! You Can't Any Card! Enter Any Word To Acknowledge Such Situation And Draw Card(s):\n");
+		while (!scanf("%d",&_thisCardNumber));
+		return _laterCard;
+	}
+	UIPrint(0,"Please Play A Card Or Enter -1 To Give Up This Turn And Draw One More Card: \n");
 	while (1){
 		while (!scanf("%d",&_thisCardNumber));
 		if (_thisCardNumber==-1) break;
-		if (IsCardMatch(_thisPlayer->HandCard->thisPile[_thisCardNumber],_laterCard)) break;
+		if (IsCardMatch(_thisPlayer->HandCard->thisPile[_thisCardNumber],_laterCard,_laterOption)) break;
 		else UIPrint(0,"Your Choice Didn't Match The Rank Or Suit Of The Last Card! Please Choose again!\n");
 	}
 	Card *_formerCard=_laterCard;
