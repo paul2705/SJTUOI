@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 [TOC]
 
+##m3-2021.10.13
+
+### Added
+
+*   Select the level of the game, i.e. EasyMode, HardMode
+
+
+
+
 ## m2-2021.10.07
 
 ### Added
