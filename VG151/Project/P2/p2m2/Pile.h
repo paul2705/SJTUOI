@@ -15,5 +15,6 @@
 	void WithdrawCardFromPile(Pile *_thisPile,int _thisCardNumber);
 	void DisplayPile(Pile *_thisPile);
 	void EmptyPile(Pile *_thisPile);
+	void DeletePile(Pile *_thisPile);
 
 #endif

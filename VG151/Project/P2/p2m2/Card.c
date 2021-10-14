@@ -3,6 +3,8 @@
 #include<stdlib.h>
 #include<stddef.h>
 
+#include"UIScreen.h"
+
 char *InterpretCardName(Card *_thisCard){
 	char *Name=malloc(15*sizeof(char));
 	switch (_thisCard->Suit){
@@ -22,13 +24,17 @@ char *InterpretCardFunction(Card *_thisCard){
 		case 7: Function="Cancel An Attack"; break;
 		case 11: Function="Skip The Next Player"; break;
 		case 12: Function="Reverse The Playing Order"; break;
-//		default: Function="Regular Card"; break;
+		default: Function="~"; break;
 	}
 	return Function;
 }
 
-int IsCardMatch(Card *_former,Card *_later){
-	return (_former->Rank==_later->Rank||_former->Suit==_later->Suit);
+int IsCardMatch(Card *_former,Card *_later,int _thisOption){
+	if (_thisOption) return (_former->Rank==_later->Rank||_former->Suit==_later->Suit);
+	if (_later->Rank==2||_later->Rank==3){
+		return ((_former->Rank==_later->Rank)||(_former->Suit==_later->Suit&&_former->Rank>=2&&_former->Rank<=3));
+	}
+	else return (_former->Rank==_later->Rank||_former->Suit==_later->Suit);
 }
 
 int IsCardEmpty(Card *_thisCard){
@@ -50,10 +56,14 @@ Card *CreateNewCard(int _thisCardSuit,int _thisCardRank){
 void DisplayCard(Card *_thisCard){
 	char *_thisName=InterpretCardName(_thisCard);
 	char *_thisFunction=InterpretCardFunction(_thisCard);
-	printf("%s %d (%s)\n",_thisName,_thisCard->Rank,_thisFunction);
+	UIPrint(0,"%s %2d (%s)\n",_thisName,_thisCard->Rank,_thisFunction);
 //	free(_thisName); free(_thisFunction);
 }
 
 void ClearCard(Card *_thisCard){
 	_thisCard->Rank=0; _thisCard->Suit=0;
+}
+
+void DeleteCard(Card *_thisCard){
+	free(_thisCard);
 }

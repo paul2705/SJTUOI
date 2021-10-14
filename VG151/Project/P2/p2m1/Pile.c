@@ -5,6 +5,7 @@
 #include<stddef.h>
 
 #include"Card.h"
+#include"UIScreen.h"
 
 void InitializePile(Pile *_thisPile){
 	_thisPile->thisPile=(Card**)malloc(sizeof(Card*)*55);
@@ -17,20 +18,22 @@ void InitializePile(Pile *_thisPile){
 void CreatePile(Pile *_thisPile){
 	for (int i=1;i<=4;i++){
 		for (int j=1;j<=13;j++){
-//			printf("%d %d %d\n",i,j,_thisPileCount);
+//			UIPrint(0,"%d %d %d\n",i,j,_thisPileCount);
 			_thisPile->thisPile[_thisPile->PileSize++]=CreateNewCard(i,j);
-//			printf("(%d,%d) (%d,%d)\n",i,j,_thisPile->thisPile[_thisPileCount-1]->Suit,_thisPile->thisPile[_thisPileCount-1]->Rank);
+//			UIPrint(0,"(%d,%d) (%d,%d)\n",i,j,_thisPile->thisPile[_thisPileCount-1]->Suit,_thisPile->thisPile[_thisPileCount-1]->Rank);
 		}
 	}
 }
 
 void InsertCardToPile(Pile *_thisPile,Card *_thisCard){
 	for (int i=0;i<=_thisPile->PileSize;i++){
-//		printf("loop_step: %d\n",i);
+//		UIPrint(0,"loop_step: %d\n",i);
+
 		if (IsCardEmpty(_thisPile->thisPile[i])){
 			_thisPile->thisPile[i]=_thisCard;
 			break;
 		}
+
 		if (i==0&&CardOrder(_thisPile->thisPile[i])>=CardOrder(_thisCard)){
 			for (int j=_thisPile->PileSize;j>0;j--) _thisPile->thisPile[j]=_thisPile->thisPile[j-1];
 			_thisPile->thisPile[0]=_thisCard;
@@ -59,13 +62,13 @@ void WithdrawCardFromPile(Pile *_thisPile,int _thisCardNumber){
 }
 
 void DisplayPile(Pile *_thisPile){
-	printf("PileSize: %d\n",_thisPile->PileSize);
+	UIPrint(0,"PileSize: %d\n",_thisPile->PileSize);
 	for (int i=0;i<_thisPile->PileSize;i++){
 //		if (IsCardEmpty(_thisPile->thisPile[i])) break;
-		printf("%d: ",i);
+		UIPrint(0,"%d: ",i);
 		DisplayCard(_thisPile->thisPile[i]);
 	}
-	printf("\n");
+	UIPrint(0,"\n");
 }
 
 void EmptyPile(Pile *_thisPile){

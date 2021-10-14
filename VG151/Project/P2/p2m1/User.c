@@ -6,6 +6,7 @@
 
 #include"Card.h"
 #include"Pile.h"
+#include"UIScreen.h"
 
 void DrawCardFromPile(Pile *_formerPile,Pile *_laterPile,int DrawCardNumber){
 	for (int i=1;i<=DrawCardNumber;i++){
@@ -23,7 +24,7 @@ void InitializePlayer(User **_thisPlayers,int _thisPlayerNumber){
 }
 
 void DisplayPlayer(User *_thisPlayer){
-	printf("Player: %s\n",_thisPlayer->PlayerName);
+	UIPrint(0,"Player: %s\n",_thisPlayer->PlayerName);
 	DisplayPile(_thisPlayer->HandCard);
-	printf("\n");
+	UIPrint(0,"\n");
 }

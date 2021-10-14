@@ -3,6 +3,8 @@
 #include<stdlib.h>
 #include<stddef.h>
 
+#include"UIScreen.h"
+
 char *InterpretCardName(Card *_thisCard){
 	char *Name=malloc(15*sizeof(char));
 	switch (_thisCard->Suit){
@@ -22,7 +24,7 @@ char *InterpretCardFunction(Card *_thisCard){
 		case 7: Function="Cancel An Attack"; break;
 		case 11: Function="Skip The Next Player"; break;
 		case 12: Function="Reverse The Playing Order"; break;
-//		default: Function="Regular Card"; break;
+		default: Function="~"; break;
 	}
 	return Function;
 }
@@ -50,7 +52,7 @@ Card *CreateNewCard(int _thisCardSuit,int _thisCardRank){
 void DisplayCard(Card *_thisCard){
 	char *_thisName=InterpretCardName(_thisCard);
 	char *_thisFunction=InterpretCardFunction(_thisCard);
-	printf("%s %d (%s)\n",_thisName,_thisCard->Rank,_thisFunction);
+	UIPrint(0,"%s %2d (%s)\n",_thisName,_thisCard->Rank,_thisFunction);
 //	free(_thisName); free(_thisFunction);
 }
 
