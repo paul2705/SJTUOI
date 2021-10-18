@@ -1,5 +1,5 @@
 onecard: Main.o Sys.o Game.o UIScreen.o Card.o Pile.o User.o Operation.o
-	gcc -o onecard Main.o Sys.o Game.o UIScreen.o Card.o Pile.o User.o Operation.o -O2 -Werror -Wall -Wextra -Wconversion -Wvla -Wpedantic -std=c11
+	gcc -o onecard Main.o Sys.o Game.o UIScreen.o Card.o Pile.o User.o Operation.o -O2 -Werror -Wall -Wextra -Wconversion -Wvla -Wpedantic -std=c11 -lncurses
 
 opt= -O2 -Werror -Wall -Wextra -Wconversion -Wvla -Wpedantic -std=c11
 hbj= Sys.h Game.h UIScreen.h Operation.h User.h Pile.h Card.h
@@ -23,7 +23,7 @@ Card.o: Card.c Card.h
 Pile.o: Pile.c Pile.h Card.h
 	gcc -c Pile.c $(opt)
 
-User.o: User.c User.h Pile.h Card.h
+User.o: User.c User.h Pile.h Card.h Operation.h Game.h
 	gcc -c User.c $(opt)
 
 Operation.o: Operation.c Operation.h Pile.h Card.h User.h Game.h

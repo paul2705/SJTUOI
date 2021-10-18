@@ -1,5 +1,5 @@
 onecard: Main.o Sys.o Game.o UIScreen.o Card.o Pile.o User.o Operation.o
-	gcc -o Main Main.o Sys.o Game.o UIScreen.o Card.o Pile.o User.o Operation.o -O2 -Werror -Wall -Wextra -Wconversion -Wvla -Wpedantic -std=c11
+	gcc -o onecard Main.o Sys.o Game.o UIScreen.o Card.o Pile.o User.o Operation.o -O2 -Werror -Wall -Wextra -Wconversion -Wvla -Wpedantic -std=c11
 opt= -O2 -Werror -Wall -Wextra -Wconversion -Wvla -Wpedantic -std=c11
 hbj= Sys.h Game.h UIScreen.h Operation.h User.h Pile.h Card.h
 obj= Main.o Sys.o Game.o UIScreen.o Card.o Pile.o User.o Operation.o

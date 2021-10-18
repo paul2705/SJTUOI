@@ -32,6 +32,7 @@ void UIPrint(int _thisPauseTime,char *_thisFormat,...){
 		}
 	}
 	va_end(ap);
+	fflush(stdout);
 	PauseScreen(_thisPauseTime);
 }
 
@@ -58,4 +59,11 @@ void FPrint(char *LogFile,char *_thisFormat,...){
 	}
 	fclose(Fout);
 	va_end(ap);
+}
+
+WINDOW *AddLogWin(char *LogFile){
+	WINDOW *LogWin=newwin(50,15,1,50);
+	box(LogWin,ACS_VLINE,ACS_HLINE);
+	printf("%s\n",LogFile);
+	return LogWin;
 }
