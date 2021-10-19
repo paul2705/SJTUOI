@@ -1,7 +1,2353 @@
 DrawPlayer: 0
-Draw Card No:1, Diamonds   7 (Cancel An Attack)
-Draw Card No:2, Clubs     10 (~)
-Draw Card No:3, Spades    13 (~)
-Draw Card No:4, Clubs      6 (~)
-Draw Card No:5, Spades     8 (~)
+Draw Card No:1, Hearts     5 (~)
+Draw Card No:2, Spades     2 (Draws Two Cards)
+Draw Card No:3, Spades    12 (Reverse The Playing Order)
+Draw Card No:4, Diamonds   8 (~)
+Draw Card No:5, Diamonds   4 (~)
 DrawPlayer: 1
+Draw Card No:1, Hearts     4 (~)
+Draw Card No:2, Clubs      4 (~)
+Draw Card No:3, Spades     4 (~)
+Draw Card No:4, Spades     6 (~)
+Draw Card No:5, Clubs      2 (Draws Two Cards)
+DrawPlayer: 2
+Draw Card No:1, Hearts     5 (~)
+Draw Card No:2, Spades     8 (~)
+Draw Card No:3, Diamonds   9 (~)
+Draw Card No:4, Clubs      6 (~)
+Draw Card No:5, Clubs     10 (~)
+DrawPlayer: 3
+Draw Card No:1, Spades    13 (~)
+Draw Card No:2, Spades     1 (~)
+Draw Card No:3, Spades     5 (~)
+Draw Card No:4, Hearts    13 (~)
+Draw Card No:5, Diamonds   5 (~)
+PlayerNumber: 4
+InitialCardNuber: 5
+DeckNumber: 2
+RoundNumber: 1
+Player: 
+PileSize: 5
+0: Spades     2 (Draws Two Cards)
+1: Spades    12 (Reverse The Playing Order)
+2: Hearts     5 (~)
+3: Diamonds   4 (~)
+4: Diamonds   8 (~)
+
+
+Player: 
+PileSize: 5
+0: Spades     4 (~)
+1: Spades     6 (~)
+2: Hearts     4 (~)
+3: Clubs      2 (Draws Two Cards)
+4: Clubs      4 (~)
+
+
+Player: 
+PileSize: 5
+0: Spades     8 (~)
+1: Hearts     5 (~)
+2: Diamonds   9 (~)
+3: Clubs      6 (~)
+4: Clubs     10 (~)
+
+
+Player: 
+PileSize: 5
+0: Spades     1 (~)
+1: Spades     5 (~)
+2: Spades    13 (~)
+3: Hearts    13 (~)
+4: Diamonds   5 (~)
+
+
+StockPile: 
+PileSize: 83
+0: Spades     2 (Draws Two Cards)
+1: Spades     3 (Draws Three Cards)
+2: Spades     4 (~)
+3: Spades     5 (~)
+4: Spades     6 (~)
+5: Spades     7 (Cancel An Attack)
+6: Spades     9 (~)
+7: Spades    10 (~)
+8: Spades    11 (Skip The Next Player)
+9: Hearts     1 (~)
+10: Hearts     2 (Draws Two Cards)
+11: Hearts     3 (Draws Three Cards)
+12: Hearts     4 (~)
+13: Hearts     6 (~)
+14: Hearts     7 (Cancel An Attack)
+15: Hearts     8 (~)
+16: Hearts    10 (~)
+17: Hearts    11 (Skip The Next Player)
+18: Hearts    12 (Reverse The Playing Order)
+19: Hearts    13 (~)
+20: Diamonds   1 (~)
+21: Diamonds   2 (Draws Two Cards)
+22: Diamonds   3 (Draws Three Cards)
+23: Diamonds   4 (~)
+24: Diamonds   5 (~)
+25: Diamonds   6 (~)
+26: Diamonds   7 (Cancel An Attack)
+27: Diamonds   8 (~)
+28: Diamonds  10 (~)
+29: Diamonds  11 (Skip The Next Player)
+30: Diamonds  12 (Reverse The Playing Order)
+31: Diamonds  13 (~)
+32: Clubs      1 (~)
+33: Clubs      3 (Draws Three Cards)
+34: Clubs      5 (~)
+35: Clubs      6 (~)
+36: Clubs      7 (Cancel An Attack)
+37: Clubs      8 (~)
+38: Clubs      9 (~)
+39: Clubs     11 (Skip The Next Player)
+40: Clubs     12 (Reverse The Playing Order)
+41: Clubs     13 (~)
+42: Spades     1 (~)
+43: Spades     3 (Draws Three Cards)
+44: Spades     7 (Cancel An Attack)
+45: Spades     8 (~)
+46: Spades     9 (~)
+47: Spades    10 (~)
+48: Spades    11 (Skip The Next Player)
+49: Spades    12 (Reverse The Playing Order)
+50: Spades    13 (~)
+51: Hearts     1 (~)
+52: Hearts     2 (Draws Two Cards)
+53: Hearts     3 (Draws Three Cards)
+54: Hearts     6 (~)
+55: Hearts     7 (Cancel An Attack)
+56: Hearts     8 (~)
+57: Hearts     9 (~)
+58: Hearts    10 (~)
+59: Hearts    11 (Skip The Next Player)
+60: Hearts    12 (Reverse The Playing Order)
+61: Diamonds   1 (~)
+62: Diamonds   2 (Draws Two Cards)
+63: Diamonds   3 (Draws Three Cards)
+64: Diamonds   6 (~)
+65: Diamonds   7 (Cancel An Attack)
+66: Diamonds   9 (~)
+67: Diamonds  10 (~)
+68: Diamonds  11 (Skip The Next Player)
+69: Diamonds  12 (Reverse The Playing Order)
+70: Diamonds  13 (~)
+71: Clubs      1 (~)
+72: Clubs      2 (Draws Two Cards)
+73: Clubs      3 (Draws Three Cards)
+74: Clubs      4 (~)
+75: Clubs      5 (~)
+76: Clubs      7 (Cancel An Attack)
+77: Clubs      8 (~)
+78: Clubs      9 (~)
+79: Clubs     10 (~)
+80: Clubs     11 (Skip The Next Player)
+81: Clubs     12 (Reverse The Playing Order)
+82: Clubs     13 (~)
+
+DiscardPile: 
+PileSize: 1
+0: Hearts     9 (~)
+
+Round: 1 , StockPile: 83 , DiscardPile: 1
+Player: 0
+You Are Supposed To Draw 0 Card(s).
+Last Card: Hearts     9 (~)
+
+
+Your Current HandCard: 
+PileSize: 5
+0: Spades     2 (Draws Two Cards)
+1: Spades    12 (Reverse The Playing Order)
+2: Hearts     5 (~)
+3: Diamonds   4 (~)
+4: Diamonds   8 (~)
+
+Please Play A Card Or Enter -1 To Give Up This Turn And Draw One More Card: 
+Draw 0 Card(s).
+PlayerNumber: 4
+InitialCardNuber: 5
+DeckNumber: 2
+RoundNumber: 1
+Player: 
+PileSize: 4
+0: Spades     2 (Draws Two Cards)
+1: Spades    12 (Reverse The Playing Order)
+2: Diamonds   4 (~)
+3: Diamonds   8 (~)
+
+
+Player: 
+PileSize: 5
+0: Spades     4 (~)
+1: Spades     6 (~)
+2: Hearts     4 (~)
+3: Clubs      2 (Draws Two Cards)
+4: Clubs      4 (~)
+
+
+Player: 
+PileSize: 5
+0: Spades     8 (~)
+1: Hearts     5 (~)
+2: Diamonds   9 (~)
+3: Clubs      6 (~)
+4: Clubs     10 (~)
+
+
+Player: 
+PileSize: 5
+0: Spades     1 (~)
+1: Spades     5 (~)
+2: Spades    13 (~)
+3: Hearts    13 (~)
+4: Diamonds   5 (~)
+
+
+StockPile: 
+PileSize: 83
+0: Spades     2 (Draws Two Cards)
+1: Spades     3 (Draws Three Cards)
+2: Spades     4 (~)
+3: Spades     5 (~)
+4: Spades     6 (~)
+5: Spades     7 (Cancel An Attack)
+6: Spades     9 (~)
+7: Spades    10 (~)
+8: Spades    11 (Skip The Next Player)
+9: Hearts     1 (~)
+10: Hearts     2 (Draws Two Cards)
+11: Hearts     3 (Draws Three Cards)
+12: Hearts     4 (~)
+13: Hearts     6 (~)
+14: Hearts     7 (Cancel An Attack)
+15: Hearts     8 (~)
+16: Hearts    10 (~)
+17: Hearts    11 (Skip The Next Player)
+18: Hearts    12 (Reverse The Playing Order)
+19: Hearts    13 (~)
+20: Diamonds   1 (~)
+21: Diamonds   2 (Draws Two Cards)
+22: Diamonds   3 (Draws Three Cards)
+23: Diamonds   4 (~)
+24: Diamonds   5 (~)
+25: Diamonds   6 (~)
+26: Diamonds   7 (Cancel An Attack)
+27: Diamonds   8 (~)
+28: Diamonds  10 (~)
+29: Diamonds  11 (Skip The Next Player)
+30: Diamonds  12 (Reverse The Playing Order)
+31: Diamonds  13 (~)
+32: Clubs      1 (~)
+33: Clubs      3 (Draws Three Cards)
+34: Clubs      5 (~)
+35: Clubs      6 (~)
+36: Clubs      7 (Cancel An Attack)
+37: Clubs      8 (~)
+38: Clubs      9 (~)
+39: Clubs     11 (Skip The Next Player)
+40: Clubs     12 (Reverse The Playing Order)
+41: Clubs     13 (~)
+42: Spades     1 (~)
+43: Spades     3 (Draws Three Cards)
+44: Spades     7 (Cancel An Attack)
+45: Spades     8 (~)
+46: Spades     9 (~)
+47: Spades    10 (~)
+48: Spades    11 (Skip The Next Player)
+49: Spades    12 (Reverse The Playing Order)
+50: Spades    13 (~)
+51: Hearts     1 (~)
+52: Hearts     2 (Draws Two Cards)
+53: Hearts     3 (Draws Three Cards)
+54: Hearts     6 (~)
+55: Hearts     7 (Cancel An Attack)
+56: Hearts     8 (~)
+57: Hearts     9 (~)
+58: Hearts    10 (~)
+59: Hearts    11 (Skip The Next Player)
+60: Hearts    12 (Reverse The Playing Order)
+61: Diamonds   1 (~)
+62: Diamonds   2 (Draws Two Cards)
+63: Diamonds   3 (Draws Three Cards)
+64: Diamonds   6 (~)
+65: Diamonds   7 (Cancel An Attack)
+66: Diamonds   9 (~)
+67: Diamonds  10 (~)
+68: Diamonds  11 (Skip The Next Player)
+69: Diamonds  12 (Reverse The Playing Order)
+70: Diamonds  13 (~)
+71: Clubs      1 (~)
+72: Clubs      2 (Draws Two Cards)
+73: Clubs      3 (Draws Three Cards)
+74: Clubs      4 (~)
+75: Clubs      5 (~)
+76: Clubs      7 (Cancel An Attack)
+77: Clubs      8 (~)
+78: Clubs      9 (~)
+79: Clubs     10 (~)
+80: Clubs     11 (Skip The Next Player)
+81: Clubs     12 (Reverse The Playing Order)
+82: Clubs     13 (~)
+
+DiscardPile: 
+PileSize: 2
+0: Hearts     5 (~)
+1: Hearts     9 (~)
+
+Round: 1 , StockPile: 83 , DiscardPile: 2
+Player: 1
+You Are Supposed To Draw 0 Card(s).
+Last Card: Hearts     5 (~)
+
+
+Your Current HandCard: 
+PileSize: 5
+0: Spades     4 (~)
+1: Spades     6 (~)
+2: Hearts     4 (~)
+3: Clubs      2 (Draws Two Cards)
+4: Clubs      4 (~)
+
+Please Play A Card Or Enter -1 To Give Up This Turn And Draw One More Card: 
+Draw 0 Card(s).
+PlayerNumber: 4
+InitialCardNuber: 5
+DeckNumber: 2
+RoundNumber: 1
+Player: 
+PileSize: 4
+0: Spades     2 (Draws Two Cards)
+1: Spades    12 (Reverse The Playing Order)
+2: Diamonds   4 (~)
+3: Diamonds   8 (~)
+
+
+Player: 
+PileSize: 4
+0: Spades     4 (~)
+1: Spades     6 (~)
+2: Clubs      2 (Draws Two Cards)
+3: Clubs      4 (~)
+
+
+Player: 
+PileSize: 5
+0: Spades     8 (~)
+1: Hearts     5 (~)
+2: Diamonds   9 (~)
+3: Clubs      6 (~)
+4: Clubs     10 (~)
+
+
+Player: 
+PileSize: 5
+0: Spades     1 (~)
+1: Spades     5 (~)
+2: Spades    13 (~)
+3: Hearts    13 (~)
+4: Diamonds   5 (~)
+
+
+StockPile: 
+PileSize: 83
+0: Spades     2 (Draws Two Cards)
+1: Spades     3 (Draws Three Cards)
+2: Spades     4 (~)
+3: Spades     5 (~)
+4: Spades     6 (~)
+5: Spades     7 (Cancel An Attack)
+6: Spades     9 (~)
+7: Spades    10 (~)
+8: Spades    11 (Skip The Next Player)
+9: Hearts     1 (~)
+10: Hearts     2 (Draws Two Cards)
+11: Hearts     3 (Draws Three Cards)
+12: Hearts     4 (~)
+13: Hearts     6 (~)
+14: Hearts     7 (Cancel An Attack)
+15: Hearts     8 (~)
+16: Hearts    10 (~)
+17: Hearts    11 (Skip The Next Player)
+18: Hearts    12 (Reverse The Playing Order)
+19: Hearts    13 (~)
+20: Diamonds   1 (~)
+21: Diamonds   2 (Draws Two Cards)
+22: Diamonds   3 (Draws Three Cards)
+23: Diamonds   4 (~)
+24: Diamonds   5 (~)
+25: Diamonds   6 (~)
+26: Diamonds   7 (Cancel An Attack)
+27: Diamonds   8 (~)
+28: Diamonds  10 (~)
+29: Diamonds  11 (Skip The Next Player)
+30: Diamonds  12 (Reverse The Playing Order)
+31: Diamonds  13 (~)
+32: Clubs      1 (~)
+33: Clubs      3 (Draws Three Cards)
+34: Clubs      5 (~)
+35: Clubs      6 (~)
+36: Clubs      7 (Cancel An Attack)
+37: Clubs      8 (~)
+38: Clubs      9 (~)
+39: Clubs     11 (Skip The Next Player)
+40: Clubs     12 (Reverse The Playing Order)
+41: Clubs     13 (~)
+42: Spades     1 (~)
+43: Spades     3 (Draws Three Cards)
+44: Spades     7 (Cancel An Attack)
+45: Spades     8 (~)
+46: Spades     9 (~)
+47: Spades    10 (~)
+48: Spades    11 (Skip The Next Player)
+49: Spades    12 (Reverse The Playing Order)
+50: Spades    13 (~)
+51: Hearts     1 (~)
+52: Hearts     2 (Draws Two Cards)
+53: Hearts     3 (Draws Three Cards)
+54: Hearts     6 (~)
+55: Hearts     7 (Cancel An Attack)
+56: Hearts     8 (~)
+57: Hearts     9 (~)
+58: Hearts    10 (~)
+59: Hearts    11 (Skip The Next Player)
+60: Hearts    12 (Reverse The Playing Order)
+61: Diamonds   1 (~)
+62: Diamonds   2 (Draws Two Cards)
+63: Diamonds   3 (Draws Three Cards)
+64: Diamonds   6 (~)
+65: Diamonds   7 (Cancel An Attack)
+66: Diamonds   9 (~)
+67: Diamonds  10 (~)
+68: Diamonds  11 (Skip The Next Player)
+69: Diamonds  12 (Reverse The Playing Order)
+70: Diamonds  13 (~)
+71: Clubs      1 (~)
+72: Clubs      2 (Draws Two Cards)
+73: Clubs      3 (Draws Three Cards)
+74: Clubs      4 (~)
+75: Clubs      5 (~)
+76: Clubs      7 (Cancel An Attack)
+77: Clubs      8 (~)
+78: Clubs      9 (~)
+79: Clubs     10 (~)
+80: Clubs     11 (Skip The Next Player)
+81: Clubs     12 (Reverse The Playing Order)
+82: Clubs     13 (~)
+
+DiscardPile: 
+PileSize: 3
+0: Hearts     4 (~)
+1: Hearts     5 (~)
+2: Hearts     9 (~)
+
+Round: 1 , StockPile: 83 , DiscardPile: 3
+Player: 2
+You Are Supposed To Draw 0 Card(s).
+Last Card: Hearts     4 (~)
+
+
+Your Current HandCard: 
+PileSize: 5
+0: Spades     8 (~)
+1: Hearts     5 (~)
+2: Diamonds   9 (~)
+3: Clubs      6 (~)
+4: Clubs     10 (~)
+
+Please Play A Card Or Enter -1 To Give Up This Turn And Draw One More Card: 
+Draw 0 Card(s).
+PlayerNumber: 4
+InitialCardNuber: 5
+DeckNumber: 2
+RoundNumber: 1
+Player: 
+PileSize: 4
+0: Spades     2 (Draws Two Cards)
+1: Spades    12 (Reverse The Playing Order)
+2: Diamonds   4 (~)
+3: Diamonds   8 (~)
+
+
+Player: 
+PileSize: 4
+0: Spades     4 (~)
+1: Spades     6 (~)
+2: Clubs      2 (Draws Two Cards)
+3: Clubs      4 (~)
+
+
+Player: 
+PileSize: 4
+0: Spades     8 (~)
+1: Diamonds   9 (~)
+2: Clubs      6 (~)
+3: Clubs     10 (~)
+
+
+Player: 
+PileSize: 5
+0: Spades     1 (~)
+1: Spades     5 (~)
+2: Spades    13 (~)
+3: Hearts    13 (~)
+4: Diamonds   5 (~)
+
+
+StockPile: 
+PileSize: 83
+0: Spades     2 (Draws Two Cards)
+1: Spades     3 (Draws Three Cards)
+2: Spades     4 (~)
+3: Spades     5 (~)
+4: Spades     6 (~)
+5: Spades     7 (Cancel An Attack)
+6: Spades     9 (~)
+7: Spades    10 (~)
+8: Spades    11 (Skip The Next Player)
+9: Hearts     1 (~)
+10: Hearts     2 (Draws Two Cards)
+11: Hearts     3 (Draws Three Cards)
+12: Hearts     4 (~)
+13: Hearts     6 (~)
+14: Hearts     7 (Cancel An Attack)
+15: Hearts     8 (~)
+16: Hearts    10 (~)
+17: Hearts    11 (Skip The Next Player)
+18: Hearts    12 (Reverse The Playing Order)
+19: Hearts    13 (~)
+20: Diamonds   1 (~)
+21: Diamonds   2 (Draws Two Cards)
+22: Diamonds   3 (Draws Three Cards)
+23: Diamonds   4 (~)
+24: Diamonds   5 (~)
+25: Diamonds   6 (~)
+26: Diamonds   7 (Cancel An Attack)
+27: Diamonds   8 (~)
+28: Diamonds  10 (~)
+29: Diamonds  11 (Skip The Next Player)
+30: Diamonds  12 (Reverse The Playing Order)
+31: Diamonds  13 (~)
+32: Clubs      1 (~)
+33: Clubs      3 (Draws Three Cards)
+34: Clubs      5 (~)
+35: Clubs      6 (~)
+36: Clubs      7 (Cancel An Attack)
+37: Clubs      8 (~)
+38: Clubs      9 (~)
+39: Clubs     11 (Skip The Next Player)
+40: Clubs     12 (Reverse The Playing Order)
+41: Clubs     13 (~)
+42: Spades     1 (~)
+43: Spades     3 (Draws Three Cards)
+44: Spades     7 (Cancel An Attack)
+45: Spades     8 (~)
+46: Spades     9 (~)
+47: Spades    10 (~)
+48: Spades    11 (Skip The Next Player)
+49: Spades    12 (Reverse The Playing Order)
+50: Spades    13 (~)
+51: Hearts     1 (~)
+52: Hearts     2 (Draws Two Cards)
+53: Hearts     3 (Draws Three Cards)
+54: Hearts     6 (~)
+55: Hearts     7 (Cancel An Attack)
+56: Hearts     8 (~)
+57: Hearts     9 (~)
+58: Hearts    10 (~)
+59: Hearts    11 (Skip The Next Player)
+60: Hearts    12 (Reverse The Playing Order)
+61: Diamonds   1 (~)
+62: Diamonds   2 (Draws Two Cards)
+63: Diamonds   3 (Draws Three Cards)
+64: Diamonds   6 (~)
+65: Diamonds   7 (Cancel An Attack)
+66: Diamonds   9 (~)
+67: Diamonds  10 (~)
+68: Diamonds  11 (Skip The Next Player)
+69: Diamonds  12 (Reverse The Playing Order)
+70: Diamonds  13 (~)
+71: Clubs      1 (~)
+72: Clubs      2 (Draws Two Cards)
+73: Clubs      3 (Draws Three Cards)
+74: Clubs      4 (~)
+75: Clubs      5 (~)
+76: Clubs      7 (Cancel An Attack)
+77: Clubs      8 (~)
+78: Clubs      9 (~)
+79: Clubs     10 (~)
+80: Clubs     11 (Skip The Next Player)
+81: Clubs     12 (Reverse The Playing Order)
+82: Clubs     13 (~)
+
+DiscardPile: 
+PileSize: 4
+0: Hearts     4 (~)
+1: Hearts     5 (~)
+2: Hearts     5 (~)
+3: Hearts     9 (~)
+
+Round: 1 , StockPile: 83 , DiscardPile: 4
+Player: 3
+You Are Supposed To Draw 0 Card(s).
+Last Card: Hearts     5 (~)
+
+
+Your Current HandCard: 
+PileSize: 5
+0: Spades     1 (~)
+1: Spades     5 (~)
+2: Spades    13 (~)
+3: Hearts    13 (~)
+4: Diamonds   5 (~)
+
+Please Play A Card Or Enter -1 To Give Up This Turn And Draw One More Card: 
+Draw 0 Card(s).
+PlayerNumber: 4
+InitialCardNuber: 5
+DeckNumber: 2
+RoundNumber: 1
+Player: 
+PileSize: 4
+0: Spades     2 (Draws Two Cards)
+1: Spades    12 (Reverse The Playing Order)
+2: Diamonds   4 (~)
+3: Diamonds   8 (~)
+
+
+Player: 
+PileSize: 4
+0: Spades     4 (~)
+1: Spades     6 (~)
+2: Clubs      2 (Draws Two Cards)
+3: Clubs      4 (~)
+
+
+Player: 
+PileSize: 4
+0: Spades     8 (~)
+1: Diamonds   9 (~)
+2: Clubs      6 (~)
+3: Clubs     10 (~)
+
+
+Player: 
+PileSize: 4
+0: Spades     1 (~)
+1: Spades     5 (~)
+2: Spades    13 (~)
+3: Hearts    13 (~)
+
+
+StockPile: 
+PileSize: 83
+0: Spades     2 (Draws Two Cards)
+1: Spades     3 (Draws Three Cards)
+2: Spades     4 (~)
+3: Spades     5 (~)
+4: Spades     6 (~)
+5: Spades     7 (Cancel An Attack)
+6: Spades     9 (~)
+7: Spades    10 (~)
+8: Spades    11 (Skip The Next Player)
+9: Hearts     1 (~)
+10: Hearts     2 (Draws Two Cards)
+11: Hearts     3 (Draws Three Cards)
+12: Hearts     4 (~)
+13: Hearts     6 (~)
+14: Hearts     7 (Cancel An Attack)
+15: Hearts     8 (~)
+16: Hearts    10 (~)
+17: Hearts    11 (Skip The Next Player)
+18: Hearts    12 (Reverse The Playing Order)
+19: Hearts    13 (~)
+20: Diamonds   1 (~)
+21: Diamonds   2 (Draws Two Cards)
+22: Diamonds   3 (Draws Three Cards)
+23: Diamonds   4 (~)
+24: Diamonds   5 (~)
+25: Diamonds   6 (~)
+26: Diamonds   7 (Cancel An Attack)
+27: Diamonds   8 (~)
+28: Diamonds  10 (~)
+29: Diamonds  11 (Skip The Next Player)
+30: Diamonds  12 (Reverse The Playing Order)
+31: Diamonds  13 (~)
+32: Clubs      1 (~)
+33: Clubs      3 (Draws Three Cards)
+34: Clubs      5 (~)
+35: Clubs      6 (~)
+36: Clubs      7 (Cancel An Attack)
+37: Clubs      8 (~)
+38: Clubs      9 (~)
+39: Clubs     11 (Skip The Next Player)
+40: Clubs     12 (Reverse The Playing Order)
+41: Clubs     13 (~)
+42: Spades     1 (~)
+43: Spades     3 (Draws Three Cards)
+44: Spades     7 (Cancel An Attack)
+45: Spades     8 (~)
+46: Spades     9 (~)
+47: Spades    10 (~)
+48: Spades    11 (Skip The Next Player)
+49: Spades    12 (Reverse The Playing Order)
+50: Spades    13 (~)
+51: Hearts     1 (~)
+52: Hearts     2 (Draws Two Cards)
+53: Hearts     3 (Draws Three Cards)
+54: Hearts     6 (~)
+55: Hearts     7 (Cancel An Attack)
+56: Hearts     8 (~)
+57: Hearts     9 (~)
+58: Hearts    10 (~)
+59: Hearts    11 (Skip The Next Player)
+60: Hearts    12 (Reverse The Playing Order)
+61: Diamonds   1 (~)
+62: Diamonds   2 (Draws Two Cards)
+63: Diamonds   3 (Draws Three Cards)
+64: Diamonds   6 (~)
+65: Diamonds   7 (Cancel An Attack)
+66: Diamonds   9 (~)
+67: Diamonds  10 (~)
+68: Diamonds  11 (Skip The Next Player)
+69: Diamonds  12 (Reverse The Playing Order)
+70: Diamonds  13 (~)
+71: Clubs      1 (~)
+72: Clubs      2 (Draws Two Cards)
+73: Clubs      3 (Draws Three Cards)
+74: Clubs      4 (~)
+75: Clubs      5 (~)
+76: Clubs      7 (Cancel An Attack)
+77: Clubs      8 (~)
+78: Clubs      9 (~)
+79: Clubs     10 (~)
+80: Clubs     11 (Skip The Next Player)
+81: Clubs     12 (Reverse The Playing Order)
+82: Clubs     13 (~)
+
+DiscardPile: 
+PileSize: 5
+0: Hearts     4 (~)
+1: Hearts     5 (~)
+2: Hearts     5 (~)
+3: Hearts     9 (~)
+4: Diamonds   5 (~)
+
+Round: 1 , StockPile: 83 , DiscardPile: 5
+Player: 0
+You Are Supposed To Draw 0 Card(s).
+Last Card: Diamonds   5 (~)
+
+
+Your Current HandCard: 
+PileSize: 4
+0: Spades     2 (Draws Two Cards)
+1: Spades    12 (Reverse The Playing Order)
+2: Diamonds   4 (~)
+3: Diamonds   8 (~)
+
+Please Play A Card Or Enter -1 To Give Up This Turn And Draw One More Card: 
+Draw 0 Card(s).
+PlayerNumber: 4
+InitialCardNuber: 5
+DeckNumber: 2
+RoundNumber: 1
+Player: 
+PileSize: 3
+0: Spades     2 (Draws Two Cards)
+1: Spades    12 (Reverse The Playing Order)
+2: Diamonds   8 (~)
+
+
+Player: 
+PileSize: 4
+0: Spades     4 (~)
+1: Spades     6 (~)
+2: Clubs      2 (Draws Two Cards)
+3: Clubs      4 (~)
+
+
+Player: 
+PileSize: 4
+0: Spades     8 (~)
+1: Diamonds   9 (~)
+2: Clubs      6 (~)
+3: Clubs     10 (~)
+
+
+Player: 
+PileSize: 4
+0: Spades     1 (~)
+1: Spades     5 (~)
+2: Spades    13 (~)
+3: Hearts    13 (~)
+
+
+StockPile: 
+PileSize: 83
+0: Spades     2 (Draws Two Cards)
+1: Spades     3 (Draws Three Cards)
+2: Spades     4 (~)
+3: Spades     5 (~)
+4: Spades     6 (~)
+5: Spades     7 (Cancel An Attack)
+6: Spades     9 (~)
+7: Spades    10 (~)
+8: Spades    11 (Skip The Next Player)
+9: Hearts     1 (~)
+10: Hearts     2 (Draws Two Cards)
+11: Hearts     3 (Draws Three Cards)
+12: Hearts     4 (~)
+13: Hearts     6 (~)
+14: Hearts     7 (Cancel An Attack)
+15: Hearts     8 (~)
+16: Hearts    10 (~)
+17: Hearts    11 (Skip The Next Player)
+18: Hearts    12 (Reverse The Playing Order)
+19: Hearts    13 (~)
+20: Diamonds   1 (~)
+21: Diamonds   2 (Draws Two Cards)
+22: Diamonds   3 (Draws Three Cards)
+23: Diamonds   4 (~)
+24: Diamonds   5 (~)
+25: Diamonds   6 (~)
+26: Diamonds   7 (Cancel An Attack)
+27: Diamonds   8 (~)
+28: Diamonds  10 (~)
+29: Diamonds  11 (Skip The Next Player)
+30: Diamonds  12 (Reverse The Playing Order)
+31: Diamonds  13 (~)
+32: Clubs      1 (~)
+33: Clubs      3 (Draws Three Cards)
+34: Clubs      5 (~)
+35: Clubs      6 (~)
+36: Clubs      7 (Cancel An Attack)
+37: Clubs      8 (~)
+38: Clubs      9 (~)
+39: Clubs     11 (Skip The Next Player)
+40: Clubs     12 (Reverse The Playing Order)
+41: Clubs     13 (~)
+42: Spades     1 (~)
+43: Spades     3 (Draws Three Cards)
+44: Spades     7 (Cancel An Attack)
+45: Spades     8 (~)
+46: Spades     9 (~)
+47: Spades    10 (~)
+48: Spades    11 (Skip The Next Player)
+49: Spades    12 (Reverse The Playing Order)
+50: Spades    13 (~)
+51: Hearts     1 (~)
+52: Hearts     2 (Draws Two Cards)
+53: Hearts     3 (Draws Three Cards)
+54: Hearts     6 (~)
+55: Hearts     7 (Cancel An Attack)
+56: Hearts     8 (~)
+57: Hearts     9 (~)
+58: Hearts    10 (~)
+59: Hearts    11 (Skip The Next Player)
+60: Hearts    12 (Reverse The Playing Order)
+61: Diamonds   1 (~)
+62: Diamonds   2 (Draws Two Cards)
+63: Diamonds   3 (Draws Three Cards)
+64: Diamonds   6 (~)
+65: Diamonds   7 (Cancel An Attack)
+66: Diamonds   9 (~)
+67: Diamonds  10 (~)
+68: Diamonds  11 (Skip The Next Player)
+69: Diamonds  12 (Reverse The Playing Order)
+70: Diamonds  13 (~)
+71: Clubs      1 (~)
+72: Clubs      2 (Draws Two Cards)
+73: Clubs      3 (Draws Three Cards)
+74: Clubs      4 (~)
+75: Clubs      5 (~)
+76: Clubs      7 (Cancel An Attack)
+77: Clubs      8 (~)
+78: Clubs      9 (~)
+79: Clubs     10 (~)
+80: Clubs     11 (Skip The Next Player)
+81: Clubs     12 (Reverse The Playing Order)
+82: Clubs     13 (~)
+
+DiscardPile: 
+PileSize: 6
+0: Hearts     4 (~)
+1: Hearts     5 (~)
+2: Hearts     5 (~)
+3: Hearts     9 (~)
+4: Diamonds   4 (~)
+5: Diamonds   5 (~)
+
+Round: 1 , StockPile: 83 , DiscardPile: 6
+Player: 1
+You Are Supposed To Draw 0 Card(s).
+Last Card: Diamonds   4 (~)
+
+
+Your Current HandCard: 
+PileSize: 4
+0: Spades     4 (~)
+1: Spades     6 (~)
+2: Clubs      2 (Draws Two Cards)
+3: Clubs      4 (~)
+
+Please Play A Card Or Enter -1 To Give Up This Turn And Draw One More Card: 
+Draw 0 Card(s).
+PlayerNumber: 4
+InitialCardNuber: 5
+DeckNumber: 2
+RoundNumber: 1
+Player: 
+PileSize: 3
+0: Spades     2 (Draws Two Cards)
+1: Spades    12 (Reverse The Playing Order)
+2: Diamonds   8 (~)
+
+
+Player: 
+PileSize: 3
+0: Spades     4 (~)
+1: Spades     6 (~)
+2: Clubs      2 (Draws Two Cards)
+
+
+Player: 
+PileSize: 4
+0: Spades     8 (~)
+1: Diamonds   9 (~)
+2: Clubs      6 (~)
+3: Clubs     10 (~)
+
+
+Player: 
+PileSize: 4
+0: Spades     1 (~)
+1: Spades     5 (~)
+2: Spades    13 (~)
+3: Hearts    13 (~)
+
+
+StockPile: 
+PileSize: 83
+0: Spades     2 (Draws Two Cards)
+1: Spades     3 (Draws Three Cards)
+2: Spades     4 (~)
+3: Spades     5 (~)
+4: Spades     6 (~)
+5: Spades     7 (Cancel An Attack)
+6: Spades     9 (~)
+7: Spades    10 (~)
+8: Spades    11 (Skip The Next Player)
+9: Hearts     1 (~)
+10: Hearts     2 (Draws Two Cards)
+11: Hearts     3 (Draws Three Cards)
+12: Hearts     4 (~)
+13: Hearts     6 (~)
+14: Hearts     7 (Cancel An Attack)
+15: Hearts     8 (~)
+16: Hearts    10 (~)
+17: Hearts    11 (Skip The Next Player)
+18: Hearts    12 (Reverse The Playing Order)
+19: Hearts    13 (~)
+20: Diamonds   1 (~)
+21: Diamonds   2 (Draws Two Cards)
+22: Diamonds   3 (Draws Three Cards)
+23: Diamonds   4 (~)
+24: Diamonds   5 (~)
+25: Diamonds   6 (~)
+26: Diamonds   7 (Cancel An Attack)
+27: Diamonds   8 (~)
+28: Diamonds  10 (~)
+29: Diamonds  11 (Skip The Next Player)
+30: Diamonds  12 (Reverse The Playing Order)
+31: Diamonds  13 (~)
+32: Clubs      1 (~)
+33: Clubs      3 (Draws Three Cards)
+34: Clubs      5 (~)
+35: Clubs      6 (~)
+36: Clubs      7 (Cancel An Attack)
+37: Clubs      8 (~)
+38: Clubs      9 (~)
+39: Clubs     11 (Skip The Next Player)
+40: Clubs     12 (Reverse The Playing Order)
+41: Clubs     13 (~)
+42: Spades     1 (~)
+43: Spades     3 (Draws Three Cards)
+44: Spades     7 (Cancel An Attack)
+45: Spades     8 (~)
+46: Spades     9 (~)
+47: Spades    10 (~)
+48: Spades    11 (Skip The Next Player)
+49: Spades    12 (Reverse The Playing Order)
+50: Spades    13 (~)
+51: Hearts     1 (~)
+52: Hearts     2 (Draws Two Cards)
+53: Hearts     3 (Draws Three Cards)
+54: Hearts     6 (~)
+55: Hearts     7 (Cancel An Attack)
+56: Hearts     8 (~)
+57: Hearts     9 (~)
+58: Hearts    10 (~)
+59: Hearts    11 (Skip The Next Player)
+60: Hearts    12 (Reverse The Playing Order)
+61: Diamonds   1 (~)
+62: Diamonds   2 (Draws Two Cards)
+63: Diamonds   3 (Draws Three Cards)
+64: Diamonds   6 (~)
+65: Diamonds   7 (Cancel An Attack)
+66: Diamonds   9 (~)
+67: Diamonds  10 (~)
+68: Diamonds  11 (Skip The Next Player)
+69: Diamonds  12 (Reverse The Playing Order)
+70: Diamonds  13 (~)
+71: Clubs      1 (~)
+72: Clubs      2 (Draws Two Cards)
+73: Clubs      3 (Draws Three Cards)
+74: Clubs      4 (~)
+75: Clubs      5 (~)
+76: Clubs      7 (Cancel An Attack)
+77: Clubs      8 (~)
+78: Clubs      9 (~)
+79: Clubs     10 (~)
+80: Clubs     11 (Skip The Next Player)
+81: Clubs     12 (Reverse The Playing Order)
+82: Clubs     13 (~)
+
+DiscardPile: 
+PileSize: 7
+0: Hearts     4 (~)
+1: Hearts     5 (~)
+2: Hearts     5 (~)
+3: Hearts     9 (~)
+4: Diamonds   4 (~)
+5: Diamonds   5 (~)
+6: Clubs      4 (~)
+
+Round: 1 , StockPile: 83 , DiscardPile: 7
+Player: 2
+You Are Supposed To Draw 0 Card(s).
+Last Card: Clubs      4 (~)
+
+
+Your Current HandCard: 
+PileSize: 4
+0: Spades     8 (~)
+1: Diamonds   9 (~)
+2: Clubs      6 (~)
+3: Clubs     10 (~)
+
+Please Play A Card Or Enter -1 To Give Up This Turn And Draw One More Card: 
+Draw 0 Card(s).
+PlayerNumber: 4
+InitialCardNuber: 5
+DeckNumber: 2
+RoundNumber: 1
+Player: 
+PileSize: 3
+0: Spades     2 (Draws Two Cards)
+1: Spades    12 (Reverse The Playing Order)
+2: Diamonds   8 (~)
+
+
+Player: 
+PileSize: 3
+0: Spades     4 (~)
+1: Spades     6 (~)
+2: Clubs      2 (Draws Two Cards)
+
+
+Player: 
+PileSize: 3
+0: Spades     8 (~)
+1: Diamonds   9 (~)
+2: Clubs     10 (~)
+
+
+Player: 
+PileSize: 4
+0: Spades     1 (~)
+1: Spades     5 (~)
+2: Spades    13 (~)
+3: Hearts    13 (~)
+
+
+StockPile: 
+PileSize: 83
+0: Spades     2 (Draws Two Cards)
+1: Spades     3 (Draws Three Cards)
+2: Spades     4 (~)
+3: Spades     5 (~)
+4: Spades     6 (~)
+5: Spades     7 (Cancel An Attack)
+6: Spades     9 (~)
+7: Spades    10 (~)
+8: Spades    11 (Skip The Next Player)
+9: Hearts     1 (~)
+10: Hearts     2 (Draws Two Cards)
+11: Hearts     3 (Draws Three Cards)
+12: Hearts     4 (~)
+13: Hearts     6 (~)
+14: Hearts     7 (Cancel An Attack)
+15: Hearts     8 (~)
+16: Hearts    10 (~)
+17: Hearts    11 (Skip The Next Player)
+18: Hearts    12 (Reverse The Playing Order)
+19: Hearts    13 (~)
+20: Diamonds   1 (~)
+21: Diamonds   2 (Draws Two Cards)
+22: Diamonds   3 (Draws Three Cards)
+23: Diamonds   4 (~)
+24: Diamonds   5 (~)
+25: Diamonds   6 (~)
+26: Diamonds   7 (Cancel An Attack)
+27: Diamonds   8 (~)
+28: Diamonds  10 (~)
+29: Diamonds  11 (Skip The Next Player)
+30: Diamonds  12 (Reverse The Playing Order)
+31: Diamonds  13 (~)
+32: Clubs      1 (~)
+33: Clubs      3 (Draws Three Cards)
+34: Clubs      5 (~)
+35: Clubs      6 (~)
+36: Clubs      7 (Cancel An Attack)
+37: Clubs      8 (~)
+38: Clubs      9 (~)
+39: Clubs     11 (Skip The Next Player)
+40: Clubs     12 (Reverse The Playing Order)
+41: Clubs     13 (~)
+42: Spades     1 (~)
+43: Spades     3 (Draws Three Cards)
+44: Spades     7 (Cancel An Attack)
+45: Spades     8 (~)
+46: Spades     9 (~)
+47: Spades    10 (~)
+48: Spades    11 (Skip The Next Player)
+49: Spades    12 (Reverse The Playing Order)
+50: Spades    13 (~)
+51: Hearts     1 (~)
+52: Hearts     2 (Draws Two Cards)
+53: Hearts     3 (Draws Three Cards)
+54: Hearts     6 (~)
+55: Hearts     7 (Cancel An Attack)
+56: Hearts     8 (~)
+57: Hearts     9 (~)
+58: Hearts    10 (~)
+59: Hearts    11 (Skip The Next Player)
+60: Hearts    12 (Reverse The Playing Order)
+61: Diamonds   1 (~)
+62: Diamonds   2 (Draws Two Cards)
+63: Diamonds   3 (Draws Three Cards)
+64: Diamonds   6 (~)
+65: Diamonds   7 (Cancel An Attack)
+66: Diamonds   9 (~)
+67: Diamonds  10 (~)
+68: Diamonds  11 (Skip The Next Player)
+69: Diamonds  12 (Reverse The Playing Order)
+70: Diamonds  13 (~)
+71: Clubs      1 (~)
+72: Clubs      2 (Draws Two Cards)
+73: Clubs      3 (Draws Three Cards)
+74: Clubs      4 (~)
+75: Clubs      5 (~)
+76: Clubs      7 (Cancel An Attack)
+77: Clubs      8 (~)
+78: Clubs      9 (~)
+79: Clubs     10 (~)
+80: Clubs     11 (Skip The Next Player)
+81: Clubs     12 (Reverse The Playing Order)
+82: Clubs     13 (~)
+
+DiscardPile: 
+PileSize: 8
+0: Hearts     4 (~)
+1: Hearts     5 (~)
+2: Hearts     5 (~)
+3: Hearts     9 (~)
+4: Diamonds   4 (~)
+5: Diamonds   5 (~)
+6: Clubs      4 (~)
+7: Clubs      6 (~)
+
+Round: 1 , StockPile: 83 , DiscardPile: 8
+Player: 3
+You Are Supposed To Draw 0 Card(s).
+Last Card: Clubs      6 (~)
+
+
+Your Current HandCard: 
+PileSize: 4
+0: Spades     1 (~)
+1: Spades     5 (~)
+2: Spades    13 (~)
+3: Hearts    13 (~)
+
+Oops! You Can't Any Card! Enter Any Word To Acknowledge Such Situation And Draw Card(s):
+Draw 1 Card(s).
+Draw Card No:1, Diamonds  11 (Skip The Next Player)
+PlayerNumber: 4
+InitialCardNuber: 5
+DeckNumber: 2
+RoundNumber: 1
+Player: 
+PileSize: 3
+0: Spades     2 (Draws Two Cards)
+1: Spades    12 (Reverse The Playing Order)
+2: Diamonds   8 (~)
+
+
+Player: 
+PileSize: 3
+0: Spades     4 (~)
+1: Spades     6 (~)
+2: Clubs      2 (Draws Two Cards)
+
+
+Player: 
+PileSize: 3
+0: Spades     8 (~)
+1: Diamonds   9 (~)
+2: Clubs     10 (~)
+
+
+Player: 
+PileSize: 5
+0: Spades     1 (~)
+1: Spades     5 (~)
+2: Spades    13 (~)
+3: Hearts    13 (~)
+4: Diamonds   5 (~)
+
+
+StockPile: 
+PileSize: 82
+0: Spades     2 (Draws Two Cards)
+1: Spades     3 (Draws Three Cards)
+2: Spades     4 (~)
+3: Spades     5 (~)
+4: Spades     6 (~)
+5: Spades     7 (Cancel An Attack)
+6: Spades     9 (~)
+7: Spades    10 (~)
+8: Spades    11 (Skip The Next Player)
+9: Hearts     1 (~)
+10: Hearts     2 (Draws Two Cards)
+11: Hearts     3 (Draws Three Cards)
+12: Hearts     4 (~)
+13: Hearts     6 (~)
+14: Hearts     7 (Cancel An Attack)
+15: Hearts     8 (~)
+16: Hearts    10 (~)
+17: Hearts    11 (Skip The Next Player)
+18: Hearts    12 (Reverse The Playing Order)
+19: Hearts    13 (~)
+20: Diamonds   1 (~)
+21: Diamonds   2 (Draws Two Cards)
+22: Diamonds   3 (Draws Three Cards)
+23: Diamonds   4 (~)
+24: Diamonds   5 (~)
+25: Diamonds   6 (~)
+26: Diamonds   7 (Cancel An Attack)
+27: Diamonds   8 (~)
+28: Diamonds  10 (~)
+29: Diamonds  11 (Skip The Next Player)
+30: Diamonds  12 (Reverse The Playing Order)
+31: Diamonds  13 (~)
+32: Clubs      1 (~)
+33: Clubs      3 (Draws Three Cards)
+34: Clubs      5 (~)
+35: Clubs      6 (~)
+36: Clubs      7 (Cancel An Attack)
+37: Clubs      8 (~)
+38: Clubs      9 (~)
+39: Clubs     11 (Skip The Next Player)
+40: Clubs     12 (Reverse The Playing Order)
+41: Clubs     13 (~)
+42: Spades     1 (~)
+43: Spades     3 (Draws Three Cards)
+44: Spades     7 (Cancel An Attack)
+45: Spades     8 (~)
+46: Spades     9 (~)
+47: Spades    10 (~)
+48: Spades    11 (Skip The Next Player)
+49: Spades    12 (Reverse The Playing Order)
+50: Spades    13 (~)
+51: Hearts     1 (~)
+52: Hearts     2 (Draws Two Cards)
+53: Hearts     3 (Draws Three Cards)
+54: Hearts     6 (~)
+55: Hearts     7 (Cancel An Attack)
+56: Hearts     8 (~)
+57: Hearts     9 (~)
+58: Hearts    10 (~)
+59: Hearts    11 (Skip The Next Player)
+60: Hearts    12 (Reverse The Playing Order)
+61: Diamonds   1 (~)
+62: Diamonds   2 (Draws Two Cards)
+63: Diamonds   3 (Draws Three Cards)
+64: Diamonds   6 (~)
+65: Diamonds   7 (Cancel An Attack)
+66: Diamonds   9 (~)
+67: Diamonds  10 (~)
+68: Diamonds  12 (Reverse The Playing Order)
+69: Diamonds  13 (~)
+70: Clubs      1 (~)
+71: Clubs      2 (Draws Two Cards)
+72: Clubs      3 (Draws Three Cards)
+73: Clubs      4 (~)
+74: Clubs      5 (~)
+75: Clubs      7 (Cancel An Attack)
+76: Clubs      8 (~)
+77: Clubs      9 (~)
+78: Clubs     10 (~)
+79: Clubs     11 (Skip The Next Player)
+80: Clubs     12 (Reverse The Playing Order)
+81: Clubs     13 (~)
+
+DiscardPile: 
+PileSize: 8
+0: Hearts     4 (~)
+1: Hearts     5 (~)
+2: Hearts     5 (~)
+3: Hearts     9 (~)
+4: Diamonds   4 (~)
+5: Diamonds   5 (~)
+6: Clubs      4 (~)
+7: Clubs      6 (~)
+
+Round: 1 , StockPile: 82 , DiscardPile: 8
+Player: 0
+You Are Supposed To Draw 0 Card(s).
+Last Card: Clubs      6 (~)
+
+
+Your Current HandCard: 
+PileSize: 3
+0: Spades     2 (Draws Two Cards)
+1: Spades    12 (Reverse The Playing Order)
+2: Diamonds   8 (~)
+
+Oops! You Can't Any Card! Enter Any Word To Acknowledge Such Situation And Draw Card(s):
+Draw 1 Card(s).
+Draw Card No:1, Diamonds   7 (Cancel An Attack)
+PlayerNumber: 4
+InitialCardNuber: 5
+DeckNumber: 2
+RoundNumber: 1
+Player: 
+PileSize: 4
+0: Spades     2 (Draws Two Cards)
+1: Spades    12 (Reverse The Playing Order)
+2: Diamonds   7 (Cancel An Attack)
+3: Diamonds   8 (~)
+
+
+Player: 
+PileSize: 3
+0: Spades     4 (~)
+1: Spades     6 (~)
+2: Clubs      2 (Draws Two Cards)
+
+
+Player: 
+PileSize: 3
+0: Spades     8 (~)
+1: Diamonds   9 (~)
+2: Clubs     10 (~)
+
+
+Player: 
+PileSize: 5
+0: Spades     1 (~)
+1: Spades     5 (~)
+2: Spades    13 (~)
+3: Hearts    13 (~)
+4: Diamonds   5 (~)
+
+
+StockPile: 
+PileSize: 81
+0: Spades     2 (Draws Two Cards)
+1: Spades     3 (Draws Three Cards)
+2: Spades     4 (~)
+3: Spades     5 (~)
+4: Spades     6 (~)
+5: Spades     7 (Cancel An Attack)
+6: Spades     9 (~)
+7: Spades    10 (~)
+8: Spades    11 (Skip The Next Player)
+9: Hearts     1 (~)
+10: Hearts     2 (Draws Two Cards)
+11: Hearts     3 (Draws Three Cards)
+12: Hearts     4 (~)
+13: Hearts     6 (~)
+14: Hearts     7 (Cancel An Attack)
+15: Hearts     8 (~)
+16: Hearts    10 (~)
+17: Hearts    11 (Skip The Next Player)
+18: Hearts    12 (Reverse The Playing Order)
+19: Hearts    13 (~)
+20: Diamonds   1 (~)
+21: Diamonds   2 (Draws Two Cards)
+22: Diamonds   3 (Draws Three Cards)
+23: Diamonds   4 (~)
+24: Diamonds   5 (~)
+25: Diamonds   6 (~)
+26: Diamonds   8 (~)
+27: Diamonds  10 (~)
+28: Diamonds  11 (Skip The Next Player)
+29: Diamonds  12 (Reverse The Playing Order)
+30: Diamonds  13 (~)
+31: Clubs      1 (~)
+32: Clubs      3 (Draws Three Cards)
+33: Clubs      5 (~)
+34: Clubs      6 (~)
+35: Clubs      7 (Cancel An Attack)
+36: Clubs      8 (~)
+37: Clubs      9 (~)
+38: Clubs     11 (Skip The Next Player)
+39: Clubs     12 (Reverse The Playing Order)
+40: Clubs     13 (~)
+41: Spades     1 (~)
+42: Spades     3 (Draws Three Cards)
+43: Spades     7 (Cancel An Attack)
+44: Spades     8 (~)
+45: Spades     9 (~)
+46: Spades    10 (~)
+47: Spades    11 (Skip The Next Player)
+48: Spades    12 (Reverse The Playing Order)
+49: Spades    13 (~)
+50: Hearts     1 (~)
+51: Hearts     2 (Draws Two Cards)
+52: Hearts     3 (Draws Three Cards)
+53: Hearts     6 (~)
+54: Hearts     7 (Cancel An Attack)
+55: Hearts     8 (~)
+56: Hearts     9 (~)
+57: Hearts    10 (~)
+58: Hearts    11 (Skip The Next Player)
+59: Hearts    12 (Reverse The Playing Order)
+60: Diamonds   1 (~)
+61: Diamonds   2 (Draws Two Cards)
+62: Diamonds   3 (Draws Three Cards)
+63: Diamonds   6 (~)
+64: Diamonds   7 (Cancel An Attack)
+65: Diamonds   9 (~)
+66: Diamonds  10 (~)
+67: Diamonds  12 (Reverse The Playing Order)
+68: Diamonds  13 (~)
+69: Clubs      1 (~)
+70: Clubs      2 (Draws Two Cards)
+71: Clubs      3 (Draws Three Cards)
+72: Clubs      4 (~)
+73: Clubs      5 (~)
+74: Clubs      7 (Cancel An Attack)
+75: Clubs      8 (~)
+76: Clubs      9 (~)
+77: Clubs     10 (~)
+78: Clubs     11 (Skip The Next Player)
+79: Clubs     12 (Reverse The Playing Order)
+80: Clubs     13 (~)
+
+DiscardPile: 
+PileSize: 8
+0: Hearts     4 (~)
+1: Hearts     5 (~)
+2: Hearts     5 (~)
+3: Hearts     9 (~)
+4: Diamonds   4 (~)
+5: Diamonds   5 (~)
+6: Clubs      4 (~)
+7: Clubs      6 (~)
+
+Round: 1 , StockPile: 81 , DiscardPile: 8
+Player: 1
+You Are Supposed To Draw 0 Card(s).
+Last Card: Clubs      6 (~)
+
+
+Your Current HandCard: 
+PileSize: 3
+0: Spades     4 (~)
+1: Spades     6 (~)
+2: Clubs      2 (Draws Two Cards)
+
+Please Play A Card Or Enter -1 To Give Up This Turn And Draw One More Card: 
+Draw 0 Card(s).
+PlayerNumber: 4
+InitialCardNuber: 5
+DeckNumber: 2
+RoundNumber: 1
+Player: 
+PileSize: 4
+0: Spades     2 (Draws Two Cards)
+1: Spades    12 (Reverse The Playing Order)
+2: Diamonds   7 (Cancel An Attack)
+3: Diamonds   8 (~)
+
+
+Player: 
+PileSize: 2
+0: Spades     4 (~)
+1: Spades     6 (~)
+
+
+Player: 
+PileSize: 3
+0: Spades     8 (~)
+1: Diamonds   9 (~)
+2: Clubs     10 (~)
+
+
+Player: 
+PileSize: 5
+0: Spades     1 (~)
+1: Spades     5 (~)
+2: Spades    13 (~)
+3: Hearts    13 (~)
+4: Diamonds   5 (~)
+
+
+StockPile: 
+PileSize: 81
+0: Spades     2 (Draws Two Cards)
+1: Spades     3 (Draws Three Cards)
+2: Spades     4 (~)
+3: Spades     5 (~)
+4: Spades     6 (~)
+5: Spades     7 (Cancel An Attack)
+6: Spades     9 (~)
+7: Spades    10 (~)
+8: Spades    11 (Skip The Next Player)
+9: Hearts     1 (~)
+10: Hearts     2 (Draws Two Cards)
+11: Hearts     3 (Draws Three Cards)
+12: Hearts     4 (~)
+13: Hearts     6 (~)
+14: Hearts     7 (Cancel An Attack)
+15: Hearts     8 (~)
+16: Hearts    10 (~)
+17: Hearts    11 (Skip The Next Player)
+18: Hearts    12 (Reverse The Playing Order)
+19: Hearts    13 (~)
+20: Diamonds   1 (~)
+21: Diamonds   2 (Draws Two Cards)
+22: Diamonds   3 (Draws Three Cards)
+23: Diamonds   4 (~)
+24: Diamonds   5 (~)
+25: Diamonds   6 (~)
+26: Diamonds   8 (~)
+27: Diamonds  10 (~)
+28: Diamonds  11 (Skip The Next Player)
+29: Diamonds  12 (Reverse The Playing Order)
+30: Diamonds  13 (~)
+31: Clubs      1 (~)
+32: Clubs      3 (Draws Three Cards)
+33: Clubs      5 (~)
+34: Clubs      6 (~)
+35: Clubs      7 (Cancel An Attack)
+36: Clubs      8 (~)
+37: Clubs      9 (~)
+38: Clubs     11 (Skip The Next Player)
+39: Clubs     12 (Reverse The Playing Order)
+40: Clubs     13 (~)
+41: Spades     1 (~)
+42: Spades     3 (Draws Three Cards)
+43: Spades     7 (Cancel An Attack)
+44: Spades     8 (~)
+45: Spades     9 (~)
+46: Spades    10 (~)
+47: Spades    11 (Skip The Next Player)
+48: Spades    12 (Reverse The Playing Order)
+49: Spades    13 (~)
+50: Hearts     1 (~)
+51: Hearts     2 (Draws Two Cards)
+52: Hearts     3 (Draws Three Cards)
+53: Hearts     6 (~)
+54: Hearts     7 (Cancel An Attack)
+55: Hearts     8 (~)
+56: Hearts     9 (~)
+57: Hearts    10 (~)
+58: Hearts    11 (Skip The Next Player)
+59: Hearts    12 (Reverse The Playing Order)
+60: Diamonds   1 (~)
+61: Diamonds   2 (Draws Two Cards)
+62: Diamonds   3 (Draws Three Cards)
+63: Diamonds   6 (~)
+64: Diamonds   7 (Cancel An Attack)
+65: Diamonds   9 (~)
+66: Diamonds  10 (~)
+67: Diamonds  12 (Reverse The Playing Order)
+68: Diamonds  13 (~)
+69: Clubs      1 (~)
+70: Clubs      2 (Draws Two Cards)
+71: Clubs      3 (Draws Three Cards)
+72: Clubs      4 (~)
+73: Clubs      5 (~)
+74: Clubs      7 (Cancel An Attack)
+75: Clubs      8 (~)
+76: Clubs      9 (~)
+77: Clubs     10 (~)
+78: Clubs     11 (Skip The Next Player)
+79: Clubs     12 (Reverse The Playing Order)
+80: Clubs     13 (~)
+
+DiscardPile: 
+PileSize: 9
+0: Hearts     4 (~)
+1: Hearts     5 (~)
+2: Hearts     5 (~)
+3: Hearts     9 (~)
+4: Diamonds   4 (~)
+5: Diamonds   5 (~)
+6: Clubs      2 (Draws Two Cards)
+7: Clubs      4 (~)
+8: Clubs      6 (~)
+
+Round: 1 , StockPile: 81 , DiscardPile: 9
+Player: 2
+You Are Supposed To Draw 2 Card(s).
+Last Card: Clubs      2 (Draws Two Cards)
+
+
+Your Current HandCard: 
+PileSize: 3
+0: Spades     8 (~)
+1: Diamonds   9 (~)
+2: Clubs     10 (~)
+
+Oops! You Can't Any Card! Enter Any Word To Acknowledge Such Situation And Draw Card(s):
+Draw 2 Card(s).
+Draw Card No:1, Hearts     8 (~)
+Draw Card No:2, Spades     9 (~)
+PlayerNumber: 4
+InitialCardNuber: 5
+DeckNumber: 2
+RoundNumber: 1
+Player: 
+PileSize: 4
+0: Spades     2 (Draws Two Cards)
+1: Spades    12 (Reverse The Playing Order)
+2: Diamonds   7 (Cancel An Attack)
+3: Diamonds   8 (~)
+
+
+Player: 
+PileSize: 2
+0: Spades     4 (~)
+1: Spades     6 (~)
+
+
+Player: 
+PileSize: 5
+0: Spades     8 (~)
+1: Spades     9 (~)
+2: Hearts     8 (~)
+3: Diamonds   9 (~)
+4: Clubs     10 (~)
+
+
+Player: 
+PileSize: 5
+0: Spades     1 (~)
+1: Spades     5 (~)
+2: Spades    13 (~)
+3: Hearts    13 (~)
+4: Diamonds   5 (~)
+
+
+StockPile: 
+PileSize: 79
+0: Spades     2 (Draws Two Cards)
+1: Spades     3 (Draws Three Cards)
+2: Spades     4 (~)
+3: Spades     5 (~)
+4: Spades     6 (~)
+5: Spades     7 (Cancel An Attack)
+6: Spades     9 (~)
+7: Spades    10 (~)
+8: Spades    11 (Skip The Next Player)
+9: Hearts     1 (~)
+10: Hearts     2 (Draws Two Cards)
+11: Hearts     3 (Draws Three Cards)
+12: Hearts     4 (~)
+13: Hearts     6 (~)
+14: Hearts     7 (Cancel An Attack)
+15: Hearts    10 (~)
+16: Hearts    11 (Skip The Next Player)
+17: Hearts    12 (Reverse The Playing Order)
+18: Hearts    13 (~)
+19: Diamonds   1 (~)
+20: Diamonds   2 (Draws Two Cards)
+21: Diamonds   3 (Draws Three Cards)
+22: Diamonds   4 (~)
+23: Diamonds   5 (~)
+24: Diamonds   6 (~)
+25: Diamonds   8 (~)
+26: Diamonds  10 (~)
+27: Diamonds  11 (Skip The Next Player)
+28: Diamonds  12 (Reverse The Playing Order)
+29: Diamonds  13 (~)
+30: Clubs      1 (~)
+31: Clubs      3 (Draws Three Cards)
+32: Clubs      5 (~)
+33: Clubs      6 (~)
+34: Clubs      7 (Cancel An Attack)
+35: Clubs      8 (~)
+36: Clubs      9 (~)
+37: Clubs     11 (Skip The Next Player)
+38: Clubs     12 (Reverse The Playing Order)
+39: Clubs     13 (~)
+40: Spades     1 (~)
+41: Spades     3 (Draws Three Cards)
+42: Spades     7 (Cancel An Attack)
+43: Spades     8 (~)
+44: Spades    10 (~)
+45: Spades    11 (Skip The Next Player)
+46: Spades    12 (Reverse The Playing Order)
+47: Spades    13 (~)
+48: Hearts     1 (~)
+49: Hearts     2 (Draws Two Cards)
+50: Hearts     3 (Draws Three Cards)
+51: Hearts     6 (~)
+52: Hearts     7 (Cancel An Attack)
+53: Hearts     8 (~)
+54: Hearts     9 (~)
+55: Hearts    10 (~)
+56: Hearts    11 (Skip The Next Player)
+57: Hearts    12 (Reverse The Playing Order)
+58: Diamonds   1 (~)
+59: Diamonds   2 (Draws Two Cards)
+60: Diamonds   3 (Draws Three Cards)
+61: Diamonds   6 (~)
+62: Diamonds   7 (Cancel An Attack)
+63: Diamonds   9 (~)
+64: Diamonds  10 (~)
+65: Diamonds  12 (Reverse The Playing Order)
+66: Diamonds  13 (~)
+67: Clubs      1 (~)
+68: Clubs      2 (Draws Two Cards)
+69: Clubs      3 (Draws Three Cards)
+70: Clubs      4 (~)
+71: Clubs      5 (~)
+72: Clubs      7 (Cancel An Attack)
+73: Clubs      8 (~)
+74: Clubs      9 (~)
+75: Clubs     10 (~)
+76: Clubs     11 (Skip The Next Player)
+77: Clubs     12 (Reverse The Playing Order)
+78: Clubs     13 (~)
+
+DiscardPile: 
+PileSize: 9
+0: Hearts     4 (~)
+1: Hearts     5 (~)
+2: Hearts     5 (~)
+3: Hearts     9 (~)
+4: Diamonds   4 (~)
+5: Diamonds   5 (~)
+6: Clubs      2 (Draws Two Cards)
+7: Clubs      4 (~)
+8: Clubs      6 (~)
+
+Round: 1 , StockPile: 79 , DiscardPile: 9
+Player: 3
+You Are Supposed To Draw 0 Card(s).
+Last Card: Clubs      2 (Draws Two Cards)
+
+
+Your Current HandCard: 
+PileSize: 5
+0: Spades     1 (~)
+1: Spades     5 (~)
+2: Spades    13 (~)
+3: Hearts    13 (~)
+4: Diamonds   5 (~)
+
+Oops! You Can't Any Card! Enter Any Word To Acknowledge Such Situation And Draw Card(s):
+Draw 1 Card(s).
+Draw Card No:1, Hearts     6 (~)
+PlayerNumber: 4
+InitialCardNuber: 5
+DeckNumber: 2
+RoundNumber: 1
+Player: 
+PileSize: 4
+0: Spades     2 (Draws Two Cards)
+1: Spades    12 (Reverse The Playing Order)
+2: Diamonds   7 (Cancel An Attack)
+3: Diamonds   8 (~)
+
+
+Player: 
+PileSize: 2
+0: Spades     4 (~)
+1: Spades     6 (~)
+
+
+Player: 
+PileSize: 5
+0: Spades     8 (~)
+1: Spades     9 (~)
+2: Hearts     8 (~)
+3: Diamonds   9 (~)
+4: Clubs     10 (~)
+
+
+Player: 
+PileSize: 6
+0: Spades     1 (~)
+1: Spades     5 (~)
+2: Spades    13 (~)
+3: Hearts     6 (~)
+4: Hearts    13 (~)
+5: Diamonds   5 (~)
+
+
+StockPile: 
+PileSize: 78
+0: Spades     2 (Draws Two Cards)
+1: Spades     3 (Draws Three Cards)
+2: Spades     4 (~)
+3: Spades     5 (~)
+4: Spades     6 (~)
+5: Spades     7 (Cancel An Attack)
+6: Spades     9 (~)
+7: Spades    10 (~)
+8: Spades    11 (Skip The Next Player)
+9: Hearts     1 (~)
+10: Hearts     2 (Draws Two Cards)
+11: Hearts     3 (Draws Three Cards)
+12: Hearts     4 (~)
+13: Hearts     6 (~)
+14: Hearts     7 (Cancel An Attack)
+15: Hearts    10 (~)
+16: Hearts    11 (Skip The Next Player)
+17: Hearts    12 (Reverse The Playing Order)
+18: Hearts    13 (~)
+19: Diamonds   1 (~)
+20: Diamonds   2 (Draws Two Cards)
+21: Diamonds   3 (Draws Three Cards)
+22: Diamonds   4 (~)
+23: Diamonds   5 (~)
+24: Diamonds   6 (~)
+25: Diamonds   8 (~)
+26: Diamonds  10 (~)
+27: Diamonds  11 (Skip The Next Player)
+28: Diamonds  12 (Reverse The Playing Order)
+29: Diamonds  13 (~)
+30: Clubs      1 (~)
+31: Clubs      3 (Draws Three Cards)
+32: Clubs      5 (~)
+33: Clubs      6 (~)
+34: Clubs      7 (Cancel An Attack)
+35: Clubs      8 (~)
+36: Clubs      9 (~)
+37: Clubs     11 (Skip The Next Player)
+38: Clubs     12 (Reverse The Playing Order)
+39: Clubs     13 (~)
+40: Spades     1 (~)
+41: Spades     3 (Draws Three Cards)
+42: Spades     7 (Cancel An Attack)
+43: Spades     8 (~)
+44: Spades    10 (~)
+45: Spades    11 (Skip The Next Player)
+46: Spades    12 (Reverse The Playing Order)
+47: Spades    13 (~)
+48: Hearts     1 (~)
+49: Hearts     2 (Draws Two Cards)
+50: Hearts     3 (Draws Three Cards)
+51: Hearts     7 (Cancel An Attack)
+52: Hearts     8 (~)
+53: Hearts     9 (~)
+54: Hearts    10 (~)
+55: Hearts    11 (Skip The Next Player)
+56: Hearts    12 (Reverse The Playing Order)
+57: Diamonds   1 (~)
+58: Diamonds   2 (Draws Two Cards)
+59: Diamonds   3 (Draws Three Cards)
+60: Diamonds   6 (~)
+61: Diamonds   7 (Cancel An Attack)
+62: Diamonds   9 (~)
+63: Diamonds  10 (~)
+64: Diamonds  12 (Reverse The Playing Order)
+65: Diamonds  13 (~)
+66: Clubs      1 (~)
+67: Clubs      2 (Draws Two Cards)
+68: Clubs      3 (Draws Three Cards)
+69: Clubs      4 (~)
+70: Clubs      5 (~)
+71: Clubs      7 (Cancel An Attack)
+72: Clubs      8 (~)
+73: Clubs      9 (~)
+74: Clubs     10 (~)
+75: Clubs     11 (Skip The Next Player)
+76: Clubs     12 (Reverse The Playing Order)
+77: Clubs     13 (~)
+
+DiscardPile: 
+PileSize: 9
+0: Hearts     4 (~)
+1: Hearts     5 (~)
+2: Hearts     5 (~)
+3: Hearts     9 (~)
+4: Diamonds   4 (~)
+5: Diamonds   5 (~)
+6: Clubs      2 (Draws Two Cards)
+7: Clubs      4 (~)
+8: Clubs      6 (~)
+
+Round: 1 , StockPile: 78 , DiscardPile: 9
+Player: 0
+You Are Supposed To Draw 0 Card(s).
+Last Card: Clubs      2 (Draws Two Cards)
+
+
+Your Current HandCard: 
+PileSize: 4
+0: Spades     2 (Draws Two Cards)
+1: Spades    12 (Reverse The Playing Order)
+2: Diamonds   7 (Cancel An Attack)
+3: Diamonds   8 (~)
+
+Please Play A Card Or Enter -1 To Give Up This Turn And Draw One More Card: 
+Draw 0 Card(s).
+PlayerNumber: 4
+InitialCardNuber: 5
+DeckNumber: 2
+RoundNumber: 1
+Player: 
+PileSize: 3
+0: Spades    12 (Reverse The Playing Order)
+1: Diamonds   7 (Cancel An Attack)
+2: Diamonds   8 (~)
+
+
+Player: 
+PileSize: 2
+0: Spades     4 (~)
+1: Spades     6 (~)
+
+
+Player: 
+PileSize: 5
+0: Spades     8 (~)
+1: Spades     9 (~)
+2: Hearts     8 (~)
+3: Diamonds   9 (~)
+4: Clubs     10 (~)
+
+
+Player: 
+PileSize: 6
+0: Spades     1 (~)
+1: Spades     5 (~)
+2: Spades    13 (~)
+3: Hearts     6 (~)
+4: Hearts    13 (~)
+5: Diamonds   5 (~)
+
+
+StockPile: 
+PileSize: 78
+0: Spades     2 (Draws Two Cards)
+1: Spades     3 (Draws Three Cards)
+2: Spades     4 (~)
+3: Spades     5 (~)
+4: Spades     6 (~)
+5: Spades     7 (Cancel An Attack)
+6: Spades     9 (~)
+7: Spades    10 (~)
+8: Spades    11 (Skip The Next Player)
+9: Hearts     1 (~)
+10: Hearts     2 (Draws Two Cards)
+11: Hearts     3 (Draws Three Cards)
+12: Hearts     4 (~)
+13: Hearts     6 (~)
+14: Hearts     7 (Cancel An Attack)
+15: Hearts    10 (~)
+16: Hearts    11 (Skip The Next Player)
+17: Hearts    12 (Reverse The Playing Order)
+18: Hearts    13 (~)
+19: Diamonds   1 (~)
+20: Diamonds   2 (Draws Two Cards)
+21: Diamonds   3 (Draws Three Cards)
+22: Diamonds   4 (~)
+23: Diamonds   5 (~)
+24: Diamonds   6 (~)
+25: Diamonds   8 (~)
+26: Diamonds  10 (~)
+27: Diamonds  11 (Skip The Next Player)
+28: Diamonds  12 (Reverse The Playing Order)
+29: Diamonds  13 (~)
+30: Clubs      1 (~)
+31: Clubs      3 (Draws Three Cards)
+32: Clubs      5 (~)
+33: Clubs      6 (~)
+34: Clubs      7 (Cancel An Attack)
+35: Clubs      8 (~)
+36: Clubs      9 (~)
+37: Clubs     11 (Skip The Next Player)
+38: Clubs     12 (Reverse The Playing Order)
+39: Clubs     13 (~)
+40: Spades     1 (~)
+41: Spades     3 (Draws Three Cards)
+42: Spades     7 (Cancel An Attack)
+43: Spades     8 (~)
+44: Spades    10 (~)
+45: Spades    11 (Skip The Next Player)
+46: Spades    12 (Reverse The Playing Order)
+47: Spades    13 (~)
+48: Hearts     1 (~)
+49: Hearts     2 (Draws Two Cards)
+50: Hearts     3 (Draws Three Cards)
+51: Hearts     7 (Cancel An Attack)
+52: Hearts     8 (~)
+53: Hearts     9 (~)
+54: Hearts    10 (~)
+55: Hearts    11 (Skip The Next Player)
+56: Hearts    12 (Reverse The Playing Order)
+57: Diamonds   1 (~)
+58: Diamonds   2 (Draws Two Cards)
+59: Diamonds   3 (Draws Three Cards)
+60: Diamonds   6 (~)
+61: Diamonds   7 (Cancel An Attack)
+62: Diamonds   9 (~)
+63: Diamonds  10 (~)
+64: Diamonds  12 (Reverse The Playing Order)
+65: Diamonds  13 (~)
+66: Clubs      1 (~)
+67: Clubs      2 (Draws Two Cards)
+68: Clubs      3 (Draws Three Cards)
+69: Clubs      4 (~)
+70: Clubs      5 (~)
+71: Clubs      7 (Cancel An Attack)
+72: Clubs      8 (~)
+73: Clubs      9 (~)
+74: Clubs     10 (~)
+75: Clubs     11 (Skip The Next Player)
+76: Clubs     12 (Reverse The Playing Order)
+77: Clubs     13 (~)
+
+DiscardPile: 
+PileSize: 10
+0: Spades     2 (Draws Two Cards)
+1: Hearts     4 (~)
+2: Hearts     5 (~)
+3: Hearts     5 (~)
+4: Hearts     9 (~)
+5: Diamonds   4 (~)
+6: Diamonds   5 (~)
+7: Clubs      2 (Draws Two Cards)
+8: Clubs      4 (~)
+9: Clubs      6 (~)
+
+Round: 1 , StockPile: 78 , DiscardPile: 10
+Player: 1
+You Are Supposed To Draw 2 Card(s).
+Last Card: Spades     2 (Draws Two Cards)
+
+
+Your Current HandCard: 
+PileSize: 2
+0: Spades     4 (~)
+1: Spades     6 (~)
+
+Oops! You Can't Any Card! Enter Any Word To Acknowledge Such Situation And Draw Card(s):
+Draw 2 Card(s).
+Draw Card No:1, Diamonds   6 (~)
+Draw Card No:2, Diamonds   2 (Draws Two Cards)
+PlayerNumber: 4
+InitialCardNuber: 5
+DeckNumber: 2
+RoundNumber: 1
+Player: 
+PileSize: 3
+0: Spades    12 (Reverse The Playing Order)
+1: Diamonds   7 (Cancel An Attack)
+2: Diamonds   8 (~)
+
+
+Player: 
+PileSize: 4
+0: Spades     4 (~)
+1: Spades     6 (~)
+2: Diamonds   2 (Draws Two Cards)
+3: Diamonds   6 (~)
+
+
+Player: 
+PileSize: 5
+0: Spades     8 (~)
+1: Spades     9 (~)
+2: Hearts     8 (~)
+3: Diamonds   9 (~)
+4: Clubs     10 (~)
+
+
+Player: 
+PileSize: 6
+0: Spades     1 (~)
+1: Spades     5 (~)
+2: Spades    13 (~)
+3: Hearts     6 (~)
+4: Hearts    13 (~)
+5: Diamonds   5 (~)
+
+
+StockPile: 
+PileSize: 76
+0: Spades     2 (Draws Two Cards)
+1: Spades     3 (Draws Three Cards)
+2: Spades     4 (~)
+3: Spades     5 (~)
+4: Spades     6 (~)
+5: Spades     7 (Cancel An Attack)
+6: Spades     9 (~)
+7: Spades    10 (~)
+8: Spades    11 (Skip The Next Player)
+9: Hearts     1 (~)
+10: Hearts     2 (Draws Two Cards)
+11: Hearts     3 (Draws Three Cards)
+12: Hearts     4 (~)
+13: Hearts     6 (~)
+14: Hearts     7 (Cancel An Attack)
+15: Hearts    10 (~)
+16: Hearts    11 (Skip The Next Player)
+17: Hearts    12 (Reverse The Playing Order)
+18: Hearts    13 (~)
+19: Diamonds   1 (~)
+20: Diamonds   3 (Draws Three Cards)
+21: Diamonds   4 (~)
+22: Diamonds   5 (~)
+23: Diamonds   6 (~)
+24: Diamonds   8 (~)
+25: Diamonds  10 (~)
+26: Diamonds  11 (Skip The Next Player)
+27: Diamonds  12 (Reverse The Playing Order)
+28: Diamonds  13 (~)
+29: Clubs      1 (~)
+30: Clubs      3 (Draws Three Cards)
+31: Clubs      5 (~)
+32: Clubs      6 (~)
+33: Clubs      7 (Cancel An Attack)
+34: Clubs      8 (~)
+35: Clubs      9 (~)
+36: Clubs     11 (Skip The Next Player)
+37: Clubs     12 (Reverse The Playing Order)
+38: Clubs     13 (~)
+39: Spades     1 (~)
+40: Spades     3 (Draws Three Cards)
+41: Spades     7 (Cancel An Attack)
+42: Spades     8 (~)
+43: Spades    10 (~)
+44: Spades    11 (Skip The Next Player)
+45: Spades    12 (Reverse The Playing Order)
+46: Spades    13 (~)
+47: Hearts     1 (~)
+48: Hearts     2 (Draws Two Cards)
+49: Hearts     3 (Draws Three Cards)
+50: Hearts     7 (Cancel An Attack)
+51: Hearts     8 (~)
+52: Hearts     9 (~)
+53: Hearts    10 (~)
+54: Hearts    11 (Skip The Next Player)
+55: Hearts    12 (Reverse The Playing Order)
+56: Diamonds   1 (~)
+57: Diamonds   2 (Draws Two Cards)
+58: Diamonds   3 (Draws Three Cards)
+59: Diamonds   7 (Cancel An Attack)
+60: Diamonds   9 (~)
+61: Diamonds  10 (~)
+62: Diamonds  12 (Reverse The Playing Order)
+63: Diamonds  13 (~)
+64: Clubs      1 (~)
+65: Clubs      2 (Draws Two Cards)
+66: Clubs      3 (Draws Three Cards)
+67: Clubs      4 (~)
+68: Clubs      5 (~)
+69: Clubs      7 (Cancel An Attack)
+70: Clubs      8 (~)
+71: Clubs      9 (~)
+72: Clubs     10 (~)
+73: Clubs     11 (Skip The Next Player)
+74: Clubs     12 (Reverse The Playing Order)
+75: Clubs     13 (~)
+
+DiscardPile: 
+PileSize: 10
+0: Spades     2 (Draws Two Cards)
+1: Hearts     4 (~)
+2: Hearts     5 (~)
+3: Hearts     5 (~)
+4: Hearts     9 (~)
+5: Diamonds   4 (~)
+6: Diamonds   5 (~)
+7: Clubs      2 (Draws Two Cards)
+8: Clubs      4 (~)
+9: Clubs      6 (~)
+
+Round: 1 , StockPile: 76 , DiscardPile: 10
+Player: 2
+You Are Supposed To Draw 0 Card(s).
+Last Card: Spades     2 (Draws Two Cards)
+
+
+Your Current HandCard: 
+PileSize: 5
+0: Spades     8 (~)
+1: Spades     9 (~)
+2: Hearts     8 (~)
+3: Diamonds   9 (~)
+4: Clubs     10 (~)
+
+Please Play A Card Or Enter -1 To Give Up This Turn And Draw One More Card: 
+Draw 0 Card(s).
+PlayerNumber: 4
+InitialCardNuber: 5
+DeckNumber: 2
+RoundNumber: 1
+Player: 
+PileSize: 3
+0: Spades    12 (Reverse The Playing Order)
+1: Diamonds   7 (Cancel An Attack)
+2: Diamonds   8 (~)
+
+
+Player: 
+PileSize: 4
+0: Spades     4 (~)
+1: Spades     6 (~)
+2: Diamonds   2 (Draws Two Cards)
+3: Diamonds   6 (~)
+
+
+Player: 
+PileSize: 4
+0: Spades     9 (~)
+1: Hearts     8 (~)
+2: Diamonds   9 (~)
+3: Clubs     10 (~)
+
+
+Player: 
+PileSize: 6
+0: Spades     1 (~)
+1: Spades     5 (~)
+2: Spades    13 (~)
+3: Hearts     6 (~)
+4: Hearts    13 (~)
+5: Diamonds   5 (~)
+
+
+StockPile: 
+PileSize: 76
+0: Spades     2 (Draws Two Cards)
+1: Spades     3 (Draws Three Cards)
+2: Spades     4 (~)
+3: Spades     5 (~)
+4: Spades     6 (~)
+5: Spades     7 (Cancel An Attack)
+6: Spades     9 (~)
+7: Spades    10 (~)
+8: Spades    11 (Skip The Next Player)
+9: Hearts     1 (~)
+10: Hearts     2 (Draws Two Cards)
+11: Hearts     3 (Draws Three Cards)
+12: Hearts     4 (~)
+13: Hearts     6 (~)
+14: Hearts     7 (Cancel An Attack)
+15: Hearts    10 (~)
+16: Hearts    11 (Skip The Next Player)
+17: Hearts    12 (Reverse The Playing Order)
+18: Hearts    13 (~)
+19: Diamonds   1 (~)
+20: Diamonds   3 (Draws Three Cards)
+21: Diamonds   4 (~)
+22: Diamonds   5 (~)
+23: Diamonds   6 (~)
+24: Diamonds   8 (~)
+25: Diamonds  10 (~)
+26: Diamonds  11 (Skip The Next Player)
+27: Diamonds  12 (Reverse The Playing Order)
+28: Diamonds  13 (~)
+29: Clubs      1 (~)
+30: Clubs      3 (Draws Three Cards)
+31: Clubs      5 (~)
+32: Clubs      6 (~)
+33: Clubs      7 (Cancel An Attack)
+34: Clubs      8 (~)
+35: Clubs      9 (~)
+36: Clubs     11 (Skip The Next Player)
+37: Clubs     12 (Reverse The Playing Order)
+38: Clubs     13 (~)
+39: Spades     1 (~)
+40: Spades     3 (Draws Three Cards)
+41: Spades     7 (Cancel An Attack)
+42: Spades     8 (~)
+43: Spades    10 (~)
+44: Spades    11 (Skip The Next Player)
+45: Spades    12 (Reverse The Playing Order)
+46: Spades    13 (~)
+47: Hearts     1 (~)
+48: Hearts     2 (Draws Two Cards)
+49: Hearts     3 (Draws Three Cards)
+50: Hearts     7 (Cancel An Attack)
+51: Hearts     8 (~)
+52: Hearts     9 (~)
+53: Hearts    10 (~)
+54: Hearts    11 (Skip The Next Player)
+55: Hearts    12 (Reverse The Playing Order)
+56: Diamonds   1 (~)
+57: Diamonds   2 (Draws Two Cards)
+58: Diamonds   3 (Draws Three Cards)
+59: Diamonds   7 (Cancel An Attack)
+60: Diamonds   9 (~)
+61: Diamonds  10 (~)
+62: Diamonds  12 (Reverse The Playing Order)
+63: Diamonds  13 (~)
+64: Clubs      1 (~)
+65: Clubs      2 (Draws Two Cards)
+66: Clubs      3 (Draws Three Cards)
+67: Clubs      4 (~)
+68: Clubs      5 (~)
+69: Clubs      7 (Cancel An Attack)
+70: Clubs      8 (~)
+71: Clubs      9 (~)
+72: Clubs     10 (~)
+73: Clubs     11 (Skip The Next Player)
+74: Clubs     12 (Reverse The Playing Order)
+75: Clubs     13 (~)
+
+DiscardPile: 
+PileSize: 11
+0: Spades     2 (Draws Two Cards)
+1: Spades     8 (~)
+2: Hearts     4 (~)
+3: Hearts     5 (~)
+4: Hearts     5 (~)
+5: Hearts     9 (~)
+6: Diamonds   4 (~)
+7: Diamonds   5 (~)
+8: Clubs      2 (Draws Two Cards)
+9: Clubs      4 (~)
+10: Clubs      6 (~)
+
+Round: 1 , StockPile: 76 , DiscardPile: 11
+Player: 3
+You Are Supposed To Draw 0 Card(s).
+Last Card: Spades     8 (~)
+
+
+Your Current HandCard: 
+PileSize: 6
+0: Spades     1 (~)
+1: Spades     5 (~)
+2: Spades    13 (~)
+3: Hearts     6 (~)
+4: Hearts    13 (~)
+5: Diamonds   5 (~)
+
+Please Play A Card Or Enter -1 To Give Up This Turn And Draw One More Card: 

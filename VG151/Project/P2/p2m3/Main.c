@@ -31,7 +31,7 @@ int main(int Argc,char *Argv[]){
 //	WINDOW *LogWin=AddLogWin(_thisGame.LogFile);
 //	wprintw(LogWin,"ruriewriw\n");
 //	wrefresh(LogWin);
-	char _thisChar;
+	char _thisChar='.';
 //	printf("%d %s\n",Argc,Argv[1]);
 	for (int i=1;i<Argc;i++){
 		char *Option=Argv[i];
@@ -74,6 +74,7 @@ int main(int Argc,char *Argv[]){
 			}
 		}
 	}
+//	printf("%c\n",_thisChar);
 	if (_thisChar!='?') StartGame(&_thisGame);
 	else OptInitialize(&_thisGame);
 //	endwin();

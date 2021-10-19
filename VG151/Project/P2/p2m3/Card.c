@@ -32,7 +32,7 @@ char *InterpretCardFunction(Card *_thisCard){
 int IsCardMatch(Card *_former,Card *_later,int _thisOption){
 	if (_thisOption) return (_former->Rank==_later->Rank||_former->Suit==_later->Suit);
 	if (_later->Rank==2||_later->Rank==3){
-		return ((_former->Rank==_later->Rank)||(_former->Suit==_later->Suit&&_former->Rank>=2&&_former->Rank<=3));
+		return ((_former->Rank==_later->Rank)||(_former->Suit==_later->Suit&&((_former->Rank>=2&&_former->Rank<=3)||_former->Rank==7)));
 	}
 	else return (_former->Rank==_later->Rank||_former->Suit==_later->Suit);
 }
