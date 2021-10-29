@@ -70,7 +70,8 @@ void DisplayPile(char *LogFile,Pile *_thisPile,int _thisOption){
 		FPrint(LogFile,"%d: ",i);
 		DisplayCard(LogFile,_thisPile->thisPile[i],_thisOption);
 	}
-	if (_thisOption) UIPrint(0,"\n"); FPrint(LogFile,"\n");
+	if (_thisOption) UIPrint(0,"\n"); 
+	FPrint(LogFile,"\n");
 }
 
 void EmptyPile(Pile *_thisPile){

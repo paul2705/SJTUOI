@@ -4,7 +4,6 @@
 #include<stdlib.h>
 #include<stddef.h>
 #include<stdarg.h>
-#include<ncurses.h>
 
 #include"Card.h"
 #include"Pile.h"
@@ -59,11 +58,4 @@ void FPrint(char *LogFile,char *_thisFormat,...){
 	}
 	fclose(Fout);
 	va_end(ap);
-}
-
-WINDOW *AddLogWin(char *LogFile){
-	WINDOW *LogWin=newwin(50,15,1,50);
-	box(LogWin,ACS_VLINE,ACS_HLINE);
-	printf("%s\n",LogFile);
-	return LogWin;
 }

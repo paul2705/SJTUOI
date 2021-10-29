@@ -1,7 +1,7 @@
 onecard: Main.o Sys.o Game.o UIScreen.o Card.o Pile.o User.o Operation.o
-	gcc -o onecard Main.o Sys.o Game.o UIScreen.o Card.o Pile.o User.o Operation.o -O2 -Werror -Wall -Wextra -Wconversion -Wvla -Wpedantic -std=c11 -lncurses
+	gcc -o onecard Main.o Sys.o Game.o UIScreen.o Card.o Pile.o User.o Operation.o -O2 -Wall -Wextra -Werror -pedantic -Wno-unused-result -std=c11
 
-opt= -O2 -Werror -Wall -Wextra -Wconversion -Wvla -Wpedantic -std=c11
+opt= -O2 -Wall -Wextra -Werror -pedantic -Wno-unused-result -std=c11
 hbj= Sys.h Game.h UIScreen.h Operation.h User.h Pile.h Card.h
 obj= Main.o Sys.o Game.o UIScreen.o Card.o Pile.o User.o Operation.o
 
@@ -31,5 +31,5 @@ Operation.o: Operation.c Operation.h Pile.h Card.h User.h Game.h
 
 .PHONY: clean
 clean: 
+	-del -f $(obj) onecard
 	-rm -f $(obj) onecard
-

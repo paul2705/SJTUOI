@@ -2,7 +2,6 @@
 #include<stdlib.h>
 #include<time.h>
 #include<stddef.h>
-#include<ncurses.h>
 
 #include"UIScreen.h"
 #include"Card.h"
