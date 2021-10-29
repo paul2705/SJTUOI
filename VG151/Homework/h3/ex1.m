@@ -1,5 +1,5 @@
 n=8*8;
-a=zeros(20);
+a=zeros(1,41);
 a(1)=1; a(2)=1;
 for i=1:n
     for j=2:a(1)+1
@@ -16,6 +16,7 @@ for i=1:n
     end
 end
 a(2)=a(2)-1;
+a
 for i=a(1)+1:-1:2
     fprintf("%d",a(i));
 end
