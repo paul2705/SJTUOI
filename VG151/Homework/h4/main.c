@@ -16,7 +16,10 @@ int main(int argc, char* argv[]) {
         case 4:
             ex4();
             return 0;
-        default:
+		case 5:
+			ex5();
+			return 0;
+		default:
             fprintf(stderr,"Exercise %d does not exist! Please check it and try again.\n", ex);
             return -1;
     }

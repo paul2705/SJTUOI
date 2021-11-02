@@ -1,48 +1,28 @@
-# README
+# h3
 
-Author: ENGR151-21 teaching group
+| Duan Lingbo    | Ex1   | Ex2   | Ex3   | Ex5   |
+| -------------- | ----- | ----- | ----- | ----- |
+| `521370910033` | 10/10 | 10/10 | 10/10 | 10/10 |
 
-Date  : October 2021
+## Ex1
 
-This is a template for students to complete your homework.
-You should follow the instructions carefully.
-Failing to do so WILL lead to deduciton.
-The graceful period has past, guys and girls.
-This file is also a sample README for you.
+**algorithm:** input complex numbers and deal with them
 
-## USAGE
+## Ex2
 
-First, READ THE CODE!
+**algorithm:** typical gcd algorithm
 
-Write your corresponding exercise in ex1.c, ex2.c, etc.
-Each file contains functions for the corresponding assignment.
-These source file should always include "assignment.h"
-Declare the function for your exercise in "assignment.h"
-If the assignment contains less then 4 exercises,
-Delete the extra file. (And declaration in "assignment.h")
+## Ex3
 
-## COMPILING
-For command line, run 
+**algorithm:** use formula $a_{1}=\frac{-b+\sqrt{b^2-4ac}}{2a},a_{2}=\frac{-b-\sqrt{b^2-4ac}}{2a}$
 
-`gcc -Wall -Wextra -pedantic -Werror main.c ex1.c ex2.c ex3.c ex4.c -o out`
+## Ex4
 
-For IDE users:
+**algorithm:** learn data types
 
-Figure out where the compiler options can be adjusted and make sure you include at 
-least `-Wall -Wextra -pedantic -Werror`
+## Ex5
 
-## RUNNING
-Run your output executable. Either (in command line) with
+**algorithm:** learn to write header
 
-`./out.exe -exi` or `./out -exi`
 
-For exercise i, or (For IDEs) click "Run" then input the exercise number
-(an integer) into program to run a specific exercise.
 
-## Extra information
-
-Keep assignment source files named in this form.
-Meaning:
-1. Readme file should be README, or README.md.
-2. Each exercise named as "exi.c". all lower case letters.
-3. Only push the cource code (`.c` and `.h` files) to git, never include `.exe, .o, .out` files. If in rare cases you need to upload other files than `c` and `.h` files, please state it clearly in your homework README.
