@@ -51,23 +51,29 @@ double calc(char *str)
         }
         if (str[i]=='.') sprintf(new,"%s%c",new,str[i]);
         if (str[i]=='(') stack[top++]=str[i];
-        if (str[i]=='^') stack[top++]=str[i];
+        if (str[i]=='^'){
+            if (stack[top-1]=='^') sprintf(new,"%s %c ",new,(char)stack[--top]);
+            stack[top++]=str[i];
+        }
         if (str[i]=='*'||str[i]=='/')
         {
             if (stack[top-1]=='^') sprintf(new,"%s %c ",new,(char)stack[--top]);
+            if (stack[top-1]=='*'||stack[top-1]=='/') sprintf(new,"%s %c ",new,(char)stack[--top]);
             stack[top++]=str[i];
         }
         if (str[i]=='+')
         {
             if (stack[top-1]=='^') sprintf(new,"%s %c ",new,(char)stack[--top]);
             if (stack[top-1]=='*'||stack[top-1]=='/') sprintf(new,"%s %c ",new,(char)stack[--top]);
+            if (stack[top-1]=='+'||stack[top-1]=='-') sprintf(new,"%s %c ",new,(char)stack[--top]);
             stack[top++]=str[i];
 //			printf("IN\n");
 		}
-        if ((i>0&&str[i-1]>='0'&&str[i-1]<='9')&&str[i]=='-'&&str[i+1]>='0'&&str[i+1]<='9')
+        if ((i>0&&str[i-1]>='0'&&str[i-1]<='9')&&str[i]=='-')
         {
             if (stack[top-1]=='^') sprintf(new,"%s %c ",new,(char)stack[--top]);
             if (stack[top-1]=='*'||stack[top-1]=='/') sprintf(new,"%s %c ",new,(char)stack[--top]);
+            if (stack[top-1]=='+'||stack[top-1]=='-') sprintf(new,"%s %c ",new,(char)stack[--top]);
             stack[top++]=str[i];
         }
         if (str[i]==')')
