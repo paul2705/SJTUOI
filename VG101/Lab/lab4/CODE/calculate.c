@@ -13,6 +13,7 @@ int interpret(char c){
 		case '-': return 1;
 		case '(': return 0;
 		case ')': return 0;
+//		case ' ': return 8;
 	}
 	return -1;
 }
@@ -30,6 +31,8 @@ stg convert(stg s){
 	for (;now<n;){
 		double tmp=0;
 		int fg=0;
+		int inv=1;
+		if (s.s[now]=='-') now++,inv=-1;
 		while (s.s[now]>='0'&&s.s[now]<='9'){
 			tmp=tmp*10+s.s[now]-'0';
 			now++;
@@ -43,13 +46,19 @@ stg convert(stg s){
 				tmp1*=10; now++;
 			}
 		}
-//		printf("now: %d\n",tmp);
+//		printf("now: %d %d\n",now,interpret(s.s[now]));
 		if (fg){
-			sprintf(stp.s,"%lf@",tmp);
+			sprintf(stp.s,"%lf@",inv*tmp);
 			strcat(ret.s,stp.s);
 		}
 		while (interpret(s.s[now])>=0){
+//			printf("tmp: %c\n",s.s[now]);
+			if ((s.s[now-1]<'0'||s.s[now-1]>'9')&&s.s[now]=='-'&&s.s[now+1]>='0'&&s.s[now+1]<='9') break;
 			int ord=interpret(s.s[now]);
+//			if (s.s[now]==' '){
+//				now++;
+//				continue;
+//			}
 			switch (s.s[now]){
 				case '(': st[++top].c=s.s[now]; st[top].ord=ord; break;
 				case ')': while (top>0&&st[top].c!='('){
@@ -87,6 +96,8 @@ double value(stg s){
 //		printf("now: %d\n",now);
 		double tmp=0;
 		int fg=0;
+		int inv=1;
+		if (s.s[now]=='-') now++,inv=-1;
 		while (s.s[now]!='.'&&s.s[now]!='@'){
 			tmp=tmp*10+s.s[now]-'0';
 			now++; fg=1;
@@ -101,11 +112,16 @@ double value(stg s){
 		}
 //		printf("%lf\n",tmp);
 		if (fg){
-			st[++top].val=tmp;
+			st[++top].val=inv*tmp;
 			now++;
 		}
 		while (interpret(s.s[now])>0){
+			if ((s.s[now-1]<'0'||s.s[now-1]>'9')&&s.s[now]=='-'&&s.s[now+1]>='0'&&s.s[now+1]<='9') break;
 //			printf("%c %d\n",s.s[now],top);
+//			if (s.s[now]==' '){
+//				now++;
+//				continue;
+//			}
 			switch (s.s[now]){
 				case '+': st[top-1].val+=st[top].val; top--; break;
 				case '-': st[top-1].val-=st[top].val; top--; break;
@@ -120,16 +136,23 @@ double value(stg s){
 	return st[top].val;
 }
 
-double getvalue(stg s){
+double getvalue(stg exp){
 //	printf("FAQ\n");
-//	stg tmp=convert(s);
+	stg s;
+	for (int i=0;i<200;i++) s.s[i]='\0';
+	int cnt=0,n=strlen(exp.s);
+	for (int i=0;i<n;i++){
+		if (exp.s[i]==' ') continue;
+		s.s[cnt++]=exp.s[i];
+	}
+	stg tmp=convert(s);
 //	printf("FAQ\n");
-//	printf("%s\n",tmp.s);
+	printf("%s\n",tmp.s);
 	return value(convert(s));
 }
 
 int main(){
-	stg s; scanf("%s",s.s);
+	stg s; scanf("%[^\n]%*c",s.s);
 	printf("%lf\n",getvalue(s));
 	return 0;
 }
