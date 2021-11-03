@@ -1,0 +1,24 @@
+GER WIN CRO
+ENG WIN FRA
+ARG WIN BRA
+COL WIN SUI
+SWE WIN RUS
+DEN WIN URU
+BEL WIN POL
+ESP WIN POR
+
+GER WIN ENG
+ARG WIN COL
+DEN WIN SWE
+BEL WIN ESP
+
+ARG WIN GER
+BEL WIN DEN
+
+BEL WIN ARG
+
+First: GER CRO ENG FRA BRA ARG SUI COL SWE RUS URU DEN POL BEL ESP POR 
+Quart:   GER     ENG     ARG     COL     SWE     DEN     BEL     ESP   
+Half :       GER             ARG             DEN             BEL       
+Final:               ARG                             BEL               
+WINNER:                              BEL                              

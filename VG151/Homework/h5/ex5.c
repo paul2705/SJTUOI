@@ -43,13 +43,23 @@ void ex5(){
 			a[cnt].y=j;
 		}
 	}
+	cnt=1;
+	for (int i=1;i<=52;i++){
+		printf("(%s %s);  ",InterpretC(a[i].x),InterpretN(a[i].y));
+		if (cnt==4){ printf("\n"); cnt=cnt%7; }
+		cnt++;
+	}
+	while (!getchar()){}
 	for (int k=1;k<=3;k++){
 		for (int i=1;i<=10000;i++){
 			int tmp1=rand()%52+1,tmp2=rand()%52+1;
 			struct rec tmp=a[tmp1]; a[tmp1]=a[tmp2]; a[tmp2]=tmp;
 		}
+		cnt=1;
 		for (int i=1;i<=52;i++){
-			printf("%s %s\n",InterpretC(a[i].x),InterpretN(a[i].y));
+			printf("(%s %s);  ",InterpretC(a[i].x),InterpretN(a[i].y));
+			if (cnt==4){ printf("\n"); cnt=0; }
+			cnt++;
 		}
 		while (!getchar()){}
 	}
