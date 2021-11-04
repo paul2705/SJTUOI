@@ -34,9 +34,10 @@ void OptPlayerDrawCard(char *LogFile,User *_thisPlayer,Pile *_formerPile,Pile *_
 Card *OptPlayerPlayCard(char *LogFile,User *_thisPlayer,Card *_laterCard,Pile *_laterPile,int _laterOption){
 	int _thisCardNumber;
 	if (!CanPlayerPlay(_thisPlayer,_laterCard,_laterOption)){
-		UIPrint(0,"Oops! You Can't Any Card! Enter Any Word To Acknowledge Such Situation And Draw Card(s):\n");
-		FPrint(LogFile,"Oops! You Can't Any Card! Enter Any Word To Acknowledge Such Situation And Draw Card(s):\n");
-		while (!scanf("%d",&_thisCardNumber));
+		UIPrint(0,"Oops! You Can't Any Card! Press Enter To Acknowledge Such Situation And Draw Card(s):\n");
+		FPrint(LogFile,"Oops! You Can't Any Card! Press Enter To Acknowledge Such Situation And Draw Card(s):\n");
+		while (!(getchar()=='\n'));
+		while (!(getchar()=='\n'));
 		return _laterCard;
 	}
 	UIPrint(0,"Please Play A Card Or Enter -1 To Give Up This Turn And Draw One More Card: \n");

@@ -36,7 +36,7 @@ double calc(char *str)
     for (int i=0;i<l;i++)
     {
         if ((i==0||str[i-1]<'0'||str[i-1]>'9')&&str[i]=='-'&&str[i+1]>='0'&&str[i+1]<='9'){
-			printf("IN\n");
+//			printf("IN\n");
 			sprintf(new,"%s -",new);
 		}
         if (str[i]>='0'&&str[i]<='9') 
@@ -47,7 +47,7 @@ double calc(char *str)
                 sprintf(new,"%s%c",new,str[i]); 
             else if (str[i-1]=='-')
                 sprintf(new,"%s%c",new,str[i]);
-			else sprintf(new,"%s %c",new,str[i]);
+			else sprintf(new,"%s%c",new,str[i]);
         }
         if (str[i]=='.') sprintf(new,"%s%c",new,str[i]);
         if (str[i]=='(') stack[top++]=str[i];
