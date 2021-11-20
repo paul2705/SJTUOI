@@ -9,14 +9,14 @@
 
 	typedef struct _User{
 		Pile *HandCard;
-		int Penalty;
-		char PlayerName[10];
+		struct _User* Nex[3];
+		int PlayerNumber;
 	} User;
 	
 	void DrawCardFromPile(char *LogFile,Pile *_formerPile,Pile *_laterPile,Pile *_alterPile,int DrawCardNumber);
 	void InitializePlayer(User **_thisPlayers,int _thisPlayerNumber);
 	int CanPlayerPlay(User *_thisPlayer,Card *_laterCard,int _laterOption);
 	void DisplayPlayer(char *LogFile,User *_thisPlayer,int _thisOption);
-	void DeletePlayer(int _thisPlayerNumber,User **_thisPlayer);
+	void DeletePlayer(char *LogFile,int _thisPlayerNumber,User **_thisPlayer);
 
 #endif

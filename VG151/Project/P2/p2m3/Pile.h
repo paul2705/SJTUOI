@@ -18,6 +18,6 @@
 	void WithdrawCardFromPile(Pile *_thisPile,int _thisCardNumber);
 	void DisplayPile(char *LogFile,Pile *_thisPile,int _thisOption);
 	void EmptyPile(Pile *_thisPile);
-	void DeletePile(Pile *_thisPile);
+	void DeletePile(char *LogFile,Pile *_thisPile);
 
 #endif

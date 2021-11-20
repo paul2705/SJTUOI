@@ -12,13 +12,13 @@
 
 void ClearScreen(){
 	#ifdef _WIN32
-		system("cls");
+		if (system("cls")){}
 	#elif __APPLE__
-		system("clear");
+		if (system("clear")){}
 	#elif __linux__
-		system("clear");
+		if (system("clear")){}
 	#elif __unix__
-		system("clear");
+		if (system("clear")){}
 	#endif
 }
 
@@ -27,7 +27,8 @@ void PauseScreen(int _thisSecond){
 		Sleep((unsigned int)_thisSecond);
 	#elif __APPLE__
 //		printf("%d\n",_thisSecond/150);
-		usleep((unsigned int)_thisSecond*1000);
+		if (_thisSecond){}
+//		usleep((unsigned int)_thisSecond*1000);
 	#elif __linux__
 		sleep((unsigned int)_thisSecond/150);
 	#elif __unix__

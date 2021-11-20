@@ -42,7 +42,7 @@ void FPrint(char *LogFile,char *_thisFormat,...){
 	va_list ap;
 	va_start(ap,_thisFormat);
 	for (char *c=_thisFormat;*c;c++){
-		if (*c!='%') fprintf(Fout,"%c",*c);
+		if ((*c)!='%') fprintf(Fout,"%c",*c);
 		else switch (*++c){
 			case 'd': fprintf(Fout,"%d",va_arg(ap,int)); break;
 			case 'c': fprintf(Fout,"%c",(char)va_arg(ap,int)); break;
@@ -56,6 +56,7 @@ void FPrint(char *LogFile,char *_thisFormat,...){
 				break;
 		}
 	}
+	fflush(Fout);
 	fclose(Fout);
 	va_end(ap);
 }

@@ -57,7 +57,7 @@ void DisplayCard(char *LogFile,Card *_thisCard,int _thisOption){
 	char *_thisName=InterpretCardName(_thisCard);
 	char *_thisFunction=InterpretCardFunction(_thisCard);
 	if (_thisOption) UIPrint(0,"%s %2d (%s)\n",_thisName,_thisCard->Rank,_thisFunction);
-	FPrint(LogFile,"%s %2d (%s)\n",_thisName,_thisCard->Rank,_thisFunction);
+	FPrint(LogFile,"%s %2d; ",_thisName,_thisCard->Rank);
 //	free(_thisName); free(_thisFunction);
 }
 
@@ -65,6 +65,8 @@ void ClearCard(Card *_thisCard){
 	_thisCard->Rank=0; _thisCard->Suit=0;
 }
 
-void DeleteCard(Card *_thisCard){
+void DeleteCard(char *LogFile,Card *_thisCard){
+	FPrint(LogFile,"Delete Card (Rank:%d Suit:%d) ....",_thisCard->Rank,_thisCard->Suit);
 	free(_thisCard);
+	FPrint(LogFile,"Success!\n");
 }

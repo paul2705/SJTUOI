@@ -93,7 +93,7 @@ double calc(char *str)
     {
         sprintf(new,"%s %c",new,(char)stack[--top]);
     }
-	printf("%s\n",new);
+//	printf("%s\n",new);
 	int l1=strlen(new);
     int helper[800]={0};
     for (int i=0;i<l1;i++)

@@ -1,0 +1,232 @@
+########################
+#
+#
+# Welcome to One Card! #
+#
+#
+########################
+
+---- Initial setup ----
+Number of rounds: 2
+Number of decks: 2
+Number of players: 4
+
+Determining the playing order...
+Player 1: Diamonds 3
+Player 2: Hearts 6
+Player 3: Spades Jack
+Player 4: Clubs 5
+The game will start with player 3
+
+Shuffling cards...
+Shuffle result:
+Hearts 4, Hearts 2, Clubs 6, Diamonds 6, Hearts King, Spades 10, Hearts Queen, Spades Jack, Hearts Jack, Diamonds 10, Hearts Jack, Clubs King, Spades 10, Hearts 6, Diamonds 4, Spades 5, Hearts 2, Clubs 7, Spades Jack, Hearts 10, Diamonds 3, Clubs Jack, Spades Ace, Clubs 9, Spades 3, Clubs 4, Spades 8, Spades 2, Diamonds 4, Diamonds 9, Spades King, Clubs 3, Spades 7, Clubs Ace, Diamonds King, Clubs 4, Hearts 7, Diamonds Ace, Hearts 4, Spades 2, Spades 8, Clubs Ace, Diamonds 5, Diamonds 7, Spades 9, Clubs Queen, Clubs 10, Clubs 2, Spades Ace, Diamonds 8, Diamonds 7, Clubs 7, Hearts 5, Clubs 8, Diamonds Queen, Spades 6, Diamonds 10, Spades King, Hearts 10, Spades Queen, Spades 6, Hearts 6, Diamonds Ace, Hearts 9, Hearts Queen, Hearts 9, Hearts Ace, Spades 4, Clubs 5, Diamonds 3, Diamonds 9, Clubs 2, Diamonds 2, Spades 9, Hearts 3, Diamonds 5, Clubs 6, Hearts King, Clubs 8, Clubs King, Clubs 3, Clubs Queen, Clubs 5, Diamonds 8, Spades Queen, Diamonds Jack, Spades 5, Hearts 8, Hearts 3, Spades 3, Diamonds 2, Hearts 7, Hearts Ace, Diamonds Queen, Clubs 9, Hearts 5, Diamonds 6, Spades 7, Diamonds King, Hearts 8, Spades 4, Clubs Jack, Diamonds Jack, Clubs 10
+
+---- New turn ----
+Start card: Clubs 10
+Dealing cards...
+Player 1: Spades 3, Hearts 3, Hearts 7, Hearts Ace, Diamonds 2
+Player 2: Spades 5, Spades Queen, Hearts 8, Diamonds 8, Diamonds Jack
+Player 3: Spades 4, Hearts 8, Diamonds Jack, Diamonds King, Clubs Jack
+Player 4: Spades 7, Hearts 5, Diamonds 6, Diamonds Queen, Clubs 9
+
+---- Game start ----
+Start card: Clubs 10
+Player 3 plays: Clubs Jack
+Player 3 cards: Spades 4, Hearts 8, Diamonds Jack, Diamonds King
+Player 1 draws 1 card: Clubs 5
+Player 1 plays: Clubs 5
+Player 1 cards: Spades 3, Hearts 3, Hearts 7, Hearts Ace, Diamonds 2
+Player 4 plays: Hearts 5
+Player 4 cards: Spades 7, Diamonds 6, Diamonds Queen, Clubs 9
+Player 3 plays: Hearts 8
+Player 3 cards: Spades 4, Diamonds Jack, Diamonds King
+Player 2 plays: Hearts 8
+Player 2 cards: Spades 5, Spades Queen, Diamonds 8, Diamonds Jack
+Player 1 plays: Hearts 3
+Player 1 cards: Spades 3, Hearts 7, Hearts Ace, Diamonds 2
+Player 4 plays: Spades 7
+Player 4 cards: Diamonds 6, Diamonds Queen, Clubs 9
+Player 3 plays: Spades 4
+Player 3 cards: Diamonds Jack, Diamonds King
+Player 2 plays: Spades 5
+Player 2 cards: Spades Queen, Diamonds 8, Diamonds Jack
+Player 1 plays: Spades 3
+Player 1 cards: Hearts 7, Hearts Ace, Diamonds 2
+Player 4 plays: Diamonds Queen
+Player 4 cards: Diamonds 6, Clubs 9
+Player 1 plays: Hearts 7
+Player 1 cards: Hearts Ace, Diamonds 2
+Player 2 draws 1 card: Clubs Queen
+Player 2 cards: Spades Queen, Diamonds 8, Diamonds Jack, Clubs Queen
+Player 3 draws 1 card: Clubs 3
+Player 3 cards: Diamonds Jack, Diamonds King, Clubs 3
+Player 4 draws 1 card: Clubs King
+Player 4 cards: Diamonds 6, Clubs 9, Clubs King
+Player 1 plays: Hearts Ace
+Player 1 cards: Diamonds 2
+Player 2 draws 1 card: Clubs 8
+Player 2 cards: Spades Queen, Diamonds 8, Diamonds Jack, Clubs 8, Clubs Queen
+Player 3 draws 1 card: Hearts King
+Player 3 plays: Hearts King
+Player 3 cards: Diamonds Jack, Diamonds King, Clubs 3
+Player 4 plays: Clubs King
+Player 4 cards: Diamonds 6, Clubs 9
+Player 1 draws 1 card: Clubs 6
+Player 1 plays: Clubs 6
+Player 1 cards: Diamonds 2
+Player 2 plays: Clubs 8
+Player 2 cards: Spades Queen, Diamonds 8, Diamonds Jack, Clubs Queen
+Player 3 plays: Clubs 3
+Player 3 cards: Diamonds Jack, Diamonds King
+Player 4 draws 3 cards
+---- New turn ----
+Start card: Diamonds 2
+Player 4 cards: Spades 9, Hearts 3, Diamonds 5, Diamonds 6, Clubs 9
+Player 1 plays: Diamonds 2
+Player 1 wins!
+
+---- Stats ----
+Round 1 result:
+Player 1: 0, total: 0
+Player 2: 97, total: 97
+Player 3: 33, total: 33
+Player 4: 49, total: 49
+Round 1 ends
+
+Shuffling cards...
+Shuffle result:
+Hearts 9, Clubs Ace, Hearts 7, Spades 7, Diamonds Ace, Spades Jack, Hearts Jack, Diamonds Queen, Diamonds 3, Diamonds 2, Clubs King, Spades Queen, Diamonds 5, Clubs Queen, Clubs 7, Clubs 6, Spades King, Diamonds 10, Hearts 6, Spades 9, Clubs King, Diamonds Ace, Hearts Ace, Spades Ace, Hearts 3, Diamonds 8, Hearts 9, Hearts 2, Spades 8, Clubs Jack, Diamonds Jack, Clubs 9, Hearts 4, Hearts 8, Spades Queen, Diamonds Jack, Spades 3, Clubs 5, Clubs 2, Diamonds 6, Diamonds 4, Spades 10, Diamonds Queen, Clubs 4, Hearts 10, Spades 4, Spades 5, Diamonds 8, Hearts King, Hearts 5, Spades 6, Clubs 8, Clubs 6, Clubs 7, Clubs Ace, Clubs 3, Diamonds 4, Hearts 10, Spades 3, Hearts Queen, Clubs 5, Diamonds 7, Clubs 3, Spades 6, Diamonds 10, Spades 2, Diamonds 9, Clubs Queen, Hearts King, Spades King, Clubs Jack, Clubs 4, Hearts 8, Spades Ace, Diamonds 9, Spades 10, Spades Jack, Diamonds 2, Clubs 9, Diamonds 3, Clubs 8, Spades 8, Spades 5, Hearts 6, Hearts 4, Spades 9, Hearts Ace, Hearts 7, Hearts Queen, Hearts 2, Diamonds King, Diamonds 5, Clubs 10, Diamonds 6, Spades 4, Hearts Jack, Spades 2, Clubs 10, Hearts 5, Diamonds King, Diamonds 7, Clubs 2, Hearts 3, Spades 7
+
+---- New turn ----
+Start card: Spades 7
+Dealing cards...
+Player 1: Hearts 3, Hearts 5, Diamonds 7, Diamonds King, Clubs 2
+Player 2: Spades 2, Spades 4, Hearts Jack, Diamonds 6, Clubs 10
+Player 3: Hearts 2, Hearts Queen, Diamonds 5, Diamonds King, Clubs 10
+Player 4: Spades 9, Hearts 4, Hearts 6, Hearts 7, Hearts Ace
+
+Player 1 draws 1 card: Spades 5
+Player 1 cards: Spades 5, Hearts 3, Hearts 5, Diamonds 7, Diamonds King, Clubs 2
+Player 2 plays: Spades 2
+Player 2 cards: Spades 4, Hearts Jack, Diamonds 6, Clubs 10
+Player 3 plays: Hearts 2
+Player 3 cards: Hearts Queen, Diamonds 5, Diamonds King, Clubs 10
+Player 4 plays: Hearts 7
+Player 4 cards: Spades 9, Hearts 4, Hearts 6, Hearts Ace
+Player 1 plays: Hearts 3
+Player 1 cards: Spades 5, Hearts 5, Diamonds 7, Diamonds King, Clubs 2
+Player 2 plays: Hearts Jack
+Player 2 cards: Spades 4, Diamonds 6, Clubs 10
+Player 4 draws 3 cards
+---- New turn ----
+Start card: Clubs 9
+Player 4 cards: Spades 8, Spades 9, Hearts 4, Hearts 6, Hearts Ace, Diamonds 3, Clubs 8
+Player 1 plays: Clubs 2
+Player 1 cards: Spades 5, Hearts 5, Diamonds 7, Diamonds King
+Player 2 draws 2 cards
+---- New turn ----
+Start card: Spades 10
+Player 2 cards: Spades 4, Spades Jack, Diamonds 2, Diamonds 6, Clubs 10
+Player 3 draws 1 card: Diamonds 9
+Player 3 cards: Hearts Queen, Diamonds 5, Diamonds 9, Diamonds King, Clubs 10
+Player 4 plays: Spades 8
+Player 4 cards: Spades 9, Hearts 4, Hearts 6, Hearts Ace, Diamonds 3, Clubs 8
+Player 1 plays: Spades 5
+Player 1 cards: Hearts 5, Diamonds 7, Diamonds King
+Player 2 plays: Spades 4
+Player 2 cards: Spades Jack, Diamonds 2, Diamonds 6, Clubs 10
+Player 3 draws 1 card: Spades Ace
+Player 3 plays: Spades Ace
+Player 3 cards: Hearts Queen, Diamonds 5, Diamonds 9, Diamonds King, Clubs 10
+Player 4 plays: Spades 9
+Player 4 cards: Hearts 4, Hearts 6, Hearts Ace, Diamonds 3, Clubs 8
+Player 1 draws 1 card: Hearts 8
+Player 1 cards: Hearts 5, Hearts 8, Diamonds 7, Diamonds King
+Player 2 plays: Spades Jack
+Player 2 cards: Diamonds 2, Diamonds 6, Clubs 10
+Player 4 draws 1 card: Clubs 4
+Player 4 cards: Hearts 4, Hearts 6, Hearts Ace, Diamonds 3, Clubs 4, Clubs 8
+Player 1 draws 1 card: Clubs Jack
+Player 1 plays: Clubs Jack
+Player 1 cards: Hearts 5, Hearts 8, Diamonds 7, Diamonds King
+Player 3 plays: Clubs 10
+Player 3 cards: Hearts Queen, Diamonds 5, Diamonds 9, Diamonds King
+Player 4 plays: Clubs 4
+Player 4 cards: Hearts 4, Hearts 6, Hearts Ace, Diamonds 3, Clubs 8
+Player 1 draws 1 card: Spades King
+Player 1 cards: Spades King, Hearts 5, Hearts 8, Diamonds 7, Diamonds King
+Player 2 plays: Clubs 10
+Player 2 cards: Diamonds 2, Diamonds 6
+Player 3 draws 1 card: Hearts King
+Player 3 cards: Hearts Queen, Hearts King, Diamonds 5, Diamonds 9, Diamonds King
+Player 4 plays: Clubs 8
+Player 4 cards: Hearts 4, Hearts 6, Hearts Ace, Diamonds 3
+Player 1 plays: Hearts 8
+Player 1 cards: Spades King, Hearts 5, Diamonds 7, Diamonds King
+Player 2 draws 1 card: Clubs Queen
+Player 2 cards: Diamonds 2, Diamonds 6, Clubs Queen
+Player 3 plays: Hearts Queen
+Player 3 cards: Hearts King, Diamonds 5, Diamonds 9, Diamonds King
+Player 2 plays: Clubs Queen
+Player 2 cards: Diamonds 2, Diamonds 6
+Player 3 draws 1 card: Diamonds 9
+Player 3 cards: Hearts King, Diamonds 5, Diamonds 9, Diamonds 9, Diamonds King
+Player 4 draws 1 card: Spades 2
+Player 4 cards: Spades 2, Hearts 4, Hearts 6, Hearts Ace, Diamonds 3
+Player 1 draws 1 card: Diamonds 10
+Player 1 cards: Spades King, Hearts 5, Diamonds 7, Diamonds 10, Diamonds King
+Player 2 draws 1 card: Spades 6
+Player 2 cards: Spades 6, Diamonds 2, Diamonds 6
+Player 3 draws 1 card: Clubs 3
+Player 3 plays: Clubs 3
+Player 3 cards: Hearts King, Diamonds 5, Diamonds 9, Diamonds 9, Diamonds King
+Player 4 plays: Spades 2
+Player 4 cards: Hearts 4, Hearts 6, Hearts Ace, Diamonds 3
+Player 1 plays: Diamonds 7
+Player 1 cards: Spades King, Hearts 5, Diamonds 10, Diamonds King
+Player 2 plays: Diamonds 2
+Player 2 cards: Spades 6, Diamonds 6
+Player 3 draws 2 cards
+---- New turn ----
+Start card: Hearts Queen
+Player 3 cards: Hearts King, Diamonds 5, Diamonds 7, Diamonds 9, Diamonds 9, Diamonds King, Clubs 5
+Player 4 plays: Hearts 4
+Player 4 cards: Hearts 6, Hearts Ace, Diamonds 3
+Player 1 plays: Hearts 5
+Player 1 cards: Spades King, Diamonds 10, Diamonds King
+Player 2 draws 1 card: Spades 3
+Player 2 cards: Spades 3, Spades 6, Diamonds 6
+Player 3 plays: Hearts King
+Player 3 cards: Diamonds 5, Diamonds 7, Diamonds 9, Diamonds 9, Diamonds King, Clubs 5
+Player 4 plays: Hearts 6
+Player 4 cards: Hearts Ace, Diamonds 3
+Player 1 draws 1 card: Hearts 10
+Player 1 plays: Hearts 10
+Player 1 cards: Spades King, Diamonds 10, Diamonds King
+Player 2 draws 1 card: Diamonds 4
+Player 2 cards: Spades 3, Spades 6, Diamonds 4, Diamonds 6
+Player 3 draws 1 card: Clubs 3
+Player 3 cards: Diamonds 5, Diamonds 7, Diamonds 9, Diamonds 9, Diamonds King, Clubs 3, Clubs 5
+Player 4 plays: Hearts Ace
+Player 4 cards: Diamonds 3
+Player 1 draws 1 card: Clubs Ace
+Player 1 plays: Clubs Ace
+Player 1 cards: Spades King, Diamonds 10, Diamonds King
+Player 2 draws 1 card: Clubs 7
+Player 2 plays: Clubs 7
+Player 2 cards: Spades 3, Spades 6, Diamonds 4, Diamonds 6
+Player 3 plays: Diamonds 7
+Player 3 cards: Diamonds 5, Diamonds 9, Diamonds 9, Diamonds King, Clubs 3, Clubs 5
+Player 4 plays: Diamonds 3
+Player 4 wins!
+
+---- Stats ----
+Round 2 result:
+Player 1: 56, total: 56
+Player 2: 36, total: 133
+Player 3: 61, total: 94
+Player 4: 0, total: 49
+Round 2 ends
+
+Winner(s): Player 4

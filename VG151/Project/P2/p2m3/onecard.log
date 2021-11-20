@@ -1,464 +1,393 @@
-DrawPlayer: 0
-Draw Card No:1, Spades    12 (Reverse The Playing Order)
-Draw Card No:2, Hearts     5 (~)
-Draw Card No:3, Diamonds  13 (~)
-Draw Card No:4, Hearts     6 (~)
-Draw Card No:5, Diamonds  12 (Reverse The Playing Order)
-DrawPlayer: 1
-Draw Card No:1, Clubs      5 (~)
-Draw Card No:2, Clubs     10 (~)
-Draw Card No:3, Diamonds   3 (Draws Three Cards)
-Draw Card No:4, Diamonds   9 (~)
-Draw Card No:5, Spades     1 (~)
-DrawPlayer: 2
-Draw Card No:1, Diamonds   3 (Draws Three Cards)
-Draw Card No:2, Diamonds   5 (~)
-Draw Card No:3, Diamonds   1 (~)
-Draw Card No:4, Diamonds  13 (~)
-Draw Card No:5, Hearts     3 (Draws Three Cards)
-DrawPlayer: 3
-Draw Card No:1, Hearts     1 (~)
-Draw Card No:2, Diamonds  10 (~)
-Draw Card No:3, Spades     3 (Draws Three Cards)
-Draw Card No:4, Clubs      5 (~)
-Draw Card No:5, Diamonds   8 (~)
-PlayerNumber: 4
-InitialCardNuber: 5
-DeckNumber: 2
-RoundNumber: 1
-Player: 
-PileSize: 5
-0: Spades    12 (Reverse The Playing Order)
-1: Hearts     5 (~)
-2: Hearts     6 (~)
-3: Diamonds  12 (Reverse The Playing Order)
-4: Diamonds  13 (~)
+########################
+#                      #
+# Welcome to One Card! #
+#                      #
+########################
+
+Initialize Game ...
+
+---- Initial setup ----
+Number of rounds: 1
+Number of decks: 2
+Number of players: 4
+
+DrawPlayer: 0; Draw Card No:1, Diamonds  11; Draw Card No:2, Hearts    11; Draw Card No:3, Hearts     7; Draw Card No:4, Hearts    11; Draw Card No:5, Clubs     12; 
+DrawPlayer: 1; Draw Card No:1, Diamonds  12; Draw Card No:2, Clubs      4; Draw Card No:3, Diamonds   7; Draw Card No:4, Clubs      5; Draw Card No:5, Hearts    10; 
+DrawPlayer: 2; Draw Card No:1, Spades     1; Draw Card No:2, Spades    13; Draw Card No:3, Clubs     12; Draw Card No:4, Hearts     8; Draw Card No:5, Clubs      3; 
+DrawPlayer: 3; Draw Card No:1, Hearts     1; Draw Card No:2, Hearts     2; Draw Card No:3, Clubs     11; Draw Card No:4, Diamonds   8; Draw Card No:5, Diamonds  11; 
 
 
-Player: 
-PileSize: 5
-0: Spades     1 (~)
-1: Diamonds   3 (Draws Three Cards)
-2: Diamonds   9 (~)
-3: Clubs      5 (~)
-4: Clubs     10 (~)
-
-
-Player: 
-PileSize: 5
-0: Hearts     3 (Draws Three Cards)
-1: Diamonds   1 (~)
-2: Diamonds   3 (Draws Three Cards)
-3: Diamonds   5 (~)
-4: Diamonds  13 (~)
-
-
-Player: 
-PileSize: 5
-0: Spades     3 (Draws Three Cards)
-1: Hearts     1 (~)
-2: Diamonds   8 (~)
-3: Diamonds  10 (~)
-4: Clubs      5 (~)
-
-
-StockPile: 
-PileSize: 83
-0: Spades     1 (~)
-1: Spades     3 (Draws Three Cards)
-2: Spades     4 (~)
-3: Spades     5 (~)
-4: Spades     6 (~)
-5: Spades     7 (Cancel An Attack)
-6: Spades     8 (~)
-7: Spades     9 (~)
-8: Spades    10 (~)
-9: Spades    11 (Skip The Next Player)
-10: Spades    13 (~)
-11: Hearts     1 (~)
-12: Hearts     2 (Draws Two Cards)
-13: Hearts     4 (~)
-14: Hearts     5 (~)
-15: Hearts     6 (~)
-16: Hearts     7 (Cancel An Attack)
-17: Hearts     8 (~)
-18: Hearts     9 (~)
-19: Hearts    10 (~)
-20: Hearts    11 (Skip The Next Player)
-21: Hearts    12 (Reverse The Playing Order)
-22: Hearts    13 (~)
-23: Diamonds   2 (Draws Two Cards)
-24: Diamonds   4 (~)
-25: Diamonds   5 (~)
-26: Diamonds   6 (~)
-27: Diamonds   7 (Cancel An Attack)
-28: Diamonds   8 (~)
-29: Diamonds  11 (Skip The Next Player)
-30: Clubs      1 (~)
-31: Clubs      2 (Draws Two Cards)
-32: Clubs      3 (Draws Three Cards)
-33: Clubs      4 (~)
-34: Clubs      6 (~)
-35: Clubs      7 (Cancel An Attack)
-36: Clubs      8 (~)
-37: Clubs      9 (~)
-38: Clubs     11 (Skip The Next Player)
-39: Clubs     12 (Reverse The Playing Order)
-40: Clubs     13 (~)
-41: Spades     2 (Draws Two Cards)
-42: Spades     4 (~)
-43: Spades     5 (~)
-44: Spades     6 (~)
-45: Spades     7 (Cancel An Attack)
-46: Spades     8 (~)
-47: Spades     9 (~)
-48: Spades    10 (~)
-49: Spades    11 (Skip The Next Player)
-50: Spades    12 (Reverse The Playing Order)
-51: Spades    13 (~)
-52: Hearts     2 (Draws Two Cards)
-53: Hearts     3 (Draws Three Cards)
-54: Hearts     4 (~)
-55: Hearts     7 (Cancel An Attack)
-56: Hearts     8 (~)
-57: Hearts     9 (~)
-58: Hearts    10 (~)
-59: Hearts    11 (Skip The Next Player)
-60: Hearts    12 (Reverse The Playing Order)
-61: Hearts    13 (~)
-62: Diamonds   1 (~)
-63: Diamonds   2 (Draws Two Cards)
-64: Diamonds   4 (~)
-65: Diamonds   6 (~)
-66: Diamonds   7 (Cancel An Attack)
-67: Diamonds   9 (~)
-68: Diamonds  10 (~)
-69: Diamonds  11 (Skip The Next Player)
-70: Diamonds  12 (Reverse The Playing Order)
-71: Clubs      1 (~)
-72: Clubs      2 (Draws Two Cards)
-73: Clubs      3 (Draws Three Cards)
-74: Clubs      4 (~)
-75: Clubs      6 (~)
-76: Clubs      7 (Cancel An Attack)
-77: Clubs      8 (~)
-78: Clubs      9 (~)
-79: Clubs     10 (~)
-80: Clubs     11 (Skip The Next Player)
-81: Clubs     12 (Reverse The Playing Order)
-82: Clubs     13 (~)
-
-DiscardPile: 
-PileSize: 1
-0: Spades     2 (Draws Two Cards)
-
+------------------------
 Round: 1 , StockPile: 83 , DiscardPile: 1
-Player: 3
-You Are Supposed To Draw 0 Card(s).
-Last Card: Spades     2 (Draws Two Cards)
+Determine Draw Card Number ...
 
+Determine Next Player ...
 
-Your Current HandCard: 
-PileSize: 5
-0: Spades     3 (Draws Three Cards)
-1: Hearts     1 (~)
-2: Diamonds   8 (~)
-3: Diamonds  10 (~)
-4: Clubs      5 (~)
+Player: 3; He/She is Supposed To Draw 0 Card(s).
+Last Card: Spades    11; 
+His/Her Current HandCard: PileSize: 5
+ 0: Hearts     1;  1: Hearts     2;  2: Diamonds   8;  3: Diamonds  11;  4: Clubs     11; 
+UI Plays this Card: Clubs     11; 
 
-Please Play A Card Or Enter -1 To Give Up This Turn And Draw One More Card: 
 Draw 0 Card(s).
-PlayerNumber: 4
-InitialCardNuber: 5
-DeckNumber: 2
-RoundNumber: 1
-Player: 
-PileSize: 5
-0: Spades    12 (Reverse The Playing Order)
-1: Hearts     5 (~)
-2: Hearts     6 (~)
-3: Diamonds  12 (Reverse The Playing Order)
-4: Diamonds  13 (~)
 
 
-Player: 
-PileSize: 5
-0: Spades     1 (~)
-1: Diamonds   3 (Draws Three Cards)
-2: Diamonds   9 (~)
-3: Clubs      5 (~)
-4: Clubs     10 (~)
 
-
-Player: 
-PileSize: 5
-0: Hearts     3 (Draws Three Cards)
-1: Diamonds   1 (~)
-2: Diamonds   3 (Draws Three Cards)
-3: Diamonds   5 (~)
-4: Diamonds  13 (~)
-
-
-Player: 
-PileSize: 4
-0: Hearts     1 (~)
-1: Diamonds   8 (~)
-2: Diamonds  10 (~)
-3: Clubs      5 (~)
-
-
-StockPile: 
-PileSize: 83
-0: Spades     1 (~)
-1: Spades     3 (Draws Three Cards)
-2: Spades     4 (~)
-3: Spades     5 (~)
-4: Spades     6 (~)
-5: Spades     7 (Cancel An Attack)
-6: Spades     8 (~)
-7: Spades     9 (~)
-8: Spades    10 (~)
-9: Spades    11 (Skip The Next Player)
-10: Spades    13 (~)
-11: Hearts     1 (~)
-12: Hearts     2 (Draws Two Cards)
-13: Hearts     4 (~)
-14: Hearts     5 (~)
-15: Hearts     6 (~)
-16: Hearts     7 (Cancel An Attack)
-17: Hearts     8 (~)
-18: Hearts     9 (~)
-19: Hearts    10 (~)
-20: Hearts    11 (Skip The Next Player)
-21: Hearts    12 (Reverse The Playing Order)
-22: Hearts    13 (~)
-23: Diamonds   2 (Draws Two Cards)
-24: Diamonds   4 (~)
-25: Diamonds   5 (~)
-26: Diamonds   6 (~)
-27: Diamonds   7 (Cancel An Attack)
-28: Diamonds   8 (~)
-29: Diamonds  11 (Skip The Next Player)
-30: Clubs      1 (~)
-31: Clubs      2 (Draws Two Cards)
-32: Clubs      3 (Draws Three Cards)
-33: Clubs      4 (~)
-34: Clubs      6 (~)
-35: Clubs      7 (Cancel An Attack)
-36: Clubs      8 (~)
-37: Clubs      9 (~)
-38: Clubs     11 (Skip The Next Player)
-39: Clubs     12 (Reverse The Playing Order)
-40: Clubs     13 (~)
-41: Spades     2 (Draws Two Cards)
-42: Spades     4 (~)
-43: Spades     5 (~)
-44: Spades     6 (~)
-45: Spades     7 (Cancel An Attack)
-46: Spades     8 (~)
-47: Spades     9 (~)
-48: Spades    10 (~)
-49: Spades    11 (Skip The Next Player)
-50: Spades    12 (Reverse The Playing Order)
-51: Spades    13 (~)
-52: Hearts     2 (Draws Two Cards)
-53: Hearts     3 (Draws Three Cards)
-54: Hearts     4 (~)
-55: Hearts     7 (Cancel An Attack)
-56: Hearts     8 (~)
-57: Hearts     9 (~)
-58: Hearts    10 (~)
-59: Hearts    11 (Skip The Next Player)
-60: Hearts    12 (Reverse The Playing Order)
-61: Hearts    13 (~)
-62: Diamonds   1 (~)
-63: Diamonds   2 (Draws Two Cards)
-64: Diamonds   4 (~)
-65: Diamonds   6 (~)
-66: Diamonds   7 (Cancel An Attack)
-67: Diamonds   9 (~)
-68: Diamonds  10 (~)
-69: Diamonds  11 (Skip The Next Player)
-70: Diamonds  12 (Reverse The Playing Order)
-71: Clubs      1 (~)
-72: Clubs      2 (Draws Two Cards)
-73: Clubs      3 (Draws Three Cards)
-74: Clubs      4 (~)
-75: Clubs      6 (~)
-76: Clubs      7 (Cancel An Attack)
-77: Clubs      8 (~)
-78: Clubs      9 (~)
-79: Clubs     10 (~)
-80: Clubs     11 (Skip The Next Player)
-81: Clubs     12 (Reverse The Playing Order)
-82: Clubs     13 (~)
-
-DiscardPile: 
-PileSize: 2
-0: Spades     2 (Draws Two Cards)
-1: Spades     3 (Draws Three Cards)
-
+------------------------
 Round: 1 , StockPile: 83 , DiscardPile: 2
-Player: 0
-You Are Supposed To Draw 3 Card(s).
-Last Card: Spades     3 (Draws Three Cards)
+Determine Draw Card Number ...
+
+Determine Next Player ...
+
+Player: 1; He/She is Supposed To Draw 0 Card(s).
+Last Card: Clubs     11; 
+His/Her Current HandCard: PileSize: 5
+ 0: Hearts    10;  1: Diamonds   7;  2: Diamonds  12;  3: Clubs      4;  4: Clubs      5; 
+UI Plays this Card: Clubs      5; 
+
+Draw 0 Card(s).
 
 
-Your Current HandCard: 
-PileSize: 5
-0: Spades    12 (Reverse The Playing Order)
-1: Hearts     5 (~)
-2: Hearts     6 (~)
-3: Diamonds  12 (Reverse The Playing Order)
-4: Diamonds  13 (~)
 
-Oops! You Can't Any Card! Press Enter To Acknowledge Such Situation And Draw Card(s):
-Draw 3 Card(s).
-Draw Card No:1, Diamonds   6 (~)
-Draw Card No:2, Clubs      2 (Draws Two Cards)
-Draw Card No:3, Hearts    13 (~)
+------------------------
+Round: 1 , StockPile: 83 , DiscardPile: 3
+Determine Draw Card Number ...
+
+Determine Next Player ...
+
+Player: 2; He/She is Supposed To Draw 0 Card(s).
+Last Card: Clubs      5; 
+His/Her Current HandCard: PileSize: 5
+ 0: Spades     1;  1: Spades    13;  2: Hearts     8;  3: Clubs      3;  4: Clubs     12; 
+UI Plays this Card: Clubs     12; 
+
+Draw 0 Card(s).
+
+
+
+------------------------
+Round: 1 , StockPile: 83 , DiscardPile: 4
+Determine Draw Card Number ...
+
+Determine Next Player ...
+
+Player: 1; He/She is Supposed To Draw 0 Card(s).
+Last Card: Clubs     12; 
+His/Her Current HandCard: PileSize: 4
+ 0: Hearts    10;  1: Diamonds   7;  2: Diamonds  12;  3: Clubs      4; 
+UI Plays this Card: Clubs      4; 
+
+Draw 0 Card(s).
+
+
+
+------------------------
+Round: 1 , StockPile: 83 , DiscardPile: 5
+Determine Draw Card Number ...
+
+Determine Next Player ...
+
+Player: 0; He/She is Supposed To Draw 0 Card(s).
+Last Card: Clubs      4; 
+His/Her Current HandCard: PileSize: 5
+ 0: Hearts     7;  1: Hearts    11;  2: Hearts    11;  3: Diamonds  11;  4: Clubs     12; 
+UI Plays this Card: Clubs     12; 
+
+Draw 0 Card(s).
+
+
+
+------------------------
+Round: 1 , StockPile: 83 , DiscardPile: 6
+Determine Draw Card Number ...
+
+Determine Next Player ...
+
+Player: 1; He/She is Supposed To Draw 0 Card(s).
+Last Card: Clubs     12; 
+His/Her Current HandCard: PileSize: 3
+ 0: Hearts    10;  1: Diamonds   7;  2: Diamonds  12; 
+UI Plays this Card: Diamonds  12; 
+
+Draw 0 Card(s).
+
+
+
+------------------------
+Round: 1 , StockPile: 83 , DiscardPile: 7
+Determine Draw Card Number ...
+
+Determine Next Player ...
+
+Player: 0; He/She is Supposed To Draw 0 Card(s).
+Last Card: Diamonds  12; 
+His/Her Current HandCard: PileSize: 4
+ 0: Hearts     7;  1: Hearts    11;  2: Hearts    11;  3: Diamonds  11; 
+UI Plays this Card: Diamonds  11; 
+
+Draw 0 Card(s).
+
+
+
+------------------------
+Round: 1 , StockPile: 83 , DiscardPile: 8
+Determine Draw Card Number ...
+
+Determine Next Player ...
+
+Player: 2; He/She is Supposed To Draw 0 Card(s).
+Last Card: Diamonds  11; 
+His/Her Current HandCard: PileSize: 4
+ 0: Spades     1;  1: Spades    13;  2: Hearts     8;  3: Clubs      3; 
+Oops! He/She Can't Play Any Card! Enter Any Number To Acknowledge Such Situation And Draw Card(s):
+UI Automatically Passes.
+Draw 1 Card(s).
+Draw Card No:1, Spades     5; 
+
+
+------------------------
+Round: 1 , StockPile: 82 , DiscardPile: 8
+Determine Draw Card Number ...
+
+Determine Next Player ...
+
+Player: 1; He/She is Supposed To Draw 0 Card(s).
+Last Card: Diamonds  11; 
+His/Her Current HandCard: PileSize: 2
+ 0: Hearts    10;  1: Diamonds   7; 
+UI Plays this Card: Diamonds   7; 
+
+Draw 0 Card(s).
+
+
+
+------------------------
+Round: 1 , StockPile: 82 , DiscardPile: 9
+Determine Draw Card Number ...
+
+Determine Next Player ...
+
+Player: 0; He/She is Supposed To Draw 0 Card(s).
+Last Card: Diamonds   7; 
+His/Her Current HandCard: PileSize: 3
+ 0: Hearts     7;  1: Hearts    11;  2: Hearts    11; 
+UI Plays this Card: Hearts     7; 
+
+Draw 0 Card(s).
+
+
+
+------------------------
+Round: 1 , StockPile: 82 , DiscardPile: 10
+Determine Draw Card Number ...
+
+Determine Next Player ...
+
+Player: 3; He/She is Supposed To Draw 0 Card(s).
+Last Card: Hearts     7; 
+His/Her Current HandCard: PileSize: 4
+ 0: Hearts     1;  1: Hearts     2;  2: Diamonds   8;  3: Diamonds  11; 
+UI Plays this Card: Hearts     2; 
+
+Draw 0 Card(s).
+
+
+
+------------------------
+Round: 1 , StockPile: 82 , DiscardPile: 11
+Determine Draw Card Number ...
+
+Determine Next Player ...
+
+Player: 2; He/She is Supposed To Draw 2 Card(s).
+Last Card: Hearts     2; 
+His/Her Current HandCard: PileSize: 5
+ 0: Spades     1;  1: Spades     5;  2: Spades    13;  3: Hearts     8;  4: Clubs      3; 
+Oops! He/She Can't Play Any Card! Enter Any Number To Acknowledge Such Situation And Draw Card(s):
+UI Automatically Passes.
+Draw 2 Card(s).
+Draw Card No:1, Clubs      1; Draw Card No:2, Diamonds   2; 
+
+
+------------------------
+Round: 1 , StockPile: 80 , DiscardPile: 11
+Determine Draw Card Number ...
+
+Determine Next Player ...
+
+Player: 1; He/She is Supposed To Draw 0 Card(s).
+Last Card: Hearts     2; 
+His/Her Current HandCard: PileSize: 1
+ 0: Hearts    10; 
+UI Plays this Card: Hearts    10; 
+
+Draw 0 Card(s).
+
+Player:1 wins!
+---- Display Game ----
+
 PlayerNumber: 4
 InitialCardNuber: 5
 DeckNumber: 2
 RoundNumber: 1
-Player: 
-PileSize: 8
-0: Spades    12 (Reverse The Playing Order)
-1: Hearts     5 (~)
-2: Hearts     6 (~)
-3: Hearts    13 (~)
-4: Diamonds   6 (~)
-5: Diamonds  12 (Reverse The Playing Order)
-6: Diamonds  13 (~)
-7: Clubs      2 (Draws Two Cards)
-
-
-Player: 
-PileSize: 5
-0: Spades     1 (~)
-1: Diamonds   3 (Draws Three Cards)
-2: Diamonds   9 (~)
-3: Clubs      5 (~)
-4: Clubs     10 (~)
-
-
-Player: 
-PileSize: 5
-0: Hearts     3 (Draws Three Cards)
-1: Diamonds   1 (~)
-2: Diamonds   3 (Draws Three Cards)
-3: Diamonds   5 (~)
-4: Diamonds  13 (~)
-
-
-Player: 
-PileSize: 4
-0: Hearts     1 (~)
-1: Diamonds   8 (~)
-2: Diamonds  10 (~)
-3: Clubs      5 (~)
-
-
-StockPile: 
-PileSize: 80
-0: Spades     1 (~)
-1: Spades     3 (Draws Three Cards)
-2: Spades     4 (~)
-3: Spades     5 (~)
-4: Spades     6 (~)
-5: Spades     7 (Cancel An Attack)
-6: Spades     8 (~)
-7: Spades     9 (~)
-8: Spades    10 (~)
-9: Spades    11 (Skip The Next Player)
-10: Spades    13 (~)
-11: Hearts     1 (~)
-12: Hearts     2 (Draws Two Cards)
-13: Hearts     4 (~)
-14: Hearts     5 (~)
-15: Hearts     6 (~)
-16: Hearts     7 (Cancel An Attack)
-17: Hearts     8 (~)
-18: Hearts     9 (~)
-19: Hearts    10 (~)
-20: Hearts    11 (Skip The Next Player)
-21: Hearts    12 (Reverse The Playing Order)
-22: Diamonds   2 (Draws Two Cards)
-23: Diamonds   4 (~)
-24: Diamonds   5 (~)
-25: Diamonds   7 (Cancel An Attack)
-26: Diamonds   8 (~)
-27: Diamonds  11 (Skip The Next Player)
-28: Clubs      1 (~)
-29: Clubs      3 (Draws Three Cards)
-30: Clubs      4 (~)
-31: Clubs      6 (~)
-32: Clubs      7 (Cancel An Attack)
-33: Clubs      8 (~)
-34: Clubs      9 (~)
-35: Clubs     11 (Skip The Next Player)
-36: Clubs     12 (Reverse The Playing Order)
-37: Clubs     13 (~)
-38: Spades     2 (Draws Two Cards)
-39: Spades     4 (~)
-40: Spades     5 (~)
-41: Spades     6 (~)
-42: Spades     7 (Cancel An Attack)
-43: Spades     8 (~)
-44: Spades     9 (~)
-45: Spades    10 (~)
-46: Spades    11 (Skip The Next Player)
-47: Spades    12 (Reverse The Playing Order)
-48: Spades    13 (~)
-49: Hearts     2 (Draws Two Cards)
-50: Hearts     3 (Draws Three Cards)
-51: Hearts     4 (~)
-52: Hearts     7 (Cancel An Attack)
-53: Hearts     8 (~)
-54: Hearts     9 (~)
-55: Hearts    10 (~)
-56: Hearts    11 (Skip The Next Player)
-57: Hearts    12 (Reverse The Playing Order)
-58: Hearts    13 (~)
-59: Diamonds   1 (~)
-60: Diamonds   2 (Draws Two Cards)
-61: Diamonds   4 (~)
-62: Diamonds   6 (~)
-63: Diamonds   7 (Cancel An Attack)
-64: Diamonds   9 (~)
-65: Diamonds  10 (~)
-66: Diamonds  11 (Skip The Next Player)
-67: Diamonds  12 (Reverse The Playing Order)
-68: Clubs      1 (~)
-69: Clubs      2 (Draws Two Cards)
-70: Clubs      3 (Draws Three Cards)
-71: Clubs      4 (~)
-72: Clubs      6 (~)
-73: Clubs      7 (Cancel An Attack)
-74: Clubs      8 (~)
-75: Clubs      9 (~)
-76: Clubs     10 (~)
-77: Clubs     11 (Skip The Next Player)
-78: Clubs     12 (Reverse The Playing Order)
-79: Clubs     13 (~)
-
-DiscardPile: 
+Player 0 Penalty: -6
+Player: 0: 
 PileSize: 2
-0: Spades     2 (Draws Two Cards)
-1: Spades     3 (Draws Three Cards)
+ 0: Hearts    11;  1: Hearts    11; 
 
-Round: 1 , StockPile: 80 , DiscardPile: 2
-Player: 1
-You Are Supposed To Draw 0 Card(s).
-Last Card: Spades     3 (Draws Three Cards)
+Player 1 Penalty: 0
+Player: 1: 
+PileSize: 0
 
 
-Your Current HandCard: 
-PileSize: 5
-0: Spades     1 (~)
-1: Diamonds   3 (Draws Three Cards)
-2: Diamonds   9 (~)
-3: Clubs      5 (~)
-4: Clubs     10 (~)
+Player 2 Penalty: -15
+Player: 2: 
+PileSize: 7
+ 0: Spades     1;  1: Spades     5;  2: Spades    13;  3: Hearts     8;  4: Diamonds   2;  5: Clubs      1; 
+ 6: Clubs      3; 
 
-Please Play A Card Or Enter -1 To Give Up This Turn And Draw One More Card: 
+Player 3 Penalty: -5
+Player: 3: 
+PileSize: 3
+ 0: Hearts     1;  1: Diamonds   8;  2: Diamonds  11; 
+
+StockPile: PileSize: 80
+ 0: Spades     1;  1: Spades     2;  2: Spades     2;  3: Spades     3;  4: Spades     3;  5: Spades     4; 
+ 6: Spades     4;  7: Spades     5;  8: Spades     6;  9: Spades     6; 10: Spades     7; 11: Spades     7; 
+12: Spades     8; 13: Spades     8; 14: Spades     9; 15: Spades     9; 16: Spades    10; 17: Spades    10; 
+18: Spades    11; 19: Spades    12; 20: Spades    12; 21: Spades    13; 22: Hearts     1; 23: Hearts     2; 
+24: Hearts     3; 25: Hearts     3; 26: Hearts     4; 27: Hearts     4; 28: Hearts     5; 29: Hearts     5; 
+30: Hearts     6; 31: Hearts     6; 32: Hearts     7; 33: Hearts     8; 34: Hearts     9; 35: Hearts     9; 
+36: Hearts    10; 37: Hearts    12; 38: Hearts    12; 39: Hearts    13; 40: Hearts    13; 41: Diamonds   1; 
+42: Diamonds   1; 43: Diamonds   2; 44: Diamonds   3; 45: Diamonds   3; 46: Diamonds   4; 47: Diamonds   4; 
+48: Diamonds   5; 49: Diamonds   5; 50: Diamonds   6; 51: Diamonds   6; 52: Diamonds   7; 53: Diamonds   8; 
+54: Diamonds   9; 55: Diamonds   9; 56: Diamonds  10; 57: Diamonds  10; 58: Diamonds  12; 59: Diamonds  13; 
+60: Diamonds  13; 61: Clubs      1; 62: Clubs      2; 63: Clubs      2; 64: Clubs      3; 65: Clubs      4; 
+66: Clubs      5; 67: Clubs      6; 68: Clubs      6; 69: Clubs      7; 70: Clubs      7; 71: Clubs      8; 
+72: Clubs      8; 73: Clubs      9; 74: Clubs      9; 75: Clubs     10; 76: Clubs     10; 77: Clubs     11; 
+78: Clubs     13; 79: Clubs     13; 
+DiscardPile: PileSize: 12
+ 0: Spades    11;  1: Hearts     2;  2: Hearts     7;  3: Hearts    10;  4: Diamonds   7;  5: Diamonds  11; 
+ 6: Diamonds  12;  7: Clubs      4;  8: Clubs      5;  9: Clubs     11; 10: Clubs     12; 11: Clubs     12; 
+
+Delete Game ...
+
+Delete Players (AllPlayerNumber:4) ...
+Delete Player: 0 ...
+Delete Pile (PileSize: 2) ...
+Delete Card (Rank:11 Suit:2) ....Success!
+Delete Card (Rank:11 Suit:2) ....Success!
+Delete Player: 0 Success!
+Delete Player: 1 ...
+Delete Pile (PileSize: 0) ...
+Delete Player: 1 Success!
+Delete Player: 2 ...
+Delete Pile (PileSize: 7) ...
+Delete Card (Rank:1 Suit:1) ....Success!
+Delete Card (Rank:5 Suit:1) ....Success!
+Delete Card (Rank:13 Suit:1) ....Success!
+Delete Card (Rank:8 Suit:2) ....Success!
+Delete Card (Rank:2 Suit:3) ....Success!
+Delete Card (Rank:1 Suit:4) ....Success!
+Delete Card (Rank:3 Suit:4) ....Success!
+Delete Player: 2 Success!
+Delete Player: 3 ...
+Delete Pile (PileSize: 3) ...
+Delete Card (Rank:1 Suit:2) ....Success!
+Delete Card (Rank:8 Suit:3) ....Success!
+Delete Card (Rank:11 Suit:3) ....Success!
+Delete Player: 3 Success!
+Delete Pile (PileSize: 80) ...
+Delete Card (Rank:1 Suit:1) ....Success!
+Delete Card (Rank:2 Suit:1) ....Success!
+Delete Card (Rank:2 Suit:1) ....Success!
+Delete Card (Rank:3 Suit:1) ....Success!
+Delete Card (Rank:3 Suit:1) ....Success!
+Delete Card (Rank:4 Suit:1) ....Success!
+Delete Card (Rank:4 Suit:1) ....Success!
+Delete Card (Rank:5 Suit:1) ....Success!
+Delete Card (Rank:6 Suit:1) ....Success!
+Delete Card (Rank:6 Suit:1) ....Success!
+Delete Card (Rank:7 Suit:1) ....Success!
+Delete Card (Rank:7 Suit:1) ....Success!
+Delete Card (Rank:8 Suit:1) ....Success!
+Delete Card (Rank:8 Suit:1) ....Success!
+Delete Card (Rank:9 Suit:1) ....Success!
+Delete Card (Rank:9 Suit:1) ....Success!
+Delete Card (Rank:10 Suit:1) ....Success!
+Delete Card (Rank:10 Suit:1) ....Success!
+Delete Card (Rank:11 Suit:1) ....Success!
+Delete Card (Rank:12 Suit:1) ....Success!
+Delete Card (Rank:12 Suit:1) ....Success!
+Delete Card (Rank:13 Suit:1) ....Success!
+Delete Card (Rank:1 Suit:2) ....Success!
+Delete Card (Rank:2 Suit:2) ....Success!
+Delete Card (Rank:3 Suit:2) ....Success!
+Delete Card (Rank:3 Suit:2) ....Success!
+Delete Card (Rank:4 Suit:2) ....Success!
+Delete Card (Rank:4 Suit:2) ....Success!
+Delete Card (Rank:5 Suit:2) ....Success!
+Delete Card (Rank:5 Suit:2) ....Success!
+Delete Card (Rank:6 Suit:2) ....Success!
+Delete Card (Rank:6 Suit:2) ....Success!
+Delete Card (Rank:7 Suit:2) ....Success!
+Delete Card (Rank:8 Suit:2) ....Success!
+Delete Card (Rank:9 Suit:2) ....Success!
+Delete Card (Rank:9 Suit:2) ....Success!
+Delete Card (Rank:10 Suit:2) ....Success!
+Delete Card (Rank:12 Suit:2) ....Success!
+Delete Card (Rank:12 Suit:2) ....Success!
+Delete Card (Rank:13 Suit:2) ....Success!
+Delete Card (Rank:13 Suit:2) ....Success!
+Delete Card (Rank:1 Suit:3) ....Success!
+Delete Card (Rank:1 Suit:3) ....Success!
+Delete Card (Rank:2 Suit:3) ....Success!
+Delete Card (Rank:3 Suit:3) ....Success!
+Delete Card (Rank:3 Suit:3) ....Success!
+Delete Card (Rank:4 Suit:3) ....Success!
+Delete Card (Rank:4 Suit:3) ....Success!
+Delete Card (Rank:5 Suit:3) ....Success!
+Delete Card (Rank:5 Suit:3) ....Success!
+Delete Card (Rank:6 Suit:3) ....Success!
+Delete Card (Rank:6 Suit:3) ....Success!
+Delete Card (Rank:7 Suit:3) ....Success!
+Delete Card (Rank:8 Suit:3) ....Success!
+Delete Card (Rank:9 Suit:3) ....Success!
+Delete Card (Rank:9 Suit:3) ....Success!
+Delete Card (Rank:10 Suit:3) ....Success!
+Delete Card (Rank:10 Suit:3) ....Success!
+Delete Card (Rank:12 Suit:3) ....Success!
+Delete Card (Rank:13 Suit:3) ....Success!
+Delete Card (Rank:13 Suit:3) ....Success!
+Delete Card (Rank:1 Suit:4) ....Success!
+Delete Card (Rank:2 Suit:4) ....Success!
+Delete Card (Rank:2 Suit:4) ....Success!
+Delete Card (Rank:3 Suit:4) ....Success!
+Delete Card (Rank:4 Suit:4) ....Success!
+Delete Card (Rank:5 Suit:4) ....Success!
+Delete Card (Rank:6 Suit:4) ....Success!
+Delete Card (Rank:6 Suit:4) ....Success!
+Delete Card (Rank:7 Suit:4) ....Success!
+Delete Card (Rank:7 Suit:4) ....Success!
+Delete Card (Rank:8 Suit:4) ....Success!
+Delete Card (Rank:8 Suit:4) ....Success!
+Delete Card (Rank:9 Suit:4) ....Success!
+Delete Card (Rank:9 Suit:4) ....Success!
+Delete Card (Rank:10 Suit:4) ....Success!
+Delete Card (Rank:10 Suit:4) ....Success!
+Delete Card (Rank:11 Suit:4) ....Success!
+Delete Card (Rank:13 Suit:4) ....Success!
+Delete Card (Rank:13 Suit:4) ....Success!
+Delete Pile (PileSize: 12) ...
+Delete Card (Rank:11 Suit:1) ....Success!
+Delete Card (Rank:2 Suit:2) ....Success!
+Delete Card (Rank:7 Suit:2) ....Success!
+Delete Card (Rank:10 Suit:2) ....Success!
+Delete Card (Rank:7 Suit:3) ....Success!
+Delete Card (Rank:11 Suit:3) ....Success!
+Delete Card (Rank:12 Suit:3) ....Success!
+Delete Card (Rank:4 Suit:4) ....Success!
+Delete Card (Rank:5 Suit:4) ....Success!
+Delete Card (Rank:11 Suit:4) ....Success!
+Delete Card (Rank:12 Suit:4) ....Success!
+Delete Card (Rank:12 Suit:4) ....Success!

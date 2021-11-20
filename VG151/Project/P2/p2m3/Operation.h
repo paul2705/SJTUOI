@@ -11,7 +11,7 @@
 
 	void OptInitialize(Game *_thisGame);
 	void OptPlayerDrawCard(char *LogFile,User *_thisPlayer,Pile *_formerPile,Pile *_laterPile,int _thisDrawCardNumber);
-	Card *OptPlayerPlayCard(char *LogFile,User *_thisPlayer,Card *_laterCard,Pile *_laterPile,int _laterOption);
+	Card *OptPlayerPlayCard(char *LogFile,User *_thisPlayer,Card *_laterCard,Pile *_laterPile,int _laterOption,int _thisAuto);
 	void OptShiftPile(Pile *_formerPile,Pile *_laterPile);
 
 #endif

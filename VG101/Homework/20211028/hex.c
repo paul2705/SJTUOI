@@ -20,7 +20,7 @@ void reverse(char *s){
 	}
 }
 int main(){
-	char s1[105],s2[105];
+	char s1[505]={'\0'},s2[505]={'\0'};
 	printf("hexadecimal number 1: "); scanf("%s",s1);
 	printf("hexadecimal number 2: "); scanf("%s",s2);
 	int n=0;

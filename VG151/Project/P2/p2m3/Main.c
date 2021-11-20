@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include<time.h>
 #include<stddef.h>
+#include<string.h>
 
 #include"UIScreen.h"
 #include"Card.h"
@@ -19,12 +20,13 @@ int OptionType(char *_thisOption){
 
 int main(int Argc,char *Argv[]){
 	srand((unsigned int)time(NULL));
-	Game _thisGame; InitializeGame(&_thisGame);
+	Game _thisGame; 
 	_thisGame.PlayerNumber=4;
 	_thisGame.InitialCardNumber=5;
 	_thisGame.DeckNumber=2;
 	_thisGame.RoundNumber=1;
 	_thisGame.Debug=0;
+	_thisGame.Auto=0;
 	sprintf(_thisGame.LogFile,"onecard.log");
 //	initscr();
 //	WINDOW *LogWin=AddLogWin(_thisGame.LogFile);
@@ -43,7 +45,7 @@ int main(int Argc,char *Argv[]){
 		}
 		else {
 			int _thisNumber=0;
-			if (Type==1&&Option[1]!='h'&&Option[1]!='g'){
+			if (Type==1&&Option[1]!='h'&&Option[1]!='g'&&Option[1]!='a'){
 				char *Parameter=Argv[i+1];
 				int ParaType=OptionType(Parameter);
 				if (ParaType>0){
@@ -51,6 +53,14 @@ int main(int Argc,char *Argv[]){
 					return 0;
 				}
 				sscanf(Parameter,"%d",&_thisNumber);
+			}
+			if (Type==2&&Option[2]!='h'&&Option[2]!='l'&&Option[2]!='a'){
+				char *Parameter=Argv[i]; int i,n=(int)strlen(Parameter);
+				for (i=0;i<n;i++){
+					if (Parameter[i]=='=') break;
+				}
+				sscanf(Parameter+i+1,"%d",&_thisNumber);
+//				printf("%s %d\n",Parameter,_thisNumber);
 			}
 			switch (Option[Type]){
 				case 'h': UIPrint(0,"-h|--help             print this help message \n");
@@ -65,17 +75,28 @@ int main(int Argc,char *Argv[]){
 						while (!scanf("%c",&_thisChar)); 
 						break;
 				case 'n': _thisGame.PlayerNumber=_thisNumber; break;
+				case 'p': _thisGame.PlayerNumber=_thisNumber; break;
 				case 'c': _thisGame.InitialCardNumber=_thisNumber; break;
+				case 'i': _thisGame.InitialCardNumber=_thisNumber; break;
 				case 'd': _thisGame.DeckNumber=_thisNumber; break;
 				case 'r': _thisGame.RoundNumber=_thisNumber; break;
 				case 'g': _thisGame.Debug=1; break;
-				case 'l': sprintf(_thisGame.LogFile,"%s",Argv[i+1]);
+				case 'l': sprintf(_thisGame.LogFile,"%s",Argv[i+1]); break;
+				case 'a': _thisGame.Auto=1; break;
 			}
 		}
 	}
-//	printf("%c\n",_thisChar);
+	FILE *tmp=fopen(_thisGame.LogFile,"w");
+	fclose(tmp);
+	FPrint(_thisGame.LogFile,"########################\n");
+	FPrint(_thisGame.LogFile,"#                      #\n");
+	FPrint(_thisGame.LogFile,"# Welcome to One Card! #\n");
+	FPrint(_thisGame.LogFile,"#                      #\n");
+	FPrint(_thisGame.LogFile,"########################\n\n");
+	InitializeGame(&_thisGame);
 	if (_thisChar!='?') StartGame(&_thisGame);
 	else OptInitialize(&_thisGame);
 //	endwin();
+	DeleteGame(&_thisGame);
 	return 0;
 }

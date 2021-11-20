@@ -1,0 +1,3 @@
+/Users/duanlingbo/Desktop/SJTUOI/github/SJTUOI/VG151/Project/P2/xiangyiming521370910032-p2/CMakeFiles/rebuild_cache.dir
+/Users/duanlingbo/Desktop/SJTUOI/github/SJTUOI/VG151/Project/P2/xiangyiming521370910032-p2/CMakeFiles/edit_cache.dir
+/Users/duanlingbo/Desktop/SJTUOI/github/SJTUOI/VG151/Project/P2/xiangyiming521370910032-p2/CMakeFiles/onecard.dir

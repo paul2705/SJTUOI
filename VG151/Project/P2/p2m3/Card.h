@@ -22,6 +22,6 @@
 	Card *CreateNewCard(int _thisCardSuit,int _thisCardRank);
 	void DisplayCard(char *LogFile,Card *_thisCard,int _thisOption);
 	void ClearCard(Card *_thisCard);
-	void DeleteCard(Card *_thisCard);
+	void DeleteCard(char *LogFile,Card *_thisCard);
 
 #endif
