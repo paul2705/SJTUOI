@@ -24,6 +24,9 @@ void ex1_ordered_vector(){
 	for (vector<string>::iterator it=arr.begin();it!=arr.end();it++) cout<<(*it)<<" ";
 	printf("\n");
 }
+void ex10(){
+}
+
 void ex1_ordered_queue(){
 	queue<string> arr;
 	string s;
