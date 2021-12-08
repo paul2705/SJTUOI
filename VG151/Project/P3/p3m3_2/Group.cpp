@@ -10,6 +10,7 @@
 #include"Trapezium.h"
 #include"Quad.h"
 #include"Circle.h"
+#include"Line.h"
 #include"Group.h"
 #ifdef __APPLE__
 	#include <GLUT/glut.h> 
@@ -49,6 +50,8 @@ void Group::AddTrack(initializer_list<Vec> _VecList){
 	for (VECLSTITER it=_VecList.begin();it!=_VecList.end();it++) Track.push_back((*it));
 }
 
+void Group::ClearTrack(){ Track.clear(); }
+
 void Group::GetStart(){
 	NowTrack=Track.begin(); NowTrack++;
 	OptMove.Switch=1; OptTurn.Switch=0;
@@ -57,8 +60,10 @@ void Group::GetStart(){
 	if (fabs(_thisTmp.GetY())>=fabs(_thisTmp.GetX())) OptMove.Cup=_thisTmp.GetY()/OptMove.CDel;
 	else OptMove.Cup=_thisTmp.GetX()/OptMove.CDel;
 	OptMove.Cup=fabs(OptMove.Cup);
-	OptMove.Del=_thisTmp/(float)OptMove.Cup;
+	OptMove.Del=Vec(_thisTmp.GetX()/(float)OptMove.Cup,_thisTmp.GetY()/(float)OptMove.Cup);
 }
+
+void Group::GetLeave(){ OptLeft.Switch=1; }
 
 void Group::Draw(){
 	for (FIGITER it=SetNormal.begin();it!=SetNormal.end();it++){
@@ -70,7 +75,7 @@ void Group::Draw(){
 	glFlush();
 }
 
-void Group::Act(){
+bool Group::Act(){
 	if (OptMove.Switch){
 		Anchor=Anchor+OptMove.Del;
 		for (FIGITER it=SetNormal.begin();it!=SetNormal.end();it++){
@@ -80,6 +85,7 @@ void Group::Act(){
 			(*it).Fig->Move(OptMove.Del);
 		}
 		OptMove.Cnt++; 
+		return 1;
 	}
 	if (OptTurn.Switch){
 		for (FIGITER it=SetNormal.begin();it!=SetNormal.end();it++){
@@ -87,14 +93,22 @@ void Group::Act(){
 		}
 		for (DECITER it=SetDecorate.begin();it!=SetDecorate.end();it++){
 			(*it).Fig->Rotate(OptTurn.Del,OptTurn.Spin);
+			(*it).Del=(*it).Del<<(OptTurn.Del*PI/180.0);
 		}
 		OptTurn.Theta+=fabs(OptTurn.Del);
+		return 1;
 	}
+	if (OptLeft.Switch){
+		DecorateLeave();
+		return 1;
+	}
+	return 0;
 }
 
 bool Group::Control(){
 	if (NowTrack==Track.end()){
 		OptTurn.Switch=OptMove.Switch=0;
+		ClearTrack(); GetLeave();
 		return 0;
 	}
 	if (OptTurn.Switch&&OptTurn.Theta>=OptTurn.Cup){
@@ -104,7 +118,8 @@ bool Group::Control(){
 		if (fabs(_thisTmp.GetY())>=fabs(_thisTmp.GetX())) OptMove.Cup=_thisTmp.GetY()/OptMove.CDel;
 		else OptMove.Cup=_thisTmp.GetX()/OptMove.CDel;
 		OptMove.Cup=fabs(OptMove.Cup);
-		OptMove.Del=_thisTmp/(float)OptMove.Cup;
+		OptMove.Del=Vec(_thisTmp.GetX()/(float)OptMove.Cup,_thisTmp.GetY()/(float)OptMove.Cup);
+		return 1;
 	}
 	else if (OptMove.Switch&&OptMove.Cnt>=OptMove.Cup){
 		OptMove.Switch=0; OptTurn.Switch=1; 
@@ -115,22 +130,16 @@ bool Group::Control(){
 		float _thisTmp=(1+_laterDir*_formerDir);
 		OptTurn.Cup=fabs(_thisTmp)<=EPS?90.0:atan((_laterDir-_formerDir)/(1+_laterDir*_formerDir))/PI*180.0;
 		OptTurn.Del=(OptTurn.Cup>=0?1:-1); OptTurn.Cup=fabs(OptTurn.Cup);
+		return 1;
 	}
-	return 1;
+	return 0;
 }
 
-void Group::Update(){
-	Control(); DecorateControl();
-	Act(); DecorateAct();
+bool Group::Update(){
+	bool _thisFlag=0;
+	_thisFlag|=Control(); DecorateControl();
+	_thisFlag|=Act(); DecorateAct();
+	return _thisFlag;
 }
 
-Group::~Group(){
-	for (FIGITER it=SetNormal.begin();it!=SetNormal.end();it++){
-		Figure *_thisTmp=*it;
-		delete _thisTmp;
-	}
-	for (DECITER it=SetDecorate.begin();it!=SetDecorate.end();it++){
-		Figure *_thisTmp=it->Fig;
-		delete _thisTmp;
-	}
-}
+Group::~Group(){}

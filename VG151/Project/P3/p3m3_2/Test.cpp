@@ -8,6 +8,8 @@
 #include"Group.h"
 #include"Sys.h"
 #include"Car.h"
+#include"Line.h"
+#include"Teleported.h"
 #ifdef __APPLE__
 	#include <GLUT/glut.h> 
 #elif __linux__
@@ -24,14 +26,15 @@ void TimeStep(int n){
 }
 
 void Display(){
-	Group *x=Car::GetInstance();
+	// Change Triangle in line 26 to YOUR_FIGURE like ` YOUR_FIGURE *x=YOUR_FIGURE:GetInstance(); `
+	Teleported *x=Teleported::GetInstance();
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	x->Update();
 	x->Draw();
 }
 
 void Start(){
-	Group *x=Car::GetInstance();
+	Teleported *x=Teleported::GetInstance();
 	x->AddTrack({Vec(-0.8,-0.4),Vec(-0.8,0),Vec(0,0),Vec(0.5,0.5)});
 	x->AddTrack({Vec(-0.4,0.2),Vec(0.4,0.2),Vec(0.4,-0.4),Vec(0.2,0.8)});
 	x->GetStart();
@@ -51,6 +54,6 @@ int main(int argc,char *argv[]){
 	glutTimerFunc(25,TimeStep,25);
 	glutMainLoop();
 //    PauseScreen(1000000);
-	Car::DeleteInstance();
+	Teleported::DeleteInstance();
 	return 0;
 }

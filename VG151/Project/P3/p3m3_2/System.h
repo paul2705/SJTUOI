@@ -15,16 +15,22 @@
 	#include"Van.h"
 	#include"Vehicle.h"
 
+	#include"Group.h"
+
 	#include"System.h"
 	using namespace std;
+	typedef struct _Item{
+		Vehicle* thisVehicle;
+		Group* thisGroup;
+	} Item;
 
 	class System{
 		private:
 			int Time;
 			Parklot Park;
-			queue<Vehicle*> WaitVehs;
-			queue<Vehicle*> InVehs;
-			queue<Vehicle*> OutVehs;
+			queue<Item> WaitVehs;
+			queue<Item> InVehs;
+			queue<Item> OutVehs;
 		public:
 			System();
 			void AskVehIn(int Time);

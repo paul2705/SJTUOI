@@ -11,29 +11,32 @@
 #include"Vehicle.h"
 #include"System.h"
 #include"Car.h"
+#include"Group.h"
 using namespace std;
 
 System::System(){
 	Time=0;
 	int NVeh=rand()%100+1;
 	for (int i=1;i<=NVeh;i++){
-		Vehicle *tmpVeh=new Car(-1,-0.4);
-		WaitVehs.push(tmpVeh);
+		Car* tmpItem=new Car(-1,-0.4);
+		Vehicle* tmpVeh=tmpItem;
+		Group* tmpGrp=tmpItem;
+		WaitVehs.push({tmpVeh,tmpGrp});
 	}
 }
 
 void System::AskVehIn(int Time){
 	if (WaitVehs.empty()) return;
-	Vehicle *tmpVeh=WaitVehs.front(); WaitVehs.pop();
-	Park.InTakeVeh(Time,tmpVeh);
-	InVehs.push(tmpVeh);
+	Item tmpItem=WaitVehs.front(); WaitVehs.pop();
+	Park.InTakeVeh(Time,tmpItem.thisVehicle);
+	InVehs.push(tmpItem);
 }
 
 void System::AskVehOut(int Time){
 	if (InVehs.empty()) return;
-	Vehicle *tmpVeh=InVehs.front(); InVehs.pop();
-	Park.OutTakeVeh(Time,tmpVeh);
-	OutVehs.push(tmpVeh);
+	Item tmpItem=InVehs.front(); InVehs.pop();
+	Park.OutTakeVeh(Time,tmpItem.thisVehicle);
+	OutVehs.push(tmpItem);
 }
 
 int System::TimeFlow(){ return Time+=rand()%100; }
@@ -42,7 +45,7 @@ bool System::IsEmpty(){ return WaitVehs.empty()&&InVehs.empty(); }
 
 System::~System(){
 	while (!OutVehs.empty()){
-		Vehicle *tmpVeh=OutVehs.front(); OutVehs.pop();
-		delete tmpVeh;
+		Item tmpItem=OutVehs.front(); OutVehs.pop();
+		delete tmpItem.thisVehicle;
 	}
 }

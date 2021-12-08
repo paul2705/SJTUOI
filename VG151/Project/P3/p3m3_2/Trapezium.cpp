@@ -56,7 +56,7 @@ void Trapezium::Rotate(float Theta,Vec Spin){
     Del1=(Del1<<Theta); Del2=(Del2<<Theta); Del3=(Del3<<Theta); Del4=(Del4<<Theta);
 }
 
-void Trapezium::Zoom(float K){
-    cout<<K<<endl;
+void Trapezium::Zoom(float K,Vec Spin){
+    Anchor=(Anchor-Spin)*K+Spin;
     Del1=Del1*K;Del2=Del2*K;Del3=Del3*K;Del4=Del4*K;
 }

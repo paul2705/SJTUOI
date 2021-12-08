@@ -35,10 +35,10 @@ void Quad::Draw(){
 		glVertex3f(BaseX+Del2.GetX(),BaseY+Del2.GetY(),0.0f);
 		glVertex3f(BaseX+Del3.GetX(),BaseY+Del3.GetY(),0.0f);
 		glVertex3f(BaseX+Del4.GetX(),BaseY+Del4.GetY(),0.0f);
-		//cout<<BaseX+Del1.GetX()<<" "<<BaseY+Del1.GetY()<<endl;
-		//cout<<BaseX+Del2.GetX()<<" "<<BaseY+Del2.GetY()<<endl;
-		//cout<<BaseX+Del3.GetX()<<" "<<BaseY+Del3.GetY()<<endl;
-		//cout<<BaseX+Del4.GetX()<<" "<<BaseY+Del4.GetY()<<endl;
+		cout<<BaseX+Del1.GetX()<<" "<<BaseY+Del1.GetY()<<endl;
+		cout<<BaseX+Del2.GetX()<<" "<<BaseY+Del2.GetY()<<endl;
+		cout<<BaseX+Del3.GetX()<<" "<<BaseY+Del3.GetY()<<endl;
+		cout<<BaseX+Del4.GetX()<<" "<<BaseY+Del4.GetY()<<endl;
 	glEnd(); 
 	// glBegin(GL_POINTS);
 	// 	glColor3f(0.0,0.0,1.0);
@@ -62,7 +62,7 @@ void Quad::Rotate(float Theta,Vec Spin){
 	Del1=Del1<<Theta; Del2=Del2<<Theta; Del3=Del3<<Theta;Del4=Del4<<Theta;
 }
 
-void Quad::Zoom(float K){
-	cout<<K<<endl;
+void Quad::Zoom(float K,Vec Spin){
+	Anchor=(Anchor-Spin)*K+Spin;
 	Del1=Del1*K; Del2=Del2*K; Del3=Del3*K;Del4=Del4*K;
 }

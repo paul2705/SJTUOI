@@ -11,6 +11,7 @@
 	#include"Triangle.h"
 	#include"Trapezium.h"
 	#include"Quad.h"
+	#include"Line.h"
 	#include"Circle.h"
 	using namespace std;
 	#define FIGITER vector<Figure*>::iterator
@@ -27,6 +28,9 @@
 		int Cup=0,Cnt=0;
 		bool Switch=0;
 	} Moving;
+	typedef struct _Leaving{
+		bool Switch=0;
+	} Leaving;
 	typedef struct _Decorating{
 		Vec Del=Vec(0,0.005);
 		int Cup=20; int Cnt=0;
@@ -43,8 +47,10 @@
 			Vec Anchor;
 			Turning OptTurn;
 			Moving OptMove;
-			void Act();
+			Leaving OptLeft;
+			bool Act();
 			bool Control();
+			void ClearTrack();
 		public:
 			Group(float _X,float _Y);
 			static Group *GetInstance(){
@@ -61,11 +67,13 @@
 			void AddDecorateFigure(initializer_list<Decorating> _FigList);
 			void AddTrack(initializer_list<Vec> _VecList);
 			void GetStart();
+			void GetLeave();
 			void Draw();
 			virtual void DecorateAct()=0;
 			virtual void DecorateControl()=0;
-			void Update();
-			~Group();
+			virtual void DecorateLeave()=0;
+			bool Update();
+			virtual ~Group()=0;
 	};
 
 #endif

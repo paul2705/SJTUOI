@@ -60,7 +60,7 @@ void Triangle::Rotate(float Theta,Vec Spin){
 	Del1=Del1<<Theta; Del2=Del2<<Theta; Del3=Del3<<Theta;
 }
 
-void Triangle::Zoom(float K){
-	cout<<K<<endl;
+void Triangle::Zoom(float K,Vec Spin){
+	Anchor=(Anchor-Spin)*K+Spin;
 	Del1=Del1*K; Del2=Del2*K; Del3=Del3*K;
 }

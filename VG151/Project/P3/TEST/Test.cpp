@@ -28,7 +28,7 @@ void Display(){
 	cout<<opt<<endl;
 	switch (opt){
 		case 0: x->Move(Vec(0.01,0)); break;
-		case 1: x->Rotate(rand()%180,Vec(0.3,0.1)); break;
+		case 1: x->Rotate(rand()%180,Vec(0,0)); break;
 		case 2: x->Zoom(rand()/float(RAND_MAX)/10+0.95); break;
 	}
 	x->Draw();
