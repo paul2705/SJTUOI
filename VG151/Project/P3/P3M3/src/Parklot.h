@@ -14,6 +14,7 @@
 	#include"Car.h"
 	#include"Group.h"
 	#include"Figure.h"
+	#include "Teleported.h"
 	using namespace std;
 
 	class _Map{
@@ -30,7 +31,7 @@
 			vector<Vec> FindTrack(int s,int t);
 	};
 
-	class Parklot{
+	class Parklot: public Group{
 		private:
 			int Floor;
 			int FloorSize[11];
@@ -45,7 +46,11 @@
 			bool InTakeVeh(int Time,Item _thisItem);
 			bool ChangeSlot(int Time,Item _thisItem);
 			bool OutTakeVeh(int Time,Item _thisItem);
-			void Draw();
+			void Draw(bool _Change);
+			void DecorateAct();
+			void DecorateControl();
+			void DecorateLeave();
+			
 			~Parklot();
 	};
 

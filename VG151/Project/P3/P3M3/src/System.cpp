@@ -34,26 +34,20 @@ System::System(){
 	Park=new Parklot(1,10);
 	int NVeh=rand()%100+1;
 	for (int i=1;i<=NVeh;i++){
-		int tmpRand=rand()%4;
+		int tmpRand=rand()%3;
 		if (tmpRand==0){
-			Teleported *tmpItem=new Teleported(-1,-0.4);
-			Vehicle* tmpVeh=tmpItem;
-			Group* tmpGrp=tmpItem;
-			WaitVehs.push({tmpVeh,tmpGrp});
-		}
-		else if (tmpRand==1){
 			Car *tmpItem=new Car(-1,-0.4);
 			Vehicle* tmpVeh=tmpItem;
 			Group* tmpGrp=tmpItem;
 			WaitVehs.push({tmpVeh,tmpGrp});
 		}
-		else if (tmpRand==2){
+		else if (tmpRand==1){
 			Spacecraft *tmpItem=new Spacecraft(-1,-0.4);
 			Vehicle* tmpVeh=tmpItem;
 			Group* tmpGrp=tmpItem;
 			WaitVehs.push({tmpVeh,tmpGrp});
 		}
-		else if (tmpRand==3){
+		else if (tmpRand==2){
 			Ufo *tmpItem=new Ufo(-1,-0.4);
 			Vehicle* tmpVeh=tmpItem;
 			Group* tmpGrp=tmpItem;
@@ -91,16 +85,15 @@ void System::Control(){
 	if (Time>=Border&&!IsEmpty()){
 		int opt=rand()%10;
 		if (opt<4)
-			if (!WaitVehs.empty()) AskVehIn(TimeFlow());
-			else AskVehOut(TimeFlow());
+			if (!WaitVehs.empty()) AskVehIn(TimeFlow()),Park->Draw(1);
+			else AskVehOut(TimeFlow()),Park->Draw(0);
 		else if (opt<7)
-			if (!InVehs.empty()) AskVehOut(TimeFlow());
-			else AskVehIn(TimeFlow());
-		else if (!InVehs.empty()) AskVehChangeSlot(TimeFlow());
-			else AskVehIn(TimeFlow());
+			if (!InVehs.empty()) AskVehOut(TimeFlow()),Park->Draw(0);
+			else AskVehIn(TimeFlow()),Park->Draw(1);
+		else if (!InVehs.empty()) AskVehChangeSlot(TimeFlow()),Park->Draw(0);
+			else AskVehIn(TimeFlow()),Park->Draw(1);
 	}
-	Time++;
-	Park->Draw();
+	Time++; Park->Draw(0);
 }
 
 System::~System(){

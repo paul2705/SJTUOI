@@ -104,6 +104,10 @@ void Display(){
 	Circle *Cir69=new Circle(Vec(-0.25,-0.05),1.0,0.0,0.0,0.01,100); Cir69->Draw();
 	Circle *Cir70=new Circle(Vec(-0.3,-0.1),1.0,0.0,0.0,0.01,100); Cir70->Draw();
 	Circle *Cir71=new Circle(Vec(-0.3,-0.3),1.0,0.0,0.0,0.01,100); Cir71->Draw();
+
+	Circle *Cir72=new Circle(Vec(-0.8,0.3),1.0,0.0,0.0,0.01,100); Cir72->Draw();
+	Circle *Cir73=new Circle(Vec(-0.8,0.6),1.0,0.0,0.0,0.01,100); Cir73->Draw();
+	Circle *Cir74=new Circle(Vec(-0.9,0.6),1.0,0.0,0.0,0.01,100); Cir74->Draw();
 	glFlush();
 }
 

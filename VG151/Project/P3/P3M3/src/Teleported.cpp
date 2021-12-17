@@ -64,6 +64,16 @@ void Teleported::ParkOut(DepartTicket *T){
     }
 }
 
+void Teleported::Rotate(float theta,Vec Spin){
+    for (DECITER it=SetDecorate.begin();it!=SetDecorate.end();it++){
+        it->Fig->Rotate(theta,Spin);
+
+    }
+    for (FIGITER it=SetNormal.begin();it!=SetNormal.end();it++){
+        (*it)->Rotate(theta,Spin);
+    }
+}
+
 void Teleported::DecorateLeave(){
     for (DECITER it=SetDecorate.begin();it!=SetDecorate.end();it++){
         it->Fig->Zoom(0.95,Anchor);

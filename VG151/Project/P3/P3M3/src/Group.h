@@ -36,7 +36,7 @@
 	typedef struct _Decorating{
 		Vec Del=Vec(0,0.005);
 		int Cup=20; int Cnt=0;
-		int Dir=1;
+		double Dir=1;
 		Figure* Fig;
 	} Decorating;
 

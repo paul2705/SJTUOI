@@ -21,6 +21,7 @@
             void DecorateLeave();//zoom and rotate to present an image of leaving
             void ReadyLeave();//change into the reverse pattern
             int GetType();
+            void Rotate(float theta,Vec Spin);
             void DecorateAct();
             void DecorateControl();
             ~Teleported();
